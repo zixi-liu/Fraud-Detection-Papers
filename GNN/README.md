@@ -19,9 +19,11 @@ A measurement study on a real world registration dataset from WeChat show that, 
 
 <img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/fake-accounts-model.png" alt="model" />
 
-i. Construct a registration feature bigraph to capture the relationship between registration accounts and features. 
-- represent each account and each feature as a node 
-- add an edge between an account and a feature if the account has the feature
+**Feature Extraction**
+- Extract features that reveal outlier registration patterns of fake accounts;
 
-ii. Design a statistical method to initialize the weight of each feature node, the weight of each registration account node based on the weights of feature
-nodes.
+**Unsupervised Weight Learning**
+- Construct a registration-feature bigraph to capture the relationship between registration accounts and features. Each node in
+the bigraph represents either a registration account or a feature, and each edge between a registration node and a feature node indicates that the registration account has the feature.
+- Design a statistical method to initialize the weight of each node in the bigraph. The weight of node quantifies the node’s anomaly.
+
