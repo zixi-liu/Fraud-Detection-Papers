@@ -1,4 +1,4 @@
-# GNN-Based Fraud Detection Papers
+# Graph-Based Fraud Detection Papers
 
 
 | Year  | Title | Company | Paper | Code  |
