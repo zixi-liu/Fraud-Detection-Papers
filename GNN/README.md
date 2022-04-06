@@ -22,6 +22,10 @@ A measurement study on a real world registration dataset from WeChat show that, 
 **Feature Extraction**
 - Extract features that reveal outlier registration patterns of fake accounts;
 
+Registration Feature Bigraph
+
+<img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/registration-feature-bigraph.png" alt="model" />
+
 **Unsupervised Weight Learning**
 - Construct a registration-feature bigraph to capture the relationship between registration accounts and features. Each node in
 the bigraph represents either a registration account or a feature, and each edge between a registration node and a feature node indicates that the registration account has the feature.
