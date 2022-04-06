@@ -31,6 +31,19 @@ Registration Feature Bigraph
 the bigraph represents either a registration account or a feature, and each edge between a registration node and a feature node indicates that the registration account has the feature.
 - Design a statistical method to initialize the weight of each node in the bigraph. The weight of node quantifies the node’s anomaly.
 
+- Statistical method relies on three concepts: 
+   - feature frequency (the number of registration accounts who have this feature),
+   - feature ratio (given a feature 𝑥 with prefix pre, the feature ratio ratio(𝑥) is defined as the fraction of its feature frequency among all features with the same prefix pre), 
+   - mode feature under a feature prefix (given a feature prefix pre, the mode feature of pre is the feature 𝑥∗ with this prefix having the maximal feature ratio).
+ 
+- Define the weight of a feature to quantify the feature anomaly:
+   -  One natural choice is to relate the anomaly of the feature to its feature ratio. 
+   -  Feature coupling define the weight for a feature by considering the feature ratio as well as the feature prefix’s ratio to make features with different prefixes comparable.
+   -  If a feature is unique, i.e., it is used by a single registration account, we set its weight to be 0.5, which means that we consider all unique features to be neutral.
+
+- Feature/registration weight update:
+   -  Linearized belief propagation, to update each node weight in the registration-feature bigraph by considering the influence from its indirect neighbors. 
+
 **Construct a Registration Graph**
 - Directly capture the correlation between registration accounts. Specifically, we map the registrationfeature bigraph into a registration graph, where each node is a registration account and an edge is added between two registration accounts if their similarity is higher than a threshold. The similarity
 between two registration accounts is defined as the sum of weights of features shared by the two accounts. In the constructed registration graph, fake accounts are likely to be densely connected, while benign accounts are likely to be sparsely connected.
