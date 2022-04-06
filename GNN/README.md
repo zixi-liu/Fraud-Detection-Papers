@@ -50,3 +50,4 @@ between two registration accounts is defined as the sum of weights of features s
 
 **Fake Account Detection**
 - Utilize a community detection algorithm to cluster the registration accounts into communities in the fake account detection component. We treat all accounts in a community as fake accounts if the community size is larger than a threshold.
+   - First adopt a community detection method, e.g., Louvain method, to cluster the nodes into different communities (i.e., dense subgraphs). Second, we predict all registration accounts in the communities whose sizes are larger than a threshold to be fake accounts.
