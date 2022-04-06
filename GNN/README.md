@@ -17,9 +17,9 @@ A measurement study on a real world registration dataset from WeChat show that, 
 
 ### Unsupervised Weight Learning
 
-1. Construct a registration feature bigraph to capture the relationship between registration accounts and features. 
+i. Construct a registration feature bigraph to capture the relationship between registration accounts and features. 
 - represent each account and each feature as a node 
 - add an edge between an account and a feature if the account has the feature
 
-2. Design a statistical method to initialize the weight of each feature node, the weight of each registration account node based on the weights of feature
+ii. Design a statistical method to initialize the weight of each feature node, the weight of each registration account node based on the weights of feature
 nodes.
