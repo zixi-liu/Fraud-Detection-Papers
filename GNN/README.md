@@ -17,6 +17,8 @@ A measurement study on a real world registration dataset from WeChat show that, 
 
 ### Unsupervised Weight Learning
 
+<img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/fake-accounts-model.png" alt="model" />
+
 i. Construct a registration feature bigraph to capture the relationship between registration accounts and features. 
 - represent each account and each feature as a node 
 - add an edge between an account and a feature if the account has the feature
