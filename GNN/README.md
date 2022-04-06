@@ -1,6 +1,6 @@
 ## GNN-Based Fraud Detection Papers
 
-
+<img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/GNN.png" alt="GNN" width = "400"/>
 
 | Year  | Title | Company | Paper | Code  |
 | :---: | :---: | :---: | :---: | :---: |
