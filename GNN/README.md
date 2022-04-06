@@ -24,7 +24,7 @@ A measurement study on a real world registration dataset from WeChat show that, 
 
 Registration Feature Bigraph
 
-<img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/registration-feature-bigraph.png" alt="model" />
+<img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/registration-feature-bigraph.png" alt="model" width = "400px" />
 
 **Unsupervised Weight Learning**
 - Construct a registration-feature bigraph to capture the relationship between registration accounts and features. Each node in
