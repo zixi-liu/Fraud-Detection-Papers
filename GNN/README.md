@@ -1,6 +1,6 @@
 # Graph-Based Fraud Detection Papers
 
-- [[UFA] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](##[UFA] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach)
+- [ Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](##[UFA] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach)
 
 | Year  | Title | Company | Paper | Code  |
 | :---: | :---: | :---: | :---: | :---: |
