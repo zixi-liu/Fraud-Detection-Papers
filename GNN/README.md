@@ -2,13 +2,18 @@
 
 #### Table of Content
 
+- [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services, 2022](#Representing-Fine-Grained-Co-Occurrences-for-Behavior-Based-Fraud-Detection-in-Online-Payment-Services)
 - [[UFA] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](#unveiling-fake-accounts-at-the-time-of-registration---an-unsupervised-approach)
+
 
 | Year  | Title | Company | Paper | Code  |
 | :---: | :---: | :---: | :---: | :---: |
+| 2022  | **Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services** | Tencent | [[KDD2021]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9085905) | Code |
 | 2021  | **Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach** | Tencent | [[KDD2021]](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094) | Code |
 
 #### Summary Notes
+
+## Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services
 
 ## Unveiling Fake Accounts at the Time of Registration - An Unsupervised Approach
 
