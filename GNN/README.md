@@ -15,6 +15,24 @@
 
 ## Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services
 
+### Behavioral Data Enhancement
+
+Adopt the heterogeneous relation network, to represent the co-occurrences among transactional attributes effectively. 
+- A network node (or say an entity) corresponds to an attribute value in transactions, and an edge corresponds to a heterogeneous association between different attribute values.
+
+**Network representation learning (NRL)** effectively capture deep relationships. 
+- By calculating the similarity between embedding vectors, more potential relationships could be inferred.
+
+**Network Embedding**
+
+The network embedding that preserves the network structure of native graph cannot directly help behavioral modeling for online payment fraud detection.
+- It is intolerable to perform network embedding operation for every new transaction due to the response latency lead by large computing overhead.
+- We are interested in the co-occurrence relationships among different behavioral entities rather than the relationship between a unique identifier and its entities.
+
+**Customized Derivative Networks**
+
+
+
 ## Unveiling Fake Accounts at the Time of Registration - An Unsupervised Approach
 
 Design UFA, an unsupervised method, to detect fake accounts at the time of registration. UFA can overcome limitations of existing fake account detection methods. Specifically, UFA consists of four components: 
