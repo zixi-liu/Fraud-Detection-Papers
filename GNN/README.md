@@ -31,7 +31,7 @@ The network embedding that preserves the network structure of native graph canno
 
 **Customized Derivative Networks**
 
-
+<img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/FraudDetectionSys.png" alt="model" />
 
 ## Unveiling Fake Accounts at the Time of Registration - An Unsupervised Approach
 
