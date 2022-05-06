@@ -15,7 +15,7 @@
 
 ## Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services
 
-### Behavioral Data Enhancement
+#### Behavioral Data Enhancement
 
 Adopt the heterogeneous relation network, to represent the co-occurrences among transactional attributes effectively. 
 - A network node (or say an entity) corresponds to an attribute value in transactions, and an edge corresponds to a heterogeneous association between different attribute values.
@@ -31,7 +31,42 @@ The network embedding that preserves the network structure of native graph canno
 
 **Customized Derivative Networks**
 
+For B2C transactions, we define two different vertices, say u and v, that originally connect the same unique identifier as a vertex pair, and view it as an
+edge e=(u,v).
+
 <img src="https://github.com/zixi-liu/GNN-Fraud-Detection-Papers/blob/main/Img/FraudDetectionSys.png" alt="model" />
+
+**Model Enhancement**
+- Population-Level Models
+  - Generate a derivative network where the vertices are transaction attributes and the edges with weights represent the co-occurrence frequency, taking no
+account of transaction labels. We say such a derivative network is label-free.
+- Individual-Level Models
+  - Extract positive relationships generated from non-fraudulent transactions and negative relationships generated from fraudulent transactions. The positive relationship enhances the correlation between the agents involved, while the negative relationship weakens the correlation. We say such a derivative network is label-aware.
+
+### Method
+
+#### Graph Representation of Transaction Records & Network Embedding
+- To transform networks from network structure to vector space, the commonly used models mainly include random walk, matrix factorization, and
+deep neural networks.
+
+#### Fraud Detection Models
+- Fraud Detection in Population-Level Model: we need the features that can summarize a bunch of transactions. 
+  - Embedding doesn't work well: d (dimension size of vector representation) x m (attributes).
+  - Use the Cosine similarity (i.e. m(m-1)/2 similarities) to represent a transaction record. 
+  - In the real online payment scenario, we divide training samples and testing samples in time order to avoid time-crossing problems.
+- Fraud Detection in Individual-Level Models: information on normal transactions enhances the association of attribute vertices in the derivative network.
+  - Use account_number as an agent. Detect anomalies by comparing with behavioral models when we assume that an agent’s behavioral pattern is stable.
+  - **Single-Agent Behavioral Model:** Calculate the similarity of any two vector representations using the euclidean distance based on a size of d x m matrix. Introduce cohesivity to express the importance of a transaction in the behavioral model.
+  - **Multi-Agent Behavioral Model:** Similar to the commonly-used agent, i.e., account number, some other attributes, e.g., merchant number and location number, can also act as the agents to build behavioral models. 
+
+Given a transaction, its fraud score rated by its corresponding probability in the singleagent behavioral model determines whether the transaction
+is fraud or not. If the transaction miss values in some attributes, we compute the average possibility of all transactions, which are related to existing attributes of the transaction.
+
+- Population-level models compare the similarity between a transaction and the learned transactional patterns. 
+- Individual-level models distinguish a transaction by contrasting the difference between its current and past patterns.
+
+#### Evaluation
+
 
 ## Unveiling Fake Accounts at the Time of Registration - An Unsupervised Approach
 
