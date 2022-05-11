@@ -4,7 +4,7 @@
 
 ## 目录
 
-一、概述篇 Overview
+一、概述 Overview
 
 - [**An Awesome Collection of Credit Card Fraud Detection Cases Using ML**](https://arxiv.org/pdf/2010.06479.pdf)
 
