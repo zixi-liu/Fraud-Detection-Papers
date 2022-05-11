@@ -9,3 +9,9 @@
 - [**Credit card fraud detection using machine learning: A survey**](https://arxiv.org/pdf/2010.06479.pdf)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
+二、机器学习 ML Methods
+
+
+三、图算法 Graph-based Models
+- [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services](#Representing-Fine-Grained-Co-Occurrences-for-Behavior-Based-Fraud-Detection-in-Online-Payment-Services)
+- [[Wechat] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](#unveiling-fake-accounts-at-the-time-of-registration---an-unsupervised-approach)
