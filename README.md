@@ -6,7 +6,7 @@
 
 **一、概述 Overview**
 
-- [**Credit card fraud detection using machine learning: A survey**](https://arxiv.org/pdf/2010.06479.pdf)
+- [Credit card fraud detection using machine learning: A survey](https://arxiv.org/pdf/2010.06479.pdf)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
 **二、机器学习 ML Methods**
