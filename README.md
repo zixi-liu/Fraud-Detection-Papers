@@ -12,6 +12,7 @@
 
 - [Credit card fraud detection using machine learning: A survey](https://arxiv.org/pdf/2010.06479.pdf)
 - [Context-aware credit card fraud detection](https://tel.archives-ouvertes.fr/tel-02902117/document)
+- [Graph-based Anomaly Detection and Description: A Survey](https://arxiv.org/pdf/1404.4679.pdf)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
 ### 终端风控组件 Terminal Risk Management
@@ -37,7 +38,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 **图特征提取**
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 
-### 文本挖掘
+### 文本挖掘 Text Mining
 
 ### 序列模型 Sequence Modeling
 
