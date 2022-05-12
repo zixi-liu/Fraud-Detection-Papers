@@ -30,6 +30,10 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 ### 序列模型 Sequence Modeling
 
+**图模型 Graphical Models**
+
+**循环神经网络 Recurrent Neural Networks**
+
 
 ### 图神经网络 Graph Neural Network-based Modeling
 
