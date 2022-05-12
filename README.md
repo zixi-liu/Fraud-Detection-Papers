@@ -37,9 +37,14 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 **图特征提取**
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 
+### 文本挖掘
+
 ### 序列模型 Sequence Modeling
 
 **图模型 Graphical Models**
+
+利用关系网络识别网络中异常的网络结构和社群。
+- [[JD Finance] Graph mining assisted semi-supervised learning for fraudulent cash-out detection](https://nosh.northwestern.edu/wp-content/uploads/2020/10/Graph-mining-assisted-semi-supervised-learning-for-fraudulent-cash-out-detection.pdf)
 
 **循环神经网络 Recurrent Neural Networks**
 
