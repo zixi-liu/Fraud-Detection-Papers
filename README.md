@@ -14,14 +14,14 @@
 - [Context-aware credit card fraud detection](https://tel.archives-ouvertes.fr/tel-02902117/document)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
-### 风控核心组件
+### 终端风控组件 Terminal Risk Management
 
-**设备指纹**
+**设备指纹 Device Fingerprint**
 
-**生物探针**
+**生物探针 Behavioral Analytics**
 - [You are How You Touch: User Verification on Smartphones via Tapping Behaviors](https://www.eecis.udel.edu/~hnw/paper/icnp14.pdf)
 
-**智能验证码**
+**智能验证码 Verification Code**
 
 ### 特征工程 Feature Engineering
 
