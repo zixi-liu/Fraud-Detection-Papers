@@ -4,15 +4,16 @@
 
 ## 目录
 
-**一、概述 Overview**
+**概述 Overview**
 
 - [Credit card fraud detection using machine learning: A survey](https://arxiv.org/pdf/2010.06479.pdf)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
-**二、机器学习 ML Methods**
+**特征工程 Feature Engineering**
 
+- [Embeddings of Categorical Variables for Sequential Data in Fraud Context](http://oliviercaelen.be/doc/AMLTA2018_paper_7.pdf)
 
-**三、图算法 Graph-based Models**
+**图算法 Graph-based Models**
 
 线上支付
 - [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services](#Representing-Fine-Grained-Co-Occurrences-for-Behavior-Based-Fraud-Detection-in-Online-Payment-Services)
