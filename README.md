@@ -43,6 +43,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 **循环神经网络 Recurrent Neural Networks**
 
+- [[JD Finance] Session-Based Fraud Detection in Online E-Commerce Transactions Using Recurrent Neural Networks](http://ecmlpkdd2017.ijs.si/papers/paperID69.pdf)
 
 ### 图神经网络 Graph Neural Network-based Modeling
 
