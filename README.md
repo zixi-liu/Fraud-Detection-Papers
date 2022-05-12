@@ -1,6 +1,7 @@
 # Fraud Detection-反欺诈学习资料、应用实例
 
-汇总反欺诈领域论文学习资料、基于传统机器学习以及图算法的反欺诈应用实例。
+汇总反欺诈领域论文学习资料、基于传统机器学习以及图算法的反欺诈应用实例。如有侵权，以下是我的联系方式：
+- Linkedin: [Zixi Liu](https://www.linkedin.com/in/betty-zixi-liu?original_referer=https%3A%2F%2Fwww.google.com%2F)
 
 **其他经典论文总结**
 - [反欺诈算法经典论文解读](https://zhuanlan.zhihu.com/p/85155064)
@@ -61,4 +62,4 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 ### 其它相关资源
 
 - [图算法学习-高密子图挖掘](https://zhuanlan.zhihu.com/p/45625323)
-
+- [开源分布式图数据库](https://zhuanlan.zhihu.com/p/152399147)
