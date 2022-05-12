@@ -21,7 +21,7 @@ Embedding
 - [[Knowledge Graph] Injecting Semantic Background Knowledge
 into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-edouard.portier/publications/2017_ZIEGLER_PORTIER_WETICE_injecting_semantic_background_knowledge_into_neural_networks_using_graph_embeddings.pdf)
 
-图网络特征提取
+图特征提取
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 
 **图算法 Graph-based Models**
