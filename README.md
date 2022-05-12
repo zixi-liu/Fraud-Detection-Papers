@@ -53,11 +53,17 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 ### 图神经网络 Graph Neural Network-based Modeling
 
+**图神经网络入门**
+- [A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/pdf/1901.00596.pdf)
+- [[GCN] Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/pdf/1609.02907.pdf)
+- [[GraphSage] Inductive Representation Learning on Large Graphs](https://arxiv.org/pdf/1706.02216.pdf)
+- [[GAT] Graph Attention Networks](https://arxiv.org/pdf/1710.10903.pdf)
+
+**图神经网络框架**
 - [[Ant Group] AGL: A Scalable System for Industrial-purpose Graph Machine Learning](https://arxiv.org/pdf/2003.02454.pdf)
 - [[Ant Group] GeniePath: Graph Neural Networks with Adaptive Receptive Paths](https://export.arxiv.org/pdf/1802.00910)
 - [[Alibaba] AliGraph: A Comprehensive Graph Neural Network Platform](https://arxiv.org/pdf/1902.08730.pdf)
 - [[Pytorch Geometric] Pytorch-Geometric implementation of a series of Graph Neural Network (GNN) based fake news detection models](https://github.com/safe-graph/GNN-FakeNews)
-
 
 **线上支付**
 - [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9085905)
