@@ -38,4 +38,51 @@ NameNode高可用容错能力非常重要，采用主从热备的方式提供高
 - 限流降级
 
 **MapReduce编程模型**
-- map主要
+- map主要输入是一对<key,value>值，经过map结算后输出一对<key,value>值，然后将相同key合并，形成<key,value集合>，再将<key,value集合>输入reduce，经过计算输出零个或多个<key,value>对。
+
+举例-词频统计问题的Python实现
+
+```
+strl_list = str.replace('\n', '').lower().split(' ')
+count_dict = {}
+for str in str_list:
+  if str in count_dict.keys():
+    count_dict[str] = count_dict[str] + 1
+    else:
+      count_dict[str] = 1
+```
+MapReduce实现
+
+```
+public class WordCount{
+  public class TokenizerMapper
+    extends Mapper<Object, Text, Text, IntWritable>{
+      
+      private final static IntWritable one = new IntWritable(1);
+      private Text word = new Text();
+      
+      public void map(Object key, Text value, Context context) throws IOException, InterruptedException{
+        StringTokenizer itr = new StringTokenizer(value.toString());
+        while (itr.hasMoreTokens()){
+          word.set(itr.nextToken());
+          context.write(word, one);
+        }
+      }
+    }
+}
+
+public static class IntSumReducer
+  extends Reducer<Text, IntWritable, Text, IntWritable>{
+  private IntWritable result = new IntWritable();
+  
+  public void reduce(Text key, Iterable<IntWritable> values, Context Context) throws IOException, InterruptedException{
+    int sum = 0;
+    for (IntWritable val: values){
+      sum += val.get();
+    }
+    result.set(sum);
+    context.write(key, results);
+  }
+ } 
+}
+```
