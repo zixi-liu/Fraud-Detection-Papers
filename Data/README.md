@@ -86,3 +86,34 @@ public static class IntSumReducer
  } 
 }
 ```
+
+### Yarn资源调度框架
+
+服务器集群资源调度管理和MapReduce执行过程耦合在一起，如果想在当前集群中运行其他计算任务，比如Spark或者Storm，就无法统一使用集群中的资源了。
+
+- Resource Manager资源管理器
+- Node Manager节点管理器（基本跟HDFS的DataNode进程一起出现）
+
+### Hive
+
+Map, Reduce, Shuffle
+
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/46979228/168404902-72a9dc89-f570-4f50-8957-d363ccb526e8.png">
+
+Hive根据SQL语句生成函数的DAG，然后封装进MapReduce的map和reduce函数。
+
+### Spark
+
+Resilient Distributed Datasets (RDD)
+- Spark分布式计算的数据分片、任务调度都以RDD为单位展开。每个RDD分片都会分配到一个执行进程去处理。
+  - Spark SQL
+  - Spark Streaming
+  - MLlib
+  - GraphX
+
+### HBase
+
+
+
+
+
