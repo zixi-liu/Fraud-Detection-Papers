@@ -9,14 +9,14 @@
 
 ## 目录
 
-### 概述 Overview
+### 一、概述 Overview
 
 - [Credit card fraud detection using machine learning: A survey](https://arxiv.org/pdf/2010.06479.pdf)
 - [Context-aware credit card fraud detection](https://tel.archives-ouvertes.fr/tel-02902117/document)
 - [Graph-based Anomaly Detection and Description: A Survey](https://arxiv.org/pdf/1404.4679.pdf)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
-### 终端风控组件 Terminal Risk Management
+### 二、终端风控组件 Terminal Risk Management
 
 **设备指纹 Device Fingerprint**
 
@@ -25,7 +25,7 @@
 
 **智能验证码 Verification Code**
 
-### 特征工程 Feature Engineering
+### 三、特征工程 Feature Engineering
 
 **Embedding**
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
@@ -39,9 +39,9 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 **图特征提取**
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 
-### 文本挖掘 Text Mining
+### 四、文本挖掘 Text Mining
 
-### 序列模型 Sequence Modeling
+### 五、序列模型 Sequence Modeling
 
 **图模型 Graphical Models**
 
@@ -52,7 +52,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 - [[JD Finance] Session-Based Fraud Detection in Online E-Commerce Transactions Using Recurrent Neural Networks](http://ecmlpkdd2017.ijs.si/papers/paperID69.pdf)
 
-### 图神经网络 Graph Neural Network-based Modeling
+### 六、图神经网络 Graph Neural Network-based Modeling
 
 **图神经网络入门**
 - [A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/pdf/1901.00596.pdf)
@@ -86,7 +86,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 - [[IBM] Anti-Money Laundering in Bitcoin: Experimenting with Graph Convolutional Networks for Financial Forensics](https://arxiv.org/pdf/1908.02591.pdf)
 
 
-### 其它相关资源
+### 七、其它相关资源
 
 - [图算法学习-高密子图挖掘](https://zhuanlan.zhihu.com/p/45625323)
 - [开源分布式图数据库](https://zhuanlan.zhihu.com/p/152399147)
