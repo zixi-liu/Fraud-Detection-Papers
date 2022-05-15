@@ -6,6 +6,7 @@
 
 **经典论文总结**
 - [反欺诈算法经典论文解读](https://zhuanlan.zhihu.com/p/85155064)
+- [[蚂蚁金融中的在线实时交易欺诈检测] TitAnt: Online Real-time Transaction Fraud Detection in Ant Financial](https://arxiv.org/pdf/1906.07407.pdf)
 
 ## 目录
 
@@ -16,11 +17,11 @@
 - [Graph-based Anomaly Detection and Description: A Survey](https://arxiv.org/pdf/1404.4679.pdf)
 - [风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
-### 二、终端风控组件 Terminal Risk Management
+### 二、终端风控组件 User Authentication Approaches
 
 **设备指纹 Device Fingerprint**
 
-**生物探针 Behavioral Analytics**
+**生物探针 Biometrics-Based Authentication**
 - [You are How You Touch: User Verification on Smartphones via Tapping Behaviors](https://www.eecis.udel.edu/~hnw/paper/icnp14.pdf)
 
 **智能验证码 Verification Code**
@@ -72,6 +73,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 **账号安全**
 - [[Wechat] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094)
 - [[Ant Group] Heterogeneous Graph Neural Networks for Malicious Account Detection](https://arxiv.org/pdf/2002.12307.pdf)
+- [[Ant Group] Adversarial Attack on Graph Structured Data](https://arxiv.org/pdf/1806.02371.pdf)
 
 **假新闻识别**
 - [Fake News Detection on Social Media using Geometric Deep Learning](https://arxiv.org/pdf/1902.06673.pdf)
