@@ -9,6 +9,9 @@
 - [Awesome Collection of Fraud Detection Papers](https://github.com/benedekrozemberczki/awesome-fraud-detection-papers)
 - [TitAnt: 蚂蚁金融在线实时交易欺诈检测](https://arxiv.org/pdf/1906.07407.pdf)
 
+<img width="831" alt="image" src = "https://user-images.githubusercontent.com/46979228/168505310-41322c30-86a9-4fee-ab6e-1fdc97f55524.png">
+
+
 ## 目录
 
 ### 一、概述 Overview
