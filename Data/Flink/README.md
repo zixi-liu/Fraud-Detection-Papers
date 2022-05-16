@@ -43,6 +43,24 @@ Flink的架构和Hadoop或者Yarn看起来很像，JobManager是Flink集群的�
 
 **流处理概念**
 
+大数据处理计算模式
+- 批量计算: MapReduce, Spark, Hive, Flink, Pig
+- 流式计算: Storm, Spark Streaming, Flink, Samza
+- 交互计算: Presto, Impala, Druid, Drill
+- 图计算: Giraph(Facebook), Graphx(Spark), Gelly(Flink)
+
+**Flink核心特性**
+- 统一数据处理组件栈（Batch, Stream, Machine Learning, Graph)
+- 数据一致性：基于轻量级分布式快照（Snapshot）实现的容错。
+- 支持有状态计算。
+- 基于JVM实现独立的内存管理。
+
+**Flink集群架构**
+- JobManager
+- TaskManager
+- Client
+
+
 ### 二、Flink DataStream API 实践原理
 
 - DataStream API实践
