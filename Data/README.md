@@ -113,6 +113,16 @@ Resilient Distributed Datasets (RDD)
 
 ### HBase
 
+BigTable对应的NoSQL系统HBase。
+
+HRegion是HBase负责数据存储的主要进程，应用程序对数据的读写操作都是通过和HRegion通信完成。
+
+HRegionServer 是物理服务器，每个 HRegionServer 上可以启动多个 HRegion 实例。当一个 HRegion 中写入的数据太多，达到配置的阈值时，一个 HRegion 会分裂成两个 HRegion，并将 HRegion 在整个集群中进行迁移，以使 HRegionServer 的负载均衡。
+
+HBase 的做法是按 Key 的区域进行分片，这个分片也就是 HRegion。应用程序通过 HMaster 查找分片，得到 HRegion 所在的服务器 HRegionServer，然后和该服务器通信，就得到了需要访问的数据。
+
+<img width="897" alt="image" src="https://user-images.githubusercontent.com/46979228/168507922-10779f36-7131-4844-91fa-842daa0ceb4f.png">
+
 
 
 
