@@ -90,8 +90,9 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 - [[Alibaba] AliGraph: A Comprehensive Graph Neural Network Platform](https://arxiv.org/pdf/1902.08730.pdf)
 - [[Pytorch Geometric] Pytorch-Geometric implementation of a series of Graph Neural Network (GNN) based fake news detection models](https://github.com/safe-graph/GNN-FakeNews)
 
-**线上支付**
+**线上交易支付**
 - [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9085905)
+- [[Live-Streaming] Live-Streaming Fraud Detection: A Heterogeneous Graph Neural Network Approach](https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3447548.3467065&file=3467065-vor.pdf)
 
 **账号安全**
 - [[Wechat] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094)
