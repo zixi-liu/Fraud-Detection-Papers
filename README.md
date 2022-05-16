@@ -113,5 +113,6 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 
 ### 七、其它相关资源
 
+- [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
 - [图算法学习-高密子图挖掘](https://zhuanlan.zhihu.com/p/45625323)
 - [开源分布式图数据库](https://zhuanlan.zhihu.com/p/152399147)
