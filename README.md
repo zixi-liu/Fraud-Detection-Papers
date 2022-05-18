@@ -30,6 +30,21 @@
 
 ### 三、特征工程 Feature Engineering
 
+数据预处理，特征选择，特征降维。
+
+**Preprocessing 预处理**
+
+[基于Spark的特征处理](https://time.geekbang.org/column/article/295300)
+- 归一化 Normalizer：处理特征值尺度不同问题
+- 分桶 Bucketing：处理特征值分布不均匀问题
+
+**Feature Selection 特征选择**
+
+- 过滤法 Filter
+  - [[多元特征过滤] Relief-Based Feature Selection: Introduction and Review](https://arxiv.org/pdf/1711.08421v2.pdf)
+- 包装法 Wrapper
+- 嵌入法 Embedded
+
 **Embedding**
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [[Word2Vec] word2vec Parameter Learning Explained](https://arxiv.org/pdf/1411.2738.pdf)
@@ -89,6 +104,7 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 - [[Ant Group] GeniePath: Graph Neural Networks with Adaptive Receptive Paths](https://export.arxiv.org/pdf/1802.00910)
 - [[Alibaba] AliGraph: A Comprehensive Graph Neural Network Platform](https://arxiv.org/pdf/1902.08730.pdf)
 - [[Pytorch Geometric] Pytorch-Geometric implementation of a series of Graph Neural Network (GNN) based fake news detection models](https://github.com/safe-graph/GNN-FakeNews)
+- [PyTorch-BigGraph](https://github.com/facebookresearch/PyTorch-BigGraph)
 
 **线上交易支付**
 - [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9085905)
