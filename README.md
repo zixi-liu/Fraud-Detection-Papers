@@ -32,25 +32,43 @@
 
 数据预处理，特征选择，特征降维。
 
-**Preprocessing 预处理**
+**1. Preprocessing 预处理**
 
 [基于Spark的特征处理](https://time.geekbang.org/column/article/295300)
-- 归一化 Normalizer：处理特征值尺度不同问题
-- 分桶 Bucketing：处理特征值分布不均匀问题
 
-**Feature Selection 特征选择**
+*数值型特征*
+- 归一化 Normalizer：处理特征值尺度不同问题 （i.e. min-max, scale to [-1, 1], z-score, log-based, L2, Gauss Rank, Robust Scaling etc.）
+- 分箱 Binning：处理特征值分布不均匀问题（有监督分箱如卡方分箱、决策树分箱/无监督分桶如固定宽度分箱、分位数分箱等）
+  - 将连续特征离散化，旨在引入非线性变换，对异常值不敏感、防止过拟合；
+  - Tree-based模型中，高基数特征相对于低基数特征处于支配地位。
 
+*类别型特征*
+- 交叉组合FM/分箱 Binning/Count Encoding/Target Encoding/Odds Ratio/相关系数/WOE
+  - [特征交叉组合模型演化简史](https://zhuanlan.zhihu.com/p/269730650)
+
+*时序特征*
+- 历史事件分时段统计
+
+**2. Feature Selection 特征选择**
+
+高质量特征有区分性(Informative)，特征之间有相互独立性(Independent)，特征应易于理解。
 - 过滤法 Filter
   - [[多元特征过滤] Relief-Based Feature Selection: Introduction and Review](https://arxiv.org/pdf/1711.08421v2.pdf)
+  - [[谱图] Spectral Feature Selection for Supervised and Unsupervised Learning](https://www.public.asu.edu/~huanliu/papers/icml07.pdf)
 - 包装法 Wrapper
 - 嵌入法 Embedded
+- 图特征选择 Graph-based
+  - [Feature Selection with Linked Data in Social Media, 2012](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.228.8109&rep=rep1&type=pdf)
+  - [Unsupervised Feature Selection for Linked Social Media Data, 2012](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.300.2277&rep=rep1&type=pdf)
+  - [Efficient Partial Order Preserving Unsupervised Feature Selection on Networks](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974010.10)
+  - [Unsupervised Feature Selection on Networks: A Generative View](https://ojs.aaai.org/index.php/AAAI/article/view/10309/10168)
 
 **Embedding**
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [[Word2Vec] word2vec Parameter Learning Explained](https://arxiv.org/pdf/1411.2738.pdf)
 - [Embeddings of Categorical Variables for Sequential Data in Fraud Context](http://oliviercaelen.be/doc/AMLTA2018_paper_7.pdf)
 
-**网络特征学习 Network Representation Learning**
+**图表示学习 Network Representation Learning**
 
 Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [[DeepWalk]: Online Learning of Social Representations](http://www.perozzi.net/publications/14_kdd_deepwalk.pdf)
@@ -62,7 +80,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 
 
-**数据增强 Data Augmentation**
+**3. 数据增强 Data Augmentation**
 - [[Knowledge Graph] Injecting Semantic Background Knowledge
 into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-edouard.portier/publications/2017_ZIEGLER_PORTIER_WETICE_injecting_semantic_background_knowledge_into_neural_networks_using_graph_embeddings.pdf)
 
