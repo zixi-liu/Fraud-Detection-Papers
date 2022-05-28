@@ -150,7 +150,7 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
 - [理解图的拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/362416124)
-  - 信号处理中的滤波器用于放大或缩小相关频率，消除不想管频率。线性空间中的矩阵乘法等同于尺度变化，与频域中的滤波器操作是相通的。
+  - 信号处理中的滤波器用于放大或缩小相关频率，消除不相关频率。线性空间中的矩阵乘法等同于尺度变化，与频域中的滤波器操作是相同的。
 - [图算法学习-高密子图挖掘](https://zhuanlan.zhihu.com/p/45625323)
 - [开源分布式图数据库](https://zhuanlan.zhihu.com/p/152399147)
 - [什么是IP地址](https://zhuanlan.zhihu.com/p/509973594)
