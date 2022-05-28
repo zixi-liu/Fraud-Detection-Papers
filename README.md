@@ -112,12 +112,13 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 ### 七、图神经网络 Graph Neural Network-based Modeling
 
 **图神经网络入门**
-- [A Comprehensive Survey on Graph Neural Networks](https://arxiv.org/pdf/1901.00596.pdf)
+- [Graph neural networks: A review of methods and applications](https://arxiv.org/pdf/1812.08434.pdf)
 - [[GCN] Semi-Supervised Classification with Graph Convolutional Networks](https://arxiv.org/pdf/1609.02907.pdf)
 - [[GraphSage] Inductive Representation Learning on Large Graphs](https://arxiv.org/pdf/1706.02216.pdf)
 - [[GAT] Graph Attention Networks](https://arxiv.org/pdf/1710.10903.pdf)
 
 **反欺诈图神经网络框架**
+- [[KDD 2016] FRAUDAR: Bounding Graph Fraud in the Face of Camouflage](https://www.kdd.org/kdd2016/papers/files/rfp0110-hooiA.pdf)
 - [[Ant Group] AGL: A Scalable System for Industrial-purpose Graph Machine Learning](https://arxiv.org/pdf/2003.02454.pdf)
 - [[Ant Group] GeniePath: Graph Neural Networks with Adaptive Receptive Paths](https://export.arxiv.org/pdf/1802.00910)
 - [[Alibaba] AliGraph: A Comprehensive Graph Neural Network Platform](https://arxiv.org/pdf/1902.08730.pdf)
@@ -151,6 +152,7 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
 - [理解图的拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/362416124)
   - 信号处理中的滤波器用于放大或缩小相关频率，消除不相关频率。线性空间中的矩阵乘法等同于尺度变化，与频域中的滤波器操作是相同的。
+- [Graph Learning综述](https://zhuanlan.zhihu.com/p/373639485)
 - [图算法学习-高密子图挖掘](https://zhuanlan.zhihu.com/p/45625323)
 - [开源分布式图数据库](https://zhuanlan.zhihu.com/p/152399147)
 - [什么是IP地址](https://zhuanlan.zhihu.com/p/509973594)
