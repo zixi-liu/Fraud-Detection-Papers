@@ -82,7 +82,7 @@ GN算法、随即游走算法和LPA算法都没有一个明确的量化指标衡
 
 - 基于Modularity模块度。模块度Q的定义可以简单理解为社区内部所有边权重和减去与社区相连的边权重和。
 
-**[Leiden Algorithm](https://www.nature.com/articles/s41598-019-41695-z.pdf)
+**[Leiden Algorithm](https://www.nature.com/articles/s41598-019-41695-z.pdf)**
 
 - 基于Louvain算法，将节点移动改为节点的本地移动。Louvain算法对于本社区内的每一个顶点都尝试和其他所有社区进行模块度计算，而Leidian算法只针对不稳定点和它直接相连的社区进行模块度计算。
 
