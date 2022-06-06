@@ -46,3 +46,55 @@
 
 4 图嵌入 Graph Embedding
 
+## 社区发现 Community Detection Algorithms
+
+- 图分割、图聚类、节点表达、广义社区发现
+
+**定义**：同一社区内的节点与节点之间关系紧密，社区与社区之间的关系稀疏。
+
+**社区算法的种类**
+- 凝聚法(Agglomerative Methods): 从强到弱将边一条一条添加到仅包含节点的图中。
+- 分裂法(Divisive Methods)：从弱到强一条一条地去除子图中的边。
+
+### 基本算法
+
+**[Girvan Newman Algorithm (GN算法, 2003)](https://arxiv.org/pdf/cond-mat/0308217.pdf)**
+
+- 在一个网络之中，经过社区内部的边的最短路径相对较少，而经过社区之间的边的最短路径的数目则相对较多。GN算法基于betweenness进行社区分割。
+
+**[Walktrap Algorithm (随机游走算法, 2005)](https://www-complexnetworks.lip6.fr/~latapy/Publis/communities.pdf)**
+
+- 社区为相对稠密的子图，因此在图中进行随机游走时较容易陷入trap社区中。随机游走过程中，网络图中每个节点表明一种状态，不同状态之间存在，表示t时刻从状态i转移到状态j的概率。
+
+**[Label Propagation Algorithm (标签传播算法, 2002)](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.14.3864&rep=rep1&type=pdf)**
+
+- 类似的数据应该具备相同的标签。LPA用已标记节点的标签信息去预测未标记节点的标签信息。
+
+**Speaker-listener Label Propagation Algorithm (SLPA)**
+
+- 当一个节点观察到有非常多一样的标签时，很有可能这个节点属于这个社区，而且在传播过程中也很有可能将这个标签传播给别的节点。
+
+### 进阶算法
+
+GN算法、随即游走算法和LPA算法都没有一个明确的量化指标衡量算法对社区划分的好坏。当图中有一些异常的节点或者特殊的节点时，将不断产生震荡，导致算法难以收敛。
+
+**[Louvain Algorithm](https://arxiv.org/pdf/0803.0476.pdf)**
+
+- 基于Modularity模块度。模块度Q的定义可以简单理解为社区内部所有边权重和减去与社区相连的边权重和。
+
+**[Leiden Algorithm](https://www.nature.com/articles/s41598-019-41695-z.pdf)
+
+- 基于Louvain算法，将节点移动改为节点的本地移动。Louvain算法对于本社区内的每一个顶点都尝试和其他所有社区进行模块度计算，而Leidian算法只针对不稳定点和它直接相连的社区进行模块度计算。
+
+ **社团划分结果评估指标：Q、ARI、NMI**
+ 
+ - 模块度Q(Modularity)
+ - 兰德指数ARI(Adjusted Rand Index)
+ - 标准化互信息NMI(Normalized Mutual Information)
+
+
+**相关资料**
+[社区发现的经典方法](https://www.zhihu.com/question/29042018)
+
+
+
