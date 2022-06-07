@@ -2,14 +2,43 @@
 
 #### Table of Content
 
-- [[Online Payment Services] Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services, 2022](#Representing-Fine-Grained-Co-Occurrences-for-Behavior-Based-Fraud-Detection-in-Online-Payment-Services)
-- [[UFA] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](#unveiling-fake-accounts-at-the-time-of-registration---an-unsupervised-approach)
-
 
 | Year  | Title | Entity | Paper | Code  |
 | :---: | :---: | :---: | :---: | :---: |
 | 2022  | **Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services** | IEEE | [[IEEE2022]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9085905) | Code |
 | 2021  | **Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach** | Tencent | [[KDD2021]](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094) | Code |
+| 2020 | [**Heterogeneous Graph Neural Networks for Malicious Account Detection**](#Heterogeneous-Graph-Neural-Networks-for-Malicious-Account-Detection) | Ant Group| [[arXiv2020]](https://arxiv.org/pdf/2002.12307.pdf) | Code |
+
+### Heterogeneous Graph Neural Networks for Malicious Account Detection
+#### GEM: 蚂蚁金服利用GCN针对恶意注册账户检测
+
+1. 综述
+
+GEM(Graph Embeddings for Malicious accounts)系统：构建的账户-不同设备异构网络，以拓扑结构和行为特征作为输入直接学习图神经网络模型。并且引入注意力机制，考虑不同类型设备的权重。
+
+2. GEM
+
+- **设备聚集性**
+
+**设备定义**：设备是广义的，包括Phone Number, User Machine ID (UMID), MAC address, IMSI (International Mobile Subscriber Identity), APDID (Alipay Device ID) , TID。
+
+**异常点定义**：如果一个帐户注册或登录同一个（一组）设备或一组公共设备，若这一个（一组）设备上有大量其他账户，那么此类帐户将是可疑的。
+
+- **行为聚集性**
+
+**异常点定义**：如果共享设备的账户行为是批量进行的（注册时间集中），那么这些账户是可疑的。
+
+- **思路：连通子图**
+
+针对恶意账户的设备和行为聚集性，直观的做法是查找连通子图：
+
+  - 构建账户-设备二部图，这里的设备是广义的，包括手机号、IMEI、设备指纹等。
+  - 将二部图转化为账户-账户之间关系图 ，并计算账户行为相似度作为权重。
+  - 删除边，得到连通子图：相似度低于阈值的边删除，该阈值为超参，通过验证集进行调参。
+  - 以连通子图大小作为风险Score。
+
+<p align="center"><img width="436" alt="image" src="https://user-images.githubusercontent.com/46979228/172289684-5bac037d-7a97-4a24-aed7-d23a9c090e1c.png"></p>
+
 
 #### Summary Notes
 
