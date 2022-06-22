@@ -70,9 +70,6 @@
   - [Efficient Partial Order Preserving Unsupervised Feature Selection on Networks](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974010.10)
   - [Unsupervised Feature Selection on Networks: A Generative View](https://ojs.aaai.org/index.php/AAAI/article/view/10309/10168)
 
-*衍生变量*
-- 因子分解机：FM， FFM等。
-
 **Embedding**
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [[Word2Vec] word2vec Parameter Learning Explained](https://arxiv.org/pdf/1411.2738.pdf)
