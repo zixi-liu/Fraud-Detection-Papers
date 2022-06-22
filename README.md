@@ -34,6 +34,10 @@
 
 **1. Preprocessing 预处理**
 
+*特征清洗*
+- 清洗异常样本
+- 采样：正负样本不均衡，样本权重
+
 [基于Spark的特征处理](https://time.geekbang.org/column/article/295300)
 
 *数值型特征*
@@ -53,15 +57,21 @@
 
 高质量特征有区分性(Informative)，特征之间有相互独立性(Independent)，特征应易于理解。
 - 过滤法 Filter
+  - 根据目标变量与自变量之间的关联：卡方检验，ANOVA，信息增益等。
   - [[多元特征过滤] Relief-Based Feature Selection: Introduction and Review](https://arxiv.org/pdf/1711.08421v2.pdf)
   - [[谱图] Spectral Feature Selection for Supervised and Unsupervised Learning](https://www.public.asu.edu/~huanliu/papers/icml07.pdf)
 - 包装法 Wrapper
+  - 根据目标函数(AUC/MSE)变化决定是否加入特征变量。
 - 嵌入法 Embedded
+  - 学习器自动选择特征：L1正则化，L2 Ridge，决策树，信息增益，深度学习等。
 - 图特征选择 Graph-based
   - [Feature Selection with Linked Data in Social Media, 2012](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.228.8109&rep=rep1&type=pdf)
   - [Unsupervised Feature Selection for Linked Social Media Data, 2012](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.300.2277&rep=rep1&type=pdf)
   - [Efficient Partial Order Preserving Unsupervised Feature Selection on Networks](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974010.10)
   - [Unsupervised Feature Selection on Networks: A Generative View](https://ojs.aaai.org/index.php/AAAI/article/view/10309/10168)
+
+*衍生变量*
+- 因子分解机：FM， FFM等。
 
 **Embedding**
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
