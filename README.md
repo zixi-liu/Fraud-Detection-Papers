@@ -56,8 +56,9 @@
 **2. Feature Selection 特征选择**
 
 高质量特征有区分性(Informative)，特征之间有相互独立性(Independent)，特征应易于理解。
-- 过滤法 Filter
-  - 根据目标变量与自变量之间的关联：卡方检验，ANOVA，信息增益等。
+- 过滤法 Filter (根据目标变量与自变量之间的关联)
+  - 单变量特征过滤：卡方检验，ANOVA，信息增益等。
+  - 多变量特征过滤
   - [[多元特征过滤] Relief-Based Feature Selection: Introduction and Review](https://arxiv.org/pdf/1711.08421v2.pdf)
   - [[谱图] Spectral Feature Selection for Supervised and Unsupervised Learning](https://www.public.asu.edu/~huanliu/papers/icml07.pdf)
 - 包装法 Wrapper
