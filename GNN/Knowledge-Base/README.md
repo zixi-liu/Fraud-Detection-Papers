@@ -97,4 +97,37 @@ GN算法、随即游走算法和LPA算法都没有一个明确的量化指标衡
 [社区发现的经典方法](https://www.zhihu.com/question/29042018)
 
 
+## 图的拉普拉斯矩阵
+
+### Spectral Graph Theory
+
+1. 拉普拉斯矩阵
+
+- L = D - A
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/46979228/177009507-0445afa9-a852-4bb2-bffe-8ea3f3bda307.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
