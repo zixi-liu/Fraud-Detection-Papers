@@ -42,7 +42,9 @@ Causal structure when the treatment assignment mechanism is ignorable:
 
 The process of moving from a target causal estimand to a corresponding estimate, through identification and estimation.
 
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/46979228/177364391-781025e7-4a40-4dd7-99ff-f923adf29741.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/46979228/177364391-781025e7-4a40-4dd7-99ff-f923adf29741.png">
 
 - **Causal estimand** refer to any estimand that contains a *potential outcome* in it. 
 - **Statistical estimand** denote the complement: any estimand that does not contain a *potential outcome*.
+
+We will often use a model (e.g. linear regression etc.) in place of the conditional expectations E[Y | T=t, X=x].
