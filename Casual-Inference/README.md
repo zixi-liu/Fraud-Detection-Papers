@@ -48,3 +48,5 @@ The process of moving from a target causal estimand to a corresponding estimate,
 - **Statistical estimand** denote the complement: any estimand that does not contain a *potential outcome*.
 
 We often use model-assisted estimators (e.g. linear regression etc.) in place of the conditional expectations E[Y | T=t, X=x].
+
+#### 2. 因果图与关联图
