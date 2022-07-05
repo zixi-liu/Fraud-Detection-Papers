@@ -37,3 +37,12 @@ Causal structure when the treatment assignment mechanism is ignorable:
 - No interference, Consistency, and SUTVA
   - No interference指的是每个个体的potential outcome只和当前这个个体所接受的treatment有关，和其他个体的treatment无关。
   - Consistency一致性指的是，如果观察到的treatment T=t，观察的结果Y 实际上是T=t的potential outcome--Y(t)。
+
+**Identification-Estimation Flowchart**
+
+The process of moving from a target causal estimand to a corresponding estimate, through identification and estimation.
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/46979228/177364391-781025e7-4a40-4dd7-99ff-f923adf29741.png">
+
+- **Causal estimand** refer to any estimand that contains a *potential outcome* in it. 
+- **Statistical estimand** denote the complement: any estimand that does not contain a *potential outcome*.
