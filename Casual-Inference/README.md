@@ -27,4 +27,9 @@ Causal structure when the treatment assignment mechanism is ignorable:
 
 - Conditional Exchangeability and Unconfoundedness
 
-  - Although the treatment and potential outcomes may be unconditionally associated (due to confounding), within levels of -, they are not associated. In other words, there is no confounding within levels of X because controlling for X has made the treatment groups comparable.
+  - Although the treatment and potential outcomes may be unconditionally associated (due to confounding), within levels of X, they are not associated. In other words, there is no confounding within levels of X because controlling for X has made the treatment groups comparable.
+
+- Positivity/Overlap and Extrapolation
+  - Positivity is the condition that all subgroups of the data with diﬀerent covariates have some probability of receiving any value of treatment.
+  - **The Positivity-Unconfoundedness Tradeoff:** 尽管condition on更多的covariate可能会有更高的机率满足unconfoundedness，但同样会有更大的机率违反Positivity。 随着我们增加covariate的数量，每个subgroup越来越小，整个subgroup得到同样treatment的可能性越来越高。
+  - **Extrapolation:** Violations of the positivity assumption can actually lead to demanding too much from models and getting very bad behavior in return.
