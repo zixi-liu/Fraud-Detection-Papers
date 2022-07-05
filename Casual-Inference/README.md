@@ -47,4 +47,4 @@ The process of moving from a target causal estimand to a corresponding estimate,
 - **Causal estimand** refer to any estimand that contains a *potential outcome* in it. 
 - **Statistical estimand** denote the complement: any estimand that does not contain a *potential outcome*.
 
-We will often use a model (e.g. linear regression etc.) in place of the conditional expectations E[Y | T=t, X=x].
+We often use model-assisted estimators (e.g. linear regression etc.) in place of the conditional expectations E[Y | T=t, X=x].
