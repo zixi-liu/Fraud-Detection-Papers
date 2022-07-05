@@ -33,3 +33,7 @@ Causal structure when the treatment assignment mechanism is ignorable:
   - Positivity is the condition that all subgroups of the data with diﬀerent covariates have some probability of receiving any value of treatment.
   - **The Positivity-Unconfoundedness Tradeoff:** 尽管condition on更多的covariate可能会有更高的机率满足unconfoundedness，但同样会有更大的机率违反Positivity。 随着我们增加covariate的数量，每个subgroup越来越小，整个subgroup得到同样treatment的可能性越来越高。
   - **Extrapolation:** Violations of the positivity assumption can actually lead to demanding too much from models and getting very bad behavior in return.
+
+- No interference, Consistency, and SUTVA
+  - No interference指的是每个个体的potential outcome只和当前这个个体所接受的treatment有关，和其他个体的treatment无关。
+  - Consistency一致性指的是，如果观察到的treatment T=t，观察的结果Y 实际上是T=t的potential outcome--Y(t)。
