@@ -1,4 +1,4 @@
-## Casual Inference
+## 因果推断 Casual Inference
 
 **Resources:** 
 - [Casual Inference Course, Brady Neal](https://www.bradyneal.com/causal-inference-course)
@@ -50,3 +50,13 @@ The process of moving from a target causal estimand to a corresponding estimate,
 We often use model-assisted estimators (e.g. linear regression etc.) in place of the conditional expectations E[Y | T=t, X=x].
 
 #### 2. 因果图与关联图
+
+**贝叶斯网络**
+
+联合概率分布可以通过chain rule写成如下形式：
+
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/46979228/177662302-860a2d3e-7526-4aee-8262-72351f48e584.png">
+
+但是如果直接对上面公式建模的话，参数数量会爆炸，所以我们只model local dependencies， 即P(x4|x3, x2, x1)写成P(x4|x3)。
+
+<img width="251" alt="image" src="https://user-images.githubusercontent.com/46979228/177662505-c27e6c6b-6b7d-4844-bbc5-31334ad12974.png">
