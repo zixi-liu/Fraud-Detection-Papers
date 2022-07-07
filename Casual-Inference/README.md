@@ -60,3 +60,5 @@ We often use model-assisted estimators (e.g. linear regression etc.) in place of
 但是如果直接对上面公式建模的话，参数数量会爆炸，所以我们只model local dependencies， 即P(x4|x3, x2, x1)写成P(x4|x3)。
 
 <img width="251" alt="image" src="https://user-images.githubusercontent.com/46979228/177662505-c27e6c6b-6b7d-4844-bbc5-31334ad12974.png">
+
+**Local Markov Assumption** Given its parents in the DAG, a node - is independent of all its non-descendants.
