@@ -53,6 +53,8 @@ We often use model-assisted estimators (e.g. linear regression etc.) in place of
 
 **贝叶斯网络**
 
+贝叶斯网络（拓扑结构是有向无环图模型）是模拟因果关系的不确定性处理模型。
+
 联合概率分布可以通过chain rule写成如下形式：
 
 <img width="300" alt="image" src="https://user-images.githubusercontent.com/46979228/177662302-860a2d3e-7526-4aee-8262-72351f48e584.png">
@@ -61,4 +63,34 @@ We often use model-assisted estimators (e.g. linear regression etc.) in place of
 
 <img width="251" alt="image" src="https://user-images.githubusercontent.com/46979228/177662505-c27e6c6b-6b7d-4844-bbc5-31334ad12974.png">
 
-**Local Markov Assumption** Given its parents in the DAG, a node - is independent of all its non-descendants.
+**Local Markov Assumption：** Given its parents in the DAG, a node - is independent of all its non-descendants.
+
+**因的定义：**
+- 如果我们把Y的所有直接原因ﬁx，那么改变Y的任何其他原因都不会引起Y的任何变化。DAG中，假设所有的父节点都是他们子节点的原因。
+
+**基本结构**
+
+- Chain链式
+- Fork叉子
+- Immoralities对撞
+
+<img width="434" alt="image" src="https://user-images.githubusercontent.com/46979228/177792068-668b7aeb-c86d-4c38-bb2c-26581aac9ef4.png">
+
+**链&叉子结构**
+
+- 相关性：关联流(associate flow)是对称的，因果流是非对称的，只能沿着有向边流动。
+- 独立性：如果condition on X2，X1与X3的相关性会被阻断变得独立。
+
+**对撞结构**
+
+- 相关性：如果condition on X2，X1与X3从独立变得相关。
+
+**D-分离**
+
+D-Separation是一种用来判断变量是否条件独立的图形化方法。
+
+**因果流与关联流**
+
+关联流沿着unblock path流动，因果流沿着有向边流动。
+
+关联分为因果关联(causal association)与非因果关联(i.e. confounding association)。
