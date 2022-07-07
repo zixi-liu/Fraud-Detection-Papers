@@ -4,7 +4,7 @@
 - [Casual Inference Course, Brady Neal](https://www.bradyneal.com/causal-inference-course)
 - [因果推断原理、框架和工具学习资源合集](https://zhuanlan.zhihu.com/p/463459303)
 
-#### 1. 因果推断的基本问题及假设
+### 1. 因果推断的基本问题及假设
 
 - Average Treatment Effects (ATE)
 
@@ -49,7 +49,7 @@ The process of moving from a target causal estimand to a corresponding estimate,
 
 We often use model-assisted estimators (e.g. linear regression etc.) in place of the conditional expectations E[Y | T=t, X=x].
 
-#### 2. 因果图与关联图
+### 2. 因果图与关联图
 
 **贝叶斯网络**
 
@@ -94,3 +94,31 @@ D-Separation是一种用来判断变量是否条件独立的图形化方法。
 关联流沿着unblock path流动，因果流沿着有向边流动。
 
 关联分为因果关联(causal association)与非因果关联(i.e. confounding association)。
+
+### 3. 因果模型
+
+**Do算子与干预分布**
+
+do算子表示干预操作。Conditioning条件与Intervening干预的区别：
+
+<img width="426" alt="image" src="https://user-images.githubusercontent.com/46979228/177797696-1290b094-b044-4596-a857-ed64f54fa9ee.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
