@@ -1,7 +1,21 @@
 ## 因果推断 Casual Inference
 
-**经典论文：**
-- [Towards Casual Representation Learning](https://arxiv.org/pdf/2102.11107.pdf)
+通过研究变量间因果关系，帮助ML获得泛化分布外场景(out-of-distribution)的能力。
+
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/46979228/178033456-9ca35e44-c3f9-4714-b701-e07215368459.png">
+
+因果学习关注：
+- 从一系列变量中发掘变量间因果联系。
+- 当因果连接存在时，因果效应有多强。
+
+ML学习关注：
+- 给定X时，Y的条件分布，P(Y|X)。
+
+
+**Causal-ML经典论文总结：**
+- [[2021, Bernard Schoelkopf] Towards Casual Representation Learning](https://arxiv.org/pdf/2102.11107.pdf)
+- [[2019, Bernard Schoelkopf] Casuality for Machine Learning](https://arxiv.org/pdf/1911.10500.pdf%5b19.pdf)
+
 
 **Resources:** 
 - [Casual Inference Course, Brady Neal](https://www.bradyneal.com/causal-inference-course)
