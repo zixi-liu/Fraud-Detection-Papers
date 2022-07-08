@@ -1,5 +1,8 @@
 ## 因果推断 Casual Inference
 
+**经典论文：**
+- [Towards Casual Representation Learning](https://arxiv.org/pdf/2102.11107.pdf)
+
 **Resources:** 
 - [Casual Inference Course, Brady Neal](https://www.bradyneal.com/causal-inference-course)
 - [因果推断原理、框架和工具学习资源合集](https://zhuanlan.zhihu.com/p/463459303)
