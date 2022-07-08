@@ -2,24 +2,40 @@
 
 通过研究变量间因果关系，帮助ML获得泛化分布外场景(out-of-distribution)的能力。
 
-<img width="550" alt="image" src="https://user-images.githubusercontent.com/46979228/178033456-9ca35e44-c3f9-4714-b701-e07215368459.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/46979228/178033456-9ca35e44-c3f9-4714-b701-e07215368459.png">
 
-因果学习关注：
+**因果学习**
 - 从一系列变量中发掘变量间因果联系。
 - 当因果连接存在时，因果效应有多强。
 
-ML学习关注：
+**ML学习**
 - 给定X时，Y的条件分布，P(Y|X)。
 
+将因果学习与ML学习结合，可以回答两个问题：
+- Y是输入特征的因还是果，以及有哪些X与Y连接和他们的因果方向。
+- 如何利用变量间因果关系更稳健地估计P(Y|X)。
 
 **Causal-ML经典论文总结：**
 - [[2021, Bernard Schoelkopf] Towards Casual Representation Learning](https://arxiv.org/pdf/2102.11107.pdf)
 - [[2019, Bernard Schoelkopf] Casuality for Machine Learning](https://arxiv.org/pdf/1911.10500.pdf%5b19.pdf)
 
 
-**Resources:** 
+**Learning Resources:** 
 - [Casual Inference Course, Brady Neal](https://www.bradyneal.com/causal-inference-course)
 - [因果推断原理、框架和工具学习资源合集](https://zhuanlan.zhihu.com/p/463459303)
+
+**因果学习与反因果学习**
+
+**独立因果机制与因果方向识别**
+
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/46979228/178065592-c594458c-7a9e-4f13-b11c-4847fcc00e92.png">
+
+独立因果机制即，因果机制f和原因C是独立的。当我们从结果生成原因时，凡因果机制往往和结果不独立。如果模型的建模方式是反因果机制，它将和结果不独立，模型将非常依赖输入数据，难以获得稳健的泛化到分布外场景。
+
+- 识别模型输入和输出间的因果方向：因果的有向性会反映在信息量（复杂度）上，用Kolmogorov算法信息量表示复杂度。
+  - <img width="350" alt="image" src="https://user-images.githubusercontent.com/46979228/178066693-e6b7fd1a-9360-4688-b01e-b21bbbf6ac41.png">
+  - 当将因果Pc,e分解为结果Pe和反因果机制Pc|e时，两者非独立/信息共享，所以信息量加和大于K(Pc,e)。
+
 
 ### 1. 因果推断的基本问题及假设
 
