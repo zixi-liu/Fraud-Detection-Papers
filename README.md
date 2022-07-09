@@ -23,40 +23,39 @@
 - [[黑产反欺诈综述]风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
 
 
-### 二、终端风控组件 User Authentication Approaches
+### 二、交易欺诈类型 Fraud Types
 
-常见反欺诈终端组件总结：
+1. Account Takeover (ATO)
+2. Stolen Financials
 
-**设备指纹 Device Fingerprint**
+常见的反欺诈终端组件：
+- 设备指纹 Device Fingerprint
+- 生物探针 Biometrics-Based Authentication
+  - [You are How You Touch: User Verification on Smartphones via Tapping Behaviors](https://www.eecis.udel.edu/~hnw/paper/icnp14.pdf)
+- 智能验证码 Verification Code
 
-**生物探针 Biometrics-Based Authentication**
-- [You are How You Touch: User Verification on Smartphones via Tapping Behaviors](https://www.eecis.udel.edu/~hnw/paper/icnp14.pdf)
+### 三、数据与特征工程 Feature Engineering
 
-**智能验证码 Verification Code**
-
-### 三、特征工程 Feature Engineering
-
-数据预处理，特征选择，特征降维。
+- 基于用户的行为序列数据建模
+- 数据预处理，特征选择，特征降维
 
 **1. Preprocessing 预处理**
 
-*特征清洗*
+特征清洗
 - 清洗异常样本
 - 采样：正负样本不均衡，样本权重
 
-[基于Spark的特征处理](https://time.geekbang.org/column/article/295300)
-
-*数值型特征*
-- 归一化 Normalizer：处理特征值尺度不同问题 （i.e. min-max, scale to [-1, 1], z-score, log-based, L2, Gauss Rank, Robust Scaling etc.）
+数值型特征
+- 归一 Normalizer：处理特征值尺度不同问题 （i.e. min-max, scale to [-1, 1], z-score, log-based, L2, Gauss Rank, Robust Scaling etc.）
 - 分箱 Binning：处理特征值分布不均匀问题（有监督分箱如卡方分箱、决策树分箱/无监督分桶如固定宽度分箱、分位数分箱等）
   - 将连续特征离散化，旨在引入非线性变换，对异常值不敏感、防止过拟合；
   - Tree-based模型中，高基数特征相对于低基数特征处于支配地位。
 
-*类别型特征*
+类别型特征
 - 交叉组合FM/分箱 Binning/Count Encoding/Target Encoding/Odds Ratio/相关系数/WOE
   - [特征交叉组合模型演化简史](https://zhuanlan.zhihu.com/p/269730650)
 
-*时序特征*
+时序特征
 - 历史事件分时段统计
 
 **2. Feature Selection 特征选择**
@@ -76,21 +75,6 @@
   - [Unsupervised Feature Selection for Linked Social Media Data, 2012](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.300.2277&rep=rep1&type=pdf)
   - [Efficient Partial Order Preserving Unsupervised Feature Selection on Networks](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974010.10)
   - [Unsupervised Feature Selection on Networks: A Generative View](https://ojs.aaai.org/index.php/AAAI/article/view/10309/10168)
-
-
-**图表示学习 Network Representation Learning**
-
-Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
-- [[DeepWalk]: Online Learning of Social Representations](http://www.perozzi.net/publications/14_kdd_deepwalk.pdf)
-- [[node2vec]: Scalable Feature Learning for Networks](https://www.kdd.org/kdd2016/papers/files/rfp0218-groverA.pdf)
-- [[LINE]: Large-scale Information Network Embedding](https://arxiv.org/pdf/1503.03578.pdf)
-- [[SDNE]: Structural Deep Network Embedding](https://arxiv.org/pdf/1503.03578.pdf)
-- [[Struc2Vec]: Learning Node Representations from Structural Identity](https://arxiv.org/pdf/1704.03165.pdf)
-- [[GraRep]:  Learning Graph Representations with Global Structural Information](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/GNN/GraRep-%20Learning%20Graph%20Representations%20with%20Global%20Structural%20Information.pdf)
-
-图表示学习在反欺诈领域的应用：
-- [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
-- [[Capital One (2019)] DeepTrax: Embedding Graphs of Financial Transactions](https://arxiv.org/pdf/1907.07225.pdf)
 
 
 **3. 数据增强 Data Augmentation**
@@ -117,18 +101,40 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 ### 六、序列模型 Sequence Modeling
 
+**循环神经网络 Recurrent Neural Networks**
+
+RNN通过重复使用单元结构实现记忆能力。
+- [[JD Finance] Session-Based Fraud Detection in Online E-Commerce Transactions Using Recurrent Neural Networks](http://ecmlpkdd2017.ijs.si/papers/paperID69.pdf)
+- [[Alibaba] Online Credit Payment Fraud Detection via Structure-Aware Hierarchical
+Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
+
+**Long Short Term Memory (LSTM)**
+
+LSTM通过训练控制参数决定哪些信息被保留/忘记。
+
+
+### 七、图神经网络 Graph Neural Network-based Modeling
+
+**图表示学习 Network Representation Learning**
+
+Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
+- [[DeepWalk]: Online Learning of Social Representations](http://www.perozzi.net/publications/14_kdd_deepwalk.pdf)
+- [[node2vec]: Scalable Feature Learning for Networks](https://www.kdd.org/kdd2016/papers/files/rfp0218-groverA.pdf)
+- [[LINE]: Large-scale Information Network Embedding](https://arxiv.org/pdf/1503.03578.pdf)
+- [[SDNE]: Structural Deep Network Embedding](https://arxiv.org/pdf/1503.03578.pdf)
+- [[Struc2Vec]: Learning Node Representations from Structural Identity](https://arxiv.org/pdf/1704.03165.pdf)
+- [[GraRep]:  Learning Graph Representations with Global Structural Information](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/GNN/GraRep-%20Learning%20Graph%20Representations%20with%20Global%20Structural%20Information.pdf)
+
+图表示学习在反欺诈领域的应用：
+- [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
+- [[Capital One (2019)] DeepTrax: Embedding Graphs of Financial Transactions](https://arxiv.org/pdf/1907.07225.pdf)
+
+
 **图模型 Graphical Models**
 
 利用关系网络识别网络中异常的网络结构和社群。
 - [[JD Finance] Graph mining assisted semi-supervised learning for fraudulent cash-out detection](https://nosh.northwestern.edu/wp-content/uploads/2020/10/Graph-mining-assisted-semi-supervised-learning-for-fraudulent-cash-out-detection.pdf)
 
-**循环神经网络 Recurrent Neural Networks**
-
-- [[JD Finance] Session-Based Fraud Detection in Online E-Commerce Transactions Using Recurrent Neural Networks](http://ecmlpkdd2017.ijs.si/papers/paperID69.pdf)
-- [[Alibaba] Online Credit Payment Fraud Detection via Structure-Aware Hierarchical
-Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
-
-### 七、图神经网络 Graph Neural Network-based Modeling
 
 **图神经网络入门**
 - [Graph neural networks: A review of methods and applications](https://arxiv.org/pdf/1812.08434.pdf)
