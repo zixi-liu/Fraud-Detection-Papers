@@ -99,6 +99,11 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 - [Greedy Function Approximation A Gradient Boosting Machine](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boostingmachine/10.1214/aos/1013203451.full)
 - [Comparative Study of RF and SVM on Credit Card Fraud Detection](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Data-Mining-for-Credit-Card-Fraud.pdf)
 
+**RecSys/用户行为序列经典模型**
+- [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
+- [[Enrich Deep Model] Sequential Behavioral Data Processing Using Deep Learning and the Markov Transition Field in Online Fraud Detection](https://arxiv.org/pdf/1808.05329.pdf)
+- [[注意力机制] Attention is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
+
 ### 六、序列模型 Sequence Modeling
 
 **循环神经网络 Recurrent Neural Networks**
@@ -111,7 +116,7 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 **Long Short Term Memory (LSTM)**
 
 LSTM通过训练控制参数决定哪些信息被保留/忘记。
-
+- [A Tutorial into LSTM](https://arxiv.org/pdf/1909.09586.pdf)
 
 ### 七、图神经网络 Graph Neural Network-based Modeling
 
@@ -215,6 +220,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 **Knowledge Base**
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
+- [深度学习综述的综述](https://mp.weixin.qq.com/s/4Aaa4qa8nU7mXreTimTv3g)
 - [理解图的拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/362416124)
   - 信号处理中的滤波器用于放大或缩小相关频率，消除不相关频率。线性空间中的矩阵乘法等同于尺度变化，与频域中的滤波器操作是相同的。
 - [Graph Learning综述](https://zhuanlan.zhihu.com/p/373639485)
