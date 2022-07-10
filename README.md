@@ -99,8 +99,13 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 - [Greedy Function Approximation A Gradient Boosting Machine](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boostingmachine/10.1214/aos/1013203451.full)
 - [Comparative Study of RF and SVM on Credit Card Fraud Detection](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Data-Mining-for-Credit-Card-Fraud.pdf)
 
-**RecSys/用户行为序列经典模型**
+**Ads/RecSys/用户行为序列模型**
 - [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
+- [[DIN] Deep Interest Network for Click-Through Rate Prediction (Alibaba 2018](https://arxiv.org/pdf/1706.06978.pdf)
+- [[SIM] Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/2006.05639.pdf)
+- [[SIM] Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/2006.05639.pdf)
+- [[MIMN] Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/1905.09248.pdf)
+- [Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce (Ebay 2021)](https://arxiv.org/pdf/2110.11072.pdf)
 - [[Enrich Deep Model] Sequential Behavioral Data Processing Using Deep Learning and the Markov Transition Field in Online Fraud Detection](https://arxiv.org/pdf/1808.05329.pdf)
 - [[注意力机制] Attention is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
 
