@@ -84,6 +84,9 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 ### 四、文本挖掘 Text Mining
 
+**文本挖掘入门**
+- [理解Bag of Words & Tf-idf](https://zhuanlan.zhihu.com/p/363697305)
+
 **Word Embedding**
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [[Word2Vec] word2vec Parameter Learning Explained](https://arxiv.org/pdf/1411.2738.pdf)
