@@ -101,8 +101,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 **Ads/RecSys/用户行为序列模型**
 - [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
-- [[DIN] Deep Interest Network for Click-Through Rate Prediction (Alibaba 2018](https://arxiv.org/pdf/1706.06978.pdf)
-- [[SIM] Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/2006.05639.pdf)
+- [[DIN] Deep Interest Network for Click-Through Rate Prediction (Alibaba 2018)](https://arxiv.org/pdf/1706.06978.pdf)
 - [[SIM] Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/2006.05639.pdf)
 - [[MIMN] Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/1905.09248.pdf)
 - [Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce (Ebay 2021)](https://arxiv.org/pdf/2110.11072.pdf)
