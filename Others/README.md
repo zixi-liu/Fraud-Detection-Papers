@@ -1,7 +1,10 @@
 ## DL Knowledge Bank
 
+用于收藏DL相关科普类文章:)
+
 ### 神经科学简史系列
 
+文章来源：SIGAI
 - [1. 理解计算与感知机](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247484981&idx=1&sn=d3003468b9853851923844812993e060&chksm=fdb69ba2cac112b4dac620d52100ebd033eb679f29340726a67297c4d6980b16c7cc91122028&scene=21#wechat_redirect)
 - [2. 神经计算历史背景](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247485155&idx=1&sn=990cc7400751c36e9fef0a261e6add2a&chksm=fdb69b74cac112628bdae14c6435120f6fece20dae9bf7b1ffc8b8b25e5496a24160feca0a72&scene=21#wechat_redirect)
 - [3. 神经网络数学模型](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247485592&idx=1&sn=1c5236972402ea8cb168161bc41e8e7e&chksm=fdb6950fcac11c19ad047e7cb9ced96447a85b41e21b10789a86ae4a211e4fb2ca1f911a7fc5&scene=21#wechat_redirect)
