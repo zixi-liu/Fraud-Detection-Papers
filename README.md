@@ -36,7 +36,7 @@
 
 ### 三、数据与特征工程 Feature Engineering
 
-- 基于用户的行为序列数据建模
+- 基于图(短时间截面)和用户的行为序列数据(较长时间窗口)建模
 - 数据预处理，特征选择，特征降维
 
 **1. Preprocessing 预处理**
@@ -141,6 +141,8 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 - [[Capital One (2019)] DeepTrax: Embedding Graphs of Financial Transactions](https://arxiv.org/pdf/1907.07225.pdf)
 
+**社区发现 Community Detection**
+- [社区发现算法总结](https://github.com/zixi-liu/Fraud-Detection-Papers/tree/main/GNN/Knowledge-Base)
 
 **图模型 Graphical Models**
 
