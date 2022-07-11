@@ -213,7 +213,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - 新模型训练样本集的特征通过回溯得到，有可能发生特征线上与线下不一致风险。
 - 新模型在旧模型决策后的样本上评估，相对于未来应用存在一定差异。
 
-分箱常用评估指标：
+[常用模型评估指标](https://github.com/zixi-liu/Fraud-Detection-Papers/tree/main/Lift-Analysis)：
 - KS值：通常用来描述模型的正负样本区分能力。
 - 负样本个数：用来描述模型排序能力。
 - 捕获率(Capture Rate)：阈值以下捕获欺诈的能力。
