@@ -2,6 +2,9 @@
 
 ROC、K-S 曲线、Lift 曲线、PR 曲线
 
+<img width="461" alt="image" src="https://user-images.githubusercontent.com/46979228/178168402-ed92010c-5f43-42e6-b4af-dd62df75694b.png">
+
+
 **模型可解释性综述**
 - [[Tencent] 机器学习模型可解释性](https://zhuanlan.zhihu.com/p/92655819)
 
