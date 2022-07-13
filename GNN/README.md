@@ -2,8 +2,9 @@
 
 #### 前言
 
-图算法在Fraud Detection领域主要分为Graph Schema，LPA，Community Detection，Graph Embedding，GNNs。
-
+- [01. 图拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/368878987)
+- [02. 谱域方法](https://zhuanlan.zhihu.com/p/369382428)
+- [03. 空间域方法](https://zhuanlan.zhihu.com/p/369425550)
 
 #### Table of Content
 
