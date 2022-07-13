@@ -1,5 +1,10 @@
 # Graph-Based Fraud Detection Papers
 
+#### 前言
+
+图算法在Fraud Detection领域主要分为Graph Schema，LPA，Community Detection，Graph Embedding，GNNs。
+
+
 #### Table of Content
 
 
