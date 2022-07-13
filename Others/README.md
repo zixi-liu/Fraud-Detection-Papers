@@ -20,6 +20,9 @@
 
 模型结构: Wide部分LR, Deep部分MLP。Wide部分增强模型记忆能力，Deep部分增强模型泛化能力。
 
+<img width="553" alt="image" src="https://user-images.githubusercontent.com/46979228/178784339-c7e1c708-5c61-49d8-827f-8f4cf6a5feed.png">
+
+
 **哪些特征适合Wide/Deep**
 
 
