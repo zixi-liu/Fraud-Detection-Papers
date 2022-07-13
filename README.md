@@ -228,6 +228,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - 如果模型分数逐月下滑，需要用新样本频繁迭代更新模型（Refit）。
 
 **Knowledge Base**
+- [2021金融风控模型内容摘要[图算法+时间序列模型]](https://zhuanlan.zhihu.com/p/384896966)
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
 - [深度学习综述的综述](https://mp.weixin.qq.com/s/4Aaa4qa8nU7mXreTimTv3g)
 - [理解图的拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/362416124)
