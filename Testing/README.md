@@ -51,6 +51,7 @@ It is a set of tests run on each new build of a product to verify that the build
 <img width="691" alt="image" src="https://user-images.githubusercontent.com/46979228/178886349-83ed84b1-4887-409f-9261-af6e670cedcc.png">
 
 
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/46979228/178888234-c96a1531-5dca-416a-8385-5b644949eb59.png">
 
 
 
