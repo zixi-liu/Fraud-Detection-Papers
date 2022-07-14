@@ -2,7 +2,7 @@
 
 - [API Test](#api-test)
 - [Smoke Test](#smoke-test)
-- [Perf Test](#perf-test)
+- [Perf Test](#perf-test,-stress-test,-load-test)
 - Stress Test
 - Load Test
 - Regression Test
@@ -43,9 +43,9 @@ It is a set of tests run on each new build of a product to verify that the build
 测试强调程序的主要功能进行的验证，而不会对具体功能进行更深入的测试。在CI中每一个Build都自动的去执行主流程的测试，确保其是一个基本可用的版本。
 
 
-### **Perf Test**
+### **Perf Test, Stress Test, Load Test**
 
-<img width="991" alt="image" src="https://user-images.githubusercontent.com/46979228/178886349-83ed84b1-4887-409f-9261-af6e670cedcc.png">
+<img width="591" alt="image" src="https://user-images.githubusercontent.com/46979228/178886349-83ed84b1-4887-409f-9261-af6e670cedcc.png">
 
 
 
