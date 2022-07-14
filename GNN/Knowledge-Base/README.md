@@ -97,29 +97,50 @@ GN算法、随即游走算法和LPA算法都没有一个明确的量化指标衡
 [社区发现的经典方法](https://www.zhihu.com/question/29042018)
 
 
-## 图的拉普拉斯矩阵
+### 图的拉普拉斯矩阵
 
-### Spectral Graph Theory
 
 1. 拉普拉斯矩阵
 
-- L = D - A
+- 邻接矩阵A
+- 度矩阵D
+- 拉普拉斯矩阵L = D - A
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/46979228/177009507-0445afa9-a852-4bb2-bffe-8ea3f3bda307.png">
 
+给定了图拉普拉斯矩阵,可以得到图中任意节点的经过拉普拉斯矩阵聚合后的结果：LX = (D - A)X
+
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/46979228/179116244-c6f8b07b-1f82-438d-b5a1-9d6398adf527.png">
+
+图信号X经过拉普拉斯矩阵L的二次型是图任意两条边上信号之差的平方和。图中任意的一条边，都可以表示成(xi - xj)^2的形式，在图信号处理中，将XLX看做为图信号的总变差, 其物理含义为图上各边上信号差值的平方和，刻画了整体信号的平滑度。
+
+2. 加权聚合
+
+如果将归一化的拉普拉斯矩阵作用在图上，即：
+
+<img width="284" alt="image" src="https://user-images.githubusercontent.com/46979228/179116548-df707334-c210-4ef9-829c-1967d7f91017.png">
+
+对节点的一阶邻居信息的加权聚合，权重与节点的度成反比。
+
+3. 拉普拉斯矩阵特征分解
+
+拉普拉斯矩阵L是一个实对称矩阵，由于实对称矩阵可以被正交对角化：
+
+<img width="318" alt="image" src="https://user-images.githubusercontent.com/46979228/179117130-b6cad0e4-50dd-468e-a0f3-a31db5b5793c.png">
+
+特征值反映了特征向量的平滑度，值越小代表对应的特征向量变化越平缓，取值差异不明显；
 
 
+### 图卷积神经网络
 
+**Spectral CNN**
 
+Spectral CNN的计算依赖于拉普拉斯矩阵分解，导致卷积核不是局部化的，可以理解为一个节点的信息聚合不是来自于其邻居，而是所有节点；
 
+**ChebyNet**
 
+**GCN**
 
-
-
-
-
-
-
-
+<img width="294" alt="image" src="https://user-images.githubusercontent.com/46979228/179118124-79997e23-4d15-49d4-848d-374ecae0ac95.png">
 
 
 
