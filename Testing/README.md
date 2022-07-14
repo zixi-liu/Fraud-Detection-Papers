@@ -1,4 +1,4 @@
-## All You Need for Testing
+## All You Need for CICD Testing
 
 - [API Test](#api-test)
 - [Smoke Test](#smoke-test)
@@ -6,7 +6,6 @@
 - [Stress Test](#perf-test)
 - [Load Test](#perf-test)
 - Regression Test
-- Unit Test
 
 
 ### **API Test**
