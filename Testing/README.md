@@ -3,8 +3,8 @@
 - [API Test](#api-test)
 - [Smoke Test](#smoke-test)
 - [Perf Test](#perf-test)
-- Stress Test
-- Load Test
+- [Stress Test](#perf-test)
+- [Load Test](#perf-test)
 - Regression Test
 - Unit Test
 
@@ -53,6 +53,6 @@ It is a set of tests run on each new build of a product to verify that the build
 
 <img width="691" alt="image" src="https://user-images.githubusercontent.com/46979228/178888234-c96a1531-5dca-416a-8385-5b644949eb59.png">
 
-
+- [Load Testing vs Stress testing](https://www.soapui.org/learn/load-testing/load-testing-vs-stress-testing-vs-performance-testing/)
 
 
