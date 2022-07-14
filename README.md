@@ -169,7 +169,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [[Live-Streaming] Live-Streaming Fraud Detection: A Heterogeneous Graph Neural Network Approach](https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3447548.3467065&file=3467065-vor.pdf)
 
 **账号安全**
-- [[Facebook]Uncovering Large Groups of Active Malicious Accounts in Online Social Networks](https://users.cs.duke.edu/~qiangcao/publications/synchrotrap.pdf)
+- [[Facebook] Uncovering Large Groups of Active Malicious Accounts in Online Social Networks](https://users.cs.duke.edu/~qiangcao/publications/synchrotrap.pdf)
 - [[Wechat] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094)
 - [[Ant Group] Heterogeneous Graph Neural Networks for Malicious Account Detection](https://arxiv.org/pdf/2002.12307.pdf)
 - [[Ant Group] Adversarial Attack on Graph Structured Data](https://arxiv.org/pdf/1806.02371.pdf)
