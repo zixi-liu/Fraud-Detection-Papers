@@ -1,7 +1,7 @@
 ## All You Need for Testing
 
 - [API Test](#api-test)
-- Smoke Test
+- [Smoke Test](#smoke-test)
 - Perf Test
 - Stress Test
 - Load Test
@@ -36,7 +36,7 @@ API测试工具
 - JMeter
 - PostMan
 
-**Smoke Test**
+### **Smoke Test**
 
 It is a set of tests run on each new build of a product to verify that the build is testable before the build is released into the hands of the test team.
 
@@ -44,6 +44,8 @@ It is a set of tests run on each new build of a product to verify that the build
 
 
 **Perf Test**
+
+<img width="991" alt="image" src="https://user-images.githubusercontent.com/46979228/178886349-83ed84b1-4887-409f-9261-af6e670cedcc.png">
 
 
 
