@@ -234,6 +234,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [深度学习综述的综述](https://mp.weixin.qq.com/s/4Aaa4qa8nU7mXreTimTv3g)
 - [理解图的拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/362416124)
   - 信号处理中的滤波器用于放大或缩小相关频率，消除不相关频率。线性空间中的矩阵乘法等同于尺度变化，与频域中的滤波器操作是相同的。
+  - 节点的拉普拉斯算子描述的是节点与邻居节点之间信号的差异。
 - [Graph Learning综述](https://zhuanlan.zhihu.com/p/373639485)
 - [图算法学习-高密子图挖掘](https://zhuanlan.zhihu.com/p/45625323)
 - [开源分布式图数据库](https://zhuanlan.zhihu.com/p/152399147)
