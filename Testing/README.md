@@ -1,6 +1,6 @@
 ## All You Need for Testing
 
-- [API Test](###api-test)
+- [API Test](#api-test)
 - Smoke Test
 - Perf Test
 - Stress Test
