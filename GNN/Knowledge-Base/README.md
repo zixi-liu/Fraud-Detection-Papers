@@ -142,10 +142,23 @@ Spectral CNN的计算依赖于拉普拉斯矩阵分解，导致卷积核不是�
 
 <img width="294" alt="image" src="https://user-images.githubusercontent.com/46979228/179118124-79997e23-4d15-49d4-848d-374ecae0ac95.png">
 
+**GraphSage**
+
+引入邻居均匀采样控制子图的规模，邻居聚合方式，将mini-batch小批量式的深度模型训练方法应用在大规模图训练上来(相比GCN使用的是全图训练方式)，使得训练超大规模图成为可能；
+- 邻居采样(Sample)
+- 邻居聚合(Aggregate)
+  - 平均聚合
+  - 最大池化聚合
+  - LSTM聚合
+
+mini-batch训练
+
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/46979228/179132230-49c85fc7-e1bb-4dfc-b74e-10f488a8fd12.png">
 
 
+**GAT**
 
-
+突破了通过邻接矩阵显式来定义来邻居的固有方式，转而利用注意力分配机制来度量节点的远近距离，但为了简单起见，实际操作还是限定在一阶邻居之上，使用多头注意力权重来加权聚合邻居节点的信息；
 
 
 
