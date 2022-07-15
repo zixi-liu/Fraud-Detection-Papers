@@ -223,6 +223,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 4. 模型策略的上线与验证
 
+- [对抗验证 Adversarial Validation](https://zhuanlan.zhihu.com/p/137580733)
 - 如果模型在测试集和OOT均效果不好，很可能是过拟合问题，应减少模型复杂度，做特征筛选，减少树模型深度等。
 - 如果在测试集表现较好，OOT表现不好，则模型跨时间稳定性不够好。应检测随时间推移单个特征的取值分布波动。
 - 如果测试集和OOT表现良好，线上效果不好，应先检查过拟合抽取更新数据集，再核对线上线下特征逻辑。
