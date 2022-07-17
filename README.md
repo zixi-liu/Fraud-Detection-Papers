@@ -18,6 +18,7 @@
 - [[Worldline 信用卡交易反欺诈模型综述] Context-aware credit card fraud detection](https://tel.archives-ouvertes.fr/tel-02902117/document)
 - [[信用卡反欺诈研究综述] Credit card fraud detection using machine learning: A survey](https://arxiv.org/pdf/2010.06479.pdf)
 - [[ebay] 基于用户行为的交易反欺诈探索](https://mp.weixin.qq.com/s/KLLTNwdgp3wZa1H6u43viw)
+- [基于图神经网络的欺诈检测](https://www.modb.pro/db/234443)
 - [TitAnt: 蚂蚁金融在线实时交易欺诈检测](https://arxiv.org/pdf/1906.07407.pdf)
 - [如何制定有效的模型应用策略](https://mp.weixin.qq.com/s/rjkHAFSm4iIDNiK6eYg3QA)
 - [[黑产反欺诈综述]风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
