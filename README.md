@@ -159,8 +159,9 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 **反欺诈图神经网络框架**
 - [[KDD 2016] FRAUDAR: Bounding Graph Fraud in the Face of Camouflage](https://www.kdd.org/kdd2016/papers/files/rfp0110-hooiA.pdf)
-- [[Ant Group] AGL: A Scalable System for Industrial-purpose Graph Machine Learning](https://arxiv.org/pdf/2003.02454.pdf)
-- [[Ant Group] GeniePath: Graph Neural Networks with Adaptive Receptive Paths](https://export.arxiv.org/pdf/1802.00910)
+- [[Ant Group - AGL] AGL: A Scalable System for Industrial-purpose Graph Machine Learning](https://arxiv.org/pdf/2003.02454.pdf)
+- [[Ant Group - GeniePath] GeniePath: Graph Neural Networks with Adaptive Receptive Paths](https://export.arxiv.org/pdf/1802.00910)
+- [[Ant Group - SemiGNN]A Semi-supervised Graph Attentive Network for Financial Fraud Detection](https://arxiv.org/pdf/2003.01171.pdf)
 - [[Alibaba] AliGraph: A Comprehensive Graph Neural Network Platform](https://arxiv.org/pdf/1902.08730.pdf)
 - [[Pytorch Geometric] Pytorch-Geometric implementation of a series of Graph Neural Network (GNN) based fake news detection models](https://github.com/safe-graph/GNN-FakeNews)
 - [PyTorch-BigGraph](https://github.com/facebookresearch/PyTorch-BigGraph)
