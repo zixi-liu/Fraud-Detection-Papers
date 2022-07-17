@@ -2,6 +2,29 @@
 
 #### 前言
 
+- [00. 数学基础]
+
+拉普拉斯算子是欧几里得空间中的二阶微分线性算子。对于n维函数f(x1, x2, ..., xn)，其拉普拉斯算子表示为:
+
+<img width="289" alt="image" src="https://user-images.githubusercontent.com/46979228/179382850-1f74068a-55c9-4b53-b8ab-fd1896a23c1d.png">
+
+对于离散函数f(x,y)，其拉普拉斯算子为：
+
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/46979228/179382917-eb14e15a-3981-41a5-be06-1b2232aa862e.png">
+
+离散函数可以写成矩阵：
+
+<img width="284" alt="image" src="https://user-images.githubusercontent.com/46979228/179382953-d789d877-2e72-40da-97bf-2dc3a4d215e1.png">
+
+假设x和y的增量即步长全为1，则点(xi, yj)处的拉普拉斯算子可以用下面的公式近似计算
+
+<img width="502" alt="image" src="https://user-images.githubusercontent.com/46979228/179383034-15431b75-7e96-4f1e-8279-0e00aa7b8fe2.png">
+
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/46979228/179383092-2fe06d5c-5cb5-4ae7-94af-47b37efff6c0.png">
+
+
+即节点(xi, yj)的拉普拉斯算子描述的是节点与邻居节点之间信号的差异。
+
 - [01. 图拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/368878987)
 - [02. 谱域方法](https://zhuanlan.zhihu.com/p/369382428)
 - [03. 空间域方法](https://zhuanlan.zhihu.com/p/369425550)
