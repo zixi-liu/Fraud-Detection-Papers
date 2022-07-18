@@ -2,7 +2,7 @@
 
 #### 前言
 
-- [00. 数学基础]
+**[数学基础] 图拉普拉斯刻画信号平滑度**
 
 拉普拉斯算子是欧几里得空间中的二阶微分线性算子。对于n维函数f(x1, x2, ..., xn)，其拉普拉斯算子表示为:
 
@@ -25,11 +25,32 @@
 
 即节点(xi, yj)的拉普拉斯算子描述的是节点与邻居节点之间信号的差异。
 
+**图神经网络入门三篇：**
 - [01. 图拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/368878987)
 - [02. 谱域方法](https://zhuanlan.zhihu.com/p/369382428)
 - [03. 空间域方法](https://zhuanlan.zhihu.com/p/369425550)
 
-#### Table of Content
+**Message Passing消息传递范式：**
+- [理解GNN消息传递机制](https://zhuanlan.zhihu.com/p/352510643)
+
+基于消息传递范式的图神经网络（MPNN）旨在将节点的特征传播到邻居节点上，通常也会考虑添加一些权重来分配邻居之间传播特征的比例。
+
+消息传递的两个阶段：
+- 消息传递阶段
+  - Aggregation Function (聚合邻居节点特征)
+  - Combination Function (节点更新函数)
+- 读出阶段 (聚合节点级别表示，获得图级别表示)
+
+三篇论文对比Aggregation Function， Combination Function：
+- [Every Document Owns Its Structure: Inductive Text Classification via Graph Neural Networks](https://aclanthology.org/2020.acl-main.31.pdf)
+  - 将邻接矩阵与节点特征矩阵相乘，物理意义是将所有邻居特征求和。
+  - 组合函数使用门控单元，由于目标是将邻居信息和节点本身信息组合起来，因此通过重置门、更新门控制邻居信息在节点更新过程中的贡献。
+- [Message Passing Attention Networks for Document Understanding](https://arxiv.org/pdf/1908.06267.pdf)
+  - 针对邻居信息求和后的结果，送入MLP，获得更抽象的特征表示。
+- [How Powerful are Graph Neural Netowrks?](https://arxiv.org/pdf/1810.00826.pdf)
+  - 聚合函数+组合函数。设计可学习参数。
+
+### 目录
 
 
 | Year  | Title | Entity | Paper | Code  |
