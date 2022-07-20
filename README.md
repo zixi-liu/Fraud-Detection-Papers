@@ -100,8 +100,11 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 决策树模型以及基于树模型的Boosting模型
 - [The Elements of Statistical Learning, <Chapter 9, 10>](https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf)
-- [Greedy Function Approximation A Gradient Boosting Machine](https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-A-gradient-boostingmachine/10.1214/aos/1013203451.full)
 - [Comparative Study of RF and SVM on Credit Card Fraud Detection](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Data-Mining-for-Credit-Card-Fraud.pdf)
+
+Boosting家族起源
+- [[1999] Greedy function approximation: A gradient boosting machine](https://jerryfriedman.su.domains/ftp/trebst.pdf)
+- [[2000] Additive logistic regression: A statistical view of boosting](https://hastie.su.domains/Papers/AdditiveLogisticRegression/alr.pdf)
 
 **Ads/RecSys/用户行为序列模型**
 - [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
