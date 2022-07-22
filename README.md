@@ -85,6 +85,8 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 
 ### 四、文本挖掘 Text Mining
 
+行为序列，关系网络的节点向量化，文字类特征，都可以用到文本处理思路。
+
 **文本挖掘入门**
 - [理解Bag of Words & Tf-idf](https://zhuanlan.zhihu.com/p/363697305)
 
@@ -93,6 +95,9 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 - [[Word2Vec] word2vec Parameter Learning Explained](https://arxiv.org/pdf/1411.2738.pdf)
 - [Embeddings of Categorical Variables for Sequential Data in Fraud Context](http://oliviercaelen.be/doc/AMLTA2018_paper_7.pdf)
 
+**地址类文本解析，地址相关性任务**
+- 地址要素解析将地址文本拆分成独立语义的要素，并对这些要素进行类型识别。
+  - [Bert family encode, span-based decode 方案](https://zhuanlan.zhihu.com/p/449676168)
 
 ### 五、有监督学习 Supervised Learning
 
@@ -141,9 +146,13 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [[Struc2Vec]: Learning Node Representations from Structural Identity](https://arxiv.org/pdf/1704.03165.pdf)
 - [[GraRep]:  Learning Graph Representations with Global Structural Information](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/GNN/GraRep-%20Learning%20Graph%20Representations%20with%20Global%20Structural%20Information.pdf)
 
-图表示学习在反欺诈领域的应用：
-- [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
-- [[Capital One (2019)] DeepTrax: Embedding Graphs of Financial Transactions](https://arxiv.org/pdf/1907.07225.pdf)
+图学习在反欺诈领域的应用：
+
+一些解决异常检测任务的over-smoothing问题(异常节点和正常节点的表达难以区分)的思路：
+- 利用注意力机制从多个视图聚合邻域信息
+  - [[SemiGNN] A Semi-supervised Graph Attentive Network for Financial Fraud Detection](https://arxiv.org/pdf/2003.01171.pdf)
+- 利用重采样方法聚合不同类别邻域信息
+- 设计损失函数辅助训练
 
 **社区发现 Community Detection**
 - [社区发现算法总结](https://github.com/zixi-liu/Fraud-Detection-Papers/tree/main/GNN/Knowledge-Base)
@@ -152,7 +161,8 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 利用关系网络识别网络中异常的网络结构和社群。
 - [[JD Finance] Graph mining assisted semi-supervised learning for fraudulent cash-out detection](https://nosh.northwestern.edu/wp-content/uploads/2020/10/Graph-mining-assisted-semi-supervised-learning-for-fraudulent-cash-out-detection.pdf)
-
+- [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
+- [[Capital One (2019)] DeepTrax: Embedding Graphs of Financial Transactions](https://arxiv.org/pdf/1907.07225.pdf)
 
 **图神经网络入门**
 - [Graph neural networks: A review of methods and applications](https://arxiv.org/pdf/1812.08434.pdf)
