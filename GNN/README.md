@@ -25,10 +25,13 @@
 
 即节点(xi, yj)的拉普拉斯算子描述的是节点与邻居节点之间信号的差异。
 
+[**图算法基础理论**](https://mp.weixin.qq.com/s/Gckxu2SboorLQgrx-A8FGw)
+
 **图神经网络入门三篇：**
 - [01. 图拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/368878987)
 - [02. 谱域方法](https://zhuanlan.zhihu.com/p/369382428)
 - [03. 空间域方法](https://zhuanlan.zhihu.com/p/369425550)
+
 
 **Message Passing消息传递范式：**
 - [理解GNN消息传递机制](https://zhuanlan.zhihu.com/p/352510643)
@@ -49,6 +52,7 @@
   - 针对邻居信息求和后的结果，送入MLP，获得更抽象的特征表示。
 - [How Powerful are Graph Neural Netowrks?](https://arxiv.org/pdf/1810.00826.pdf)
   - 聚合函数+组合函数。设计可学习参数。
+
 
 ### 目录
 
