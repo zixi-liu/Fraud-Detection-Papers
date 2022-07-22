@@ -16,21 +16,13 @@
 
 ### Boosting家族
 
-- [深入理解Boosting算法-1](https://zhuanlan.zhihu.com/p/129079207)
-
-**逻辑回归的损失函数**
-
-逻辑回归的两种标签形式：
-- $y\in[-1, 1]$, 只关注是否为正负样本的硬分类。
-- $y\in[0, 1]$, 得到样本为正样本概率值的软分类。
-
-当$y\in[0,1]$, W表示参数向量，X表示特征向量，正负样本预测值：
-- $p(y=1|X) = \sigma(X) = \dfrac{1}{1+e^{-W^{T}X}}$
+- [深入理解Boosting算法-1 基础回归树](https://zhuanlan.zhihu.com/p/129079207)
+- [深入理解Boosting算法-2 AdaBoost](https://zhuanlan.zhihu.com/p/129079870)
+- [深入理解Boosting算法-3 GBDT](https://zhuanlan.zhihu.com/p/129080589)
+- [深入理解Boosting算法-4 XGBoost](https://zhuanlan.zhihu.com/p/136243990)
 
 
-$log\dfrac{p}{1-p}=W^{T}X$为了得到参数W，利用最大似然拟合真实样本空间概率分布。
 
-**极大似然**
 
 
 ### MLP
