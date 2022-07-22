@@ -1,6 +1,6 @@
-## DL Knowledge Bank
+## ML Knowledge Bank
 
-用于收藏DL相关科普类文章:)
+用于收藏ML相关科普类文章:)
 
 ### 神经科学简史系列
 
@@ -13,6 +13,24 @@
 - [6. 统计学习理论与支持向量机](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247489453&idx=1&sn=d24e8738e6d0ddd069a51c4682464809&chksm=fdb68a3acac1032c0395109c2cd092c8e61d87c81adac0af0f102ac80f22ecf55de19134f908&scene=21#wechat_redirect)
 - [7. 无处不在的贝叶斯](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247490017&idx=1&sn=bc15e07ae76282c82826a64e662de0e5&chksm=fdb68476cac10d6027a7b8e9883c5652950de6e989c0f57cf460aaeba89e717d4ab84decab22&scene=21#wechat_redirect)
 - [8. 深度学习发展简史](https://mp.weixin.qq.com/s/mDRo3v9UPhmFZcdSSGoacQ)
+
+### Boosting家族
+
+- [深入理解Boosting算法-1](https://zhuanlan.zhihu.com/p/129079207)
+
+**逻辑回归的损失函数**
+
+逻辑回归的两种标签形式：
+- $y\in[-1, 1]$, 只关注是否为正负样本的硬分类。
+- $y\in[0, 1]$, 得到样本为正样本概率值的软分类。
+
+当$y\in[0,1]$, W表示参数向量，X表示特征向量，正负样本预测值：
+- $p(y=1|X) = \sigma(X) = \dfrac{1}{1+e^{-WTX}}$
+
+
+$log\dfrac{p}{1-p}$
+
+
 
 ### MLP
 
