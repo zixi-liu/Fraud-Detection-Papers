@@ -1,6 +1,6 @@
 ## All You Need for CICD Testing
 
-**学习索引：**[Pre-Production Checklist](https://github.com/mercari/production-readiness-checklist/blob/master/docs/references/pre-production-checklist.md)
+**测试索引：**[Pre-Production Checklist](https://github.com/mercari/production-readiness-checklist/blob/master/docs/references/pre-production-checklist.md)
 
 - [API Test](#api-test)
 - [Smoke Test](#smoke-test)
