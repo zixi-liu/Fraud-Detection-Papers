@@ -1,5 +1,7 @@
 ## All You Need for CICD Testing
 
+[Pre-Production Checklist](https://github.com/mercari/production-readiness-checklist/blob/master/docs/references/pre-production-checklist.md)
+
 - [API Test](#api-test)
 - [Smoke Test](#smoke-test)
 - [Perf Test](#perf-test)
