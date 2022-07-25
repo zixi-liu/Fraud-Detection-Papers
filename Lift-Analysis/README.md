@@ -1,5 +1,9 @@
 ## Model Evaluation 风控模型评估常用指标
 
+[**模型评估指标基础**](https://zhuanlan.zhihu.com/p/353384266)
+
+[**模型评估指标进阶**](https://zhuanlan.zhihu.com/p/355335193)
+
 ROC、K-S 曲线、Lift 曲线、PR 曲线
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/46979228/178168402-ed92010c-5f43-42e6-b4af-dd62df75694b.png">
