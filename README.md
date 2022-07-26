@@ -189,6 +189,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 **账号安全**
 - [[Facebook - SynchroTrap] Uncovering Large Groups of Active Malicious Accounts in Online Social Networks](https://users.cs.duke.edu/~qiangcao/publications/synchrotrap.pdf)
+- [SocialWatch: Detection of Online Service Abuse via Large-Scale Social Graphs](https://users.soe.ucsc.edu/~abadi/Papers/socialwatch.pdf)
 - [[Wechat] Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach, 2021](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094)
 - [[Ant Group] Heterogeneous Graph Neural Networks for Malicious Account Detection](https://arxiv.org/pdf/2002.12307.pdf)
 - [[Ant Group] Adversarial Attack on Graph Structured Data](https://arxiv.org/pdf/1806.02371.pdf)
