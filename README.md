@@ -180,7 +180,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [[Ant Group - GeniePath] GeniePath: Graph Neural Networks with Adaptive Receptive Paths](https://export.arxiv.org/pdf/1802.00910)
 - [[Ant Group - SemiGNN] A Semi-supervised Graph Attentive Network for Financial Fraud Detection](https://arxiv.org/pdf/2003.01171.pdf)
 - [[Alibaba] AliGraph: A Comprehensive Graph Neural Network Platform](https://arxiv.org/pdf/1902.08730.pdf)
-- [[Pytorch Geometric] Pytorch-Geometric implementation of a series of Graph Neural Network (GNN) based fake news detection models](https://github.com/safe-graph/GNN-FakeNews)
+- [[PyG] Pytorch-Geometric implementation of a series of Graph Neural Network (GNN) based fake news detection models](https://github.com/safe-graph/GNN-FakeNews)
 - [PyTorch-BigGraph](https://github.com/facebookresearch/PyTorch-BigGraph)
 
 **线上交易支付**
