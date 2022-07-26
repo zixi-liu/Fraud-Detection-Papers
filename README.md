@@ -132,6 +132,7 @@ RNN通过重复使用单元结构实现记忆能力。
 - [[JD Finance] Session-Based Fraud Detection in Online E-Commerce Transactions Using Recurrent Neural Networks](http://ecmlpkdd2017.ijs.si/papers/paperID69.pdf)
 - [[Alibaba] Online Credit Payment Fraud Detection via Structure-Aware Hierarchical
 Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
+- [E.T.-RNN: Applying Deep Learning to Credit Loan Applications](https://arxiv.org/pdf/1911.02496.pdf)
 
 **Long Short Term Memory (LSTM)**
 
