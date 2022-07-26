@@ -31,6 +31,7 @@
 
 常见的反欺诈终端组件：
 - 设备指纹 Device Fingerprint
+  - [设备指纹技术](https://mp.weixin.qq.com/s/zxuKHMB2vLCB1W2PO1-ynA)
 - 生物探针 Biometrics-Based Authentication
   - [You are How You Touch: User Verification on Smartphones via Tapping Behaviors](https://www.eecis.udel.edu/~hnw/paper/icnp14.pdf)
 - 智能验证码 Verification Code
@@ -98,6 +99,9 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 **地址类文本解析，地址相关性任务**
 - 地址要素解析将地址文本拆分成独立语义的要素，并对这些要素进行类型识别。
   - [Bert family encode, span-based decode 方案](https://zhuanlan.zhihu.com/p/449676168)
+  
+**文本聚类/Topic Model话题模型**
+- [[DBSCAN]文本中挖掘典型意见](https://zhuanlan.zhihu.com/p/185623849)
 
 ### 五、有监督学习 Supervised Learning
 
