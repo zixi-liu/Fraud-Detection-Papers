@@ -160,6 +160,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - 设计损失函数辅助训练
 
 **社区发现 Community Detection**
+- [社区发现算法库与可视化](https://github.com/shobrook/communities)
 - [社区发现算法总结](https://github.com/zixi-liu/Fraud-Detection-Papers/tree/main/GNN/Knowledge-Base)
 
 **图模型 Graphical Models**
