@@ -1,4 +1,33 @@
-## Fraud & Risk Domain Knowledge
+## Payments, Fraud & Risk Domain Knowledge
+
+### Payments Terminology
+
+**CIT vs MIT**
+- CIT (Customer Initiated Transactions)
+- MIT (Merchant Initiated Transactions)
+
+**Payment Gateways (pass the Payment Transaction onto the relevant place)**
+
+For Cards, the Payment Gateway passes the transaction onto an Authorisation Platform.
+
+- Adyen
+- Paymentech
+- Chase Orbital
+- Worldpay
+
+**Payment Provider (someone who PROVIDES a Payment Services and helps settle transactions after authorization)**
+- Paypal (APM)
+- Boku (APM)
+  - KakaoPay
+  - DCB (Direct Carrier Billing) 
+
+**3DS**
+- 3DS Retries are NOT classed as retries.
+
+### Payments Newsletter
+
+- [How does VISA work?](https://blog.bytebytego.com/p/ep15-what-happens-when-you-swipe)
+
 
 ### 团伙挖掘关系类型
 
