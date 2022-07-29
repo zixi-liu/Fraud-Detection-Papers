@@ -62,7 +62,14 @@
 
 **2. Feature Selection 特征选择**
 
-高质量特征有区分性(Informative)，特征之间有相互独立性(Independent)，特征应易于理解。
+高质量特征有信息量(Informative)，有区分性(Discriminative)，特征之间有相互独立性(Independent)，特征应易于理解。
+
+特征工程中稀疏变量处理思路：
+- Sparse Representation与Dimension Reduction
+  - 降维是将原space的数据在subspace(space spanned by selected major eigenvector)里进行表达；稀疏表达则是在a union of subspace里进行表达。
+  - 稀疏表达作为自然信号的regularizer。
+  
+特征选择常用方法：
 - 过滤法 Filter (根据目标变量与自变量之间的关联)
   - 单变量特征过滤：卡方检验，ANOVA，信息增益等。
   - 多变量特征过滤
