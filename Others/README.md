@@ -26,9 +26,16 @@
 - [深入理解Boosting算法-3 GBDT](https://zhuanlan.zhihu.com/p/129080589)
 - [深入理解Boosting算法-4 XGBoost](https://zhuanlan.zhihu.com/p/136243990) 
 
-### ML模型线上表现
+### ML模型评估
 - [Underspecification Presents Challenges for Credibility in Modern Machine Learning](https://arxiv.org/pdf/2011.03395.pdf)
 
+三点模型评估压力测试思路：
+- 分层表现评估(Stratified performance evaluations)
+  - 根据特征分层数据集，检验不同层中预测器表现是否稳定。
+- 迁移表现评估(Shifted performance evaluations)
+  - 图像处理-将数据映射到另一个数据分布上，测试预测器表现是否稳定。
+- 对比评估(Constrastive evaluations)
+  - 用特例集验证预测器表现。
 
 ### MLP
 
