@@ -14,6 +14,9 @@
 - [7. 无处不在的贝叶斯](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247490017&idx=1&sn=bc15e07ae76282c82826a64e662de0e5&chksm=fdb68476cac10d6027a7b8e9883c5652950de6e989c0f57cf460aaeba89e717d4ab84decab22&scene=21#wechat_redirect)
 - [8. 深度学习发展简史](https://mp.weixin.qq.com/s/mDRo3v9UPhmFZcdSSGoacQ)
 
+### PCA降维
+- [深入理解PCA降维](https://zhuanlan.zhihu.com/p/269432722)
+
 ### 决策树
 
 - [深入理解决策树](https://mp.weixin.qq.com/s/ZV8f3YMve2QuWNZiTtv34g)
