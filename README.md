@@ -226,6 +226,9 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [Slice Finder: Automated Data Slicing for Model Validation](https://arxiv.org/pdf/1807.06068.pdf)
 - [Subgroup Discovery Algorithms: A Survey and Empirical Evaluation](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Subgroup%20Discovery%20Algorithms_%20A%20Survey%20and%20Empirical%20Evaluation.pdf)
 
+**AB Testing**
+- [Overlapping Experiment Infrastructure: More, Better, Faster Experimentation](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36500.pdf)
+
 **金融场景风控模型策略**
 
 1. 样本提取
