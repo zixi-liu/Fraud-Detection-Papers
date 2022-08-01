@@ -60,6 +60,9 @@
 时序特征
 - 历史事件分时段统计
 
+一些搜索排序业务的特征工程思路：
+- [[Airbnb] DNN特征工程思路](https://tracholar.github.io/wiki/machine-learning/airbnb-dnn-rank-2018.html#_5)
+
 **2. Feature Selection 特征选择**
 
 高质量特征有信息量(Informative)，有区分性(Discriminative)，特征之间有相互独立性(Independent)，特征应易于理解。
