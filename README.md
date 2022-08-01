@@ -60,6 +60,7 @@
 时序特征
 - 历史事件分时段统计
 
+
 一些搜索排序业务的特征工程思路：
 - [[Airbnb] DNN特征工程思路](https://tracholar.github.io/wiki/machine-learning/airbnb-dnn-rank-2018.html#_5)
   - [关于Airbnb特征工程的一点补充](https://zhuanlan.zhihu.com/p/52287783)
@@ -102,10 +103,13 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 **文本挖掘入门**
 - [理解Bag of Words & Tf-idf](https://zhuanlan.zhihu.com/p/363697305)
 
-**Word Embedding**
+**Embeddings(从原始数据提取出来的Feature，通过神经网络映射之后的低维向量)**
+
 - [[Word2Vec] Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 - [[Word2Vec] word2vec Parameter Learning Explained](https://arxiv.org/pdf/1411.2738.pdf)
 - [Embeddings of Categorical Variables for Sequential Data in Fraud Context](http://oliviercaelen.be/doc/AMLTA2018_paper_7.pdf)
+- [[Airbnb] Hotel2vec: Learning Attribute-Aware Hotel Embeddings with Self-Supervision](https://arxiv.org/pdf/1910.03943.pdf)
+- [[Doordash] Store2vec: Personalized Store Feed with Vector Embeddings](https://doordash.news/company/personalized-store-feed-with-vector-embeddings/)
 
 **地址类文本解析，地址相关性任务**
 - 地址要素解析将地址文本拆分成独立语义的要素，并对这些要素进行类型识别。
