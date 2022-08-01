@@ -62,6 +62,7 @@
 
 一些搜索排序业务的特征工程思路：
 - [[Airbnb] DNN特征工程思路](https://tracholar.github.io/wiki/machine-learning/airbnb-dnn-rank-2018.html#_5)
+  - [关于Airbnb特征工程的一点补充](https://zhuanlan.zhihu.com/p/52287783)
 
 **2. Feature Selection 特征选择**
 
