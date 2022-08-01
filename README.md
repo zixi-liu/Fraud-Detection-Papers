@@ -225,7 +225,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [Slice Finder: Automated Data Slicing for Model Validation](https://arxiv.org/pdf/1807.06068.pdf)
 - [Subgroup Discovery Algorithms: A Survey and Empirical Evaluation](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Subgroup%20Discovery%20Algorithms_%20A%20Survey%20and%20Empirical%20Evaluation.pdf)
 
-**ML模型策略分析流程**
+**金融场景风控模型策略**
 
 1. 样本提取
   - 模型开发时的跨时间验证集（OOT）：主要用于衡量同时期新模型相对于旧模型的模型效果提升度和制定决策点（Cut-off）时的效果预估。
@@ -266,6 +266,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - 如果模型分数逐月下滑，需要用新样本频繁迭代更新模型（Refit）。
 
 **Knowledge Base**
+- [非常全面的ML资料wiki](https://tracholar.github.io/wiki/#machine-learning)
 - [2021金融风控模型内容摘要[图算法+时间序列模型]](https://zhuanlan.zhihu.com/p/384896966)
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
 - [深度学习综述的综述](https://mp.weixin.qq.com/s/4Aaa4qa8nU7mXreTimTv3g)
