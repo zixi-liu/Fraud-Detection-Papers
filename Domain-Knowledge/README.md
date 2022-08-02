@@ -1,4 +1,3 @@
-# Payments, Fraud & Risk Domain Knowledge
 
 ## MRC Payments and Fraud Prevention Program
 
