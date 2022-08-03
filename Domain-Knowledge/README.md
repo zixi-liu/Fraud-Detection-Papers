@@ -27,8 +27,10 @@ Impersonation Techniques
   - Device ID and behavioral info are harder to spoof unless the attack is carried out with malware used to skim the info from live visitors.
   - Emails & Phone numbers: fraudster steal account or use disposable SIM cards that match whereever victim lives.
   - Physical Orders: order and then change adddress or click-and-collect option pose challenges. 
+  - Address verification service (AVS) spoofing.
 - Fraudsters pretend to be completely fresh,
 - [Friendly Fraudster] using own identity and plan to file a fraudulent chargeback.
+
 
 
 =======================================================================================================
