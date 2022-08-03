@@ -1,13 +1,37 @@
 
 ## Payments and Fraud Prevention 
 
+*Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
+
+
 ### [O'Reilly] Practical Fraud Prevention
 
 **前言**
 
-一点Fraud的发展历史：早期的信用卡欺诈
+一点Fraud的发展历史：早期的信用卡欺诈形式主要是磁条侧录盗刷(Card Skimming)或者收银员窃取信用卡号和密码。但随着Card Chip和PIN的技术发展，card-not-present fraud逐渐成为主流。
+
+![image](https://user-images.githubusercontent.com/46979228/182518512-e6c7c2b9-c54a-45b8-ae7c-8b05724bbede.png)
+
+Why event-based historical data?
+
+- Point-in-time analysis (e.g., being able to train a predictive system using only data that was available at the time of the fraud attack, long before the financial loss became evident)
+
+**一、欺诈分析 Fraud Analytics**
+
+1. Fraud Traits
+
+*You don’t care about what (the IP, address, email, etc.). You care about who.*
+
+Impersonation Techniques
+- Fraudsters pretend to be someone else,
+  - Device ID and behavioral info are harder to spoof unless the attack is carried out with malware used to skim the info from live visitors.
+  - Emails & Phone numbers: fraudster steal account or use disposable SIM cards that match whereever victim lives.
+  - Physical Orders: order and then change adddress or click-and-collect option pose challenges. 
+- Fraudsters pretend to be completely fresh,
+- [Friendly Fraudster] using own identity and plan to file a fraudulent chargeback.
 
 
+=======================================================================================================
 ### Merchant Risk Council (MRC) 2022 Global Payments and Fraud Survey Report 
 
 **Executive Summary**
