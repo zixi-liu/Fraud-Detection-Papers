@@ -7,26 +7,55 @@
 
 **Executive Summary**
 
-- e-commerce fraud
+E-commerce fraud
 
-1. What effect is fraud having on merchant businesses?
+1. [Business Impacts of Fraud] What effect is fraud having on merchant businesses?
 
 - MRC merchants in our survey report *fraud rates* by revenue that are 5 to 8 times lower, *order rejection rates* that are 50 to 60 percent
 lower, and *shares of accepted orders* that are fraudulent that are 5 times lower, when compared to non-members.
   - 重点关注在fraud rate, order reject rate, 和shares of accepted order。
-- [Payment Regulation System] European Commission’s Payment Services Directive, specifically involving the implementation of Strong Customer Authentication (known as PSD2 / SCA) and for the implementation of EMV® 3DS.
+  - Reduce Manual Order Review: European merchants and SMBs are significantly more likely to lean in this direction, given that the share
+of orders manually screened and the share of screened orders that were subsequently declined due to suspicion of fraud, both decreased across all region and size segments.
+- [Payment Regulation System] EU’s Payment Services Directive, specifically involving the implementation of Strong Customer Authentication (known as PSD2 / SCA) and for the implementation of EMV® 3DS.
 
-2. What types of fraud attacks are merchants experiencing?
+2. [Range of Fraud Attacks] What types of fraud attacks are merchants experiencing?
 
-- Phishing网络钓鱼/pharming, card testing, identity theft, and first-party misuse remain the most prevalent fraud attacks, each affecting more than 3 in 10 merchants globally.
+- Phishing网络钓鱼/pharming, card testing, identity theft, and first-party misuse remain the most prevalent fraud attacks, each affecting impact around one-third of merchants, globally.
+  - First-Party Misuse (chargeback fraud): disputed transactions are the result of cardholders aiming to obtain free goods, confusion about transaction descriptors, or card issuers incorrectly processing general cardholder disputes as fraud (likely due, in part, to incentives issuers have to resolve disputes quickly). For example, Attempt to obtain free goods or services, Transaction or descriptor confusion, Family fraud, Attempt to return goods outside of merchant’s return period, Buyer’s remorse, Quality of goods not as expected.
+  - A list of common fraud types:
+  - ![image](https://user-images.githubusercontent.com/46979228/182512070-84ae4472-1c4b-42ea-b62e-52fe89276115.png)
 
-What strategic and tactical approaches are merchants using to prevent and manage fraud?
+- Globally, on average, merchants believe 16% of fraudulent disputes should be attributed to **first-party misuse** (or “friendly fraud”).
+- The challenges of identifying and responding to emerging fraud attacks, updating fraud risk models, and effectively managing fraud while expanding into new sales channels have become markedly more difficult for merchants to overcome.
 
-- e-commerce payments
+3. [Fraud Prevention Strategies] What strategic and tactical approaches are merchants using to prevent and manage fraud?
 
-What practices and partners are merchants using to accept eCommerce payments? 
+- Merchants report using an average of four fraud detection tools and services, in total. 
+  - Payment card,
+  - Identity verification services,
+  - 3D-Secure,
+  - Two-factor phone authentication
+- Other commonly used tools, such as list management tools (e.g., negative lists / blacklists, positive lists / whitelists), geographic indicators (e.g.,
+maps, geo location for country, IP location, etc.), company-specific fraud scoring models, and order velocity monitoring to significantly enhance their ability to detect and thwart incoming fraud attacks.
+  - A list of commonly used fraud prevention tools:
+  - ![image](https://user-images.githubusercontent.com/46979228/182513931-aef54560-5c4d-4f77-8341-0d0599396752.png)
 
-How are merchants optimizing payment processes and platforms?
+
+E-commerce payments
+
+4. [Payment Acceptance and Partners] What practices and partners are merchants using to accept eCommerce payments? 
+
+- Most eCommerce merchants accept payments via digital wallets, direct debit, cards, and Commerce mobile payments. The vast majority (nearly 9 in 10)
+encourage customers to pay via preferred methods, mainly to minimize risk of payment fraud.
+- Third-party payments, buy now pay later (BNPL), digital wallet, and mobile payments are the fastest growing payment methods.
+- Merchants leverage multiple payment processors and acquiring banks to support omnichannel payments. Maximizing flexibility, geographic coverage, uptime,
+and authorizations represent merchants’ main motivations for utilizing multiple acquirers.
+
+5. [Payment Management] How are merchants optimizing payment processes and platforms?
+
+- Merchants are experimenting with a diverse range of novel retail approaches, such as buy now pay later (or BNPL) and buy online pickup in store (BOPIS), as well as new customer experiences to facilitate payments, like AI chatbots and face-to-pay technologies.
+- On average, merchants use 2 to 3 different approaches or techniques to optimize payment authorization. EMV® 3DS, intelligent routing, machine learning and automated retries are most common.
+- MRC members are more likely to have a sophisticated approach to payment management, with most using tokenization, employing authorization-boosting techniques, and monitoring a larger and wider range of payment KPIs.
 
 
 ### Payments Terminology
