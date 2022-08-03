@@ -33,3 +33,6 @@ Vanishing Gradient Problems
 ## LSTM
 
 ![image](https://user-images.githubusercontent.com/46979228/182665493-1787c40e-6d40-4c5a-960a-023dda984b8c.png)
+
+$\sigma$ 表示sigmoid函数，输出在
+- many-to-many
