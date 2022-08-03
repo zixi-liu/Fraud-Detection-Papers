@@ -38,24 +38,31 @@ of orders manually screened and the share of screened orders that were subsequen
 - Other commonly used tools, such as list management tools (e.g., negative lists / blacklists, positive lists / whitelists), geographic indicators (e.g.,
 maps, geo location for country, IP location, etc.), company-specific fraud scoring models, and order velocity monitoring to significantly enhance their ability to detect and thwart incoming fraud attacks.
   - A list of commonly used fraud prevention tools:
-  - ![image](https://user-images.githubusercontent.com/46979228/182513931-aef54560-5c4d-4f77-8341-0d0599396752.png)
+  - ![image](https://user-images.githubusercontent.com/46979228/182514217-6eca02d6-e619-48d3-98b0-ed06949aceea.png)
 
 
 E-commerce payments
 
 4. [Payment Acceptance and Partners] What practices and partners are merchants using to accept eCommerce payments? 
 
-- Most eCommerce merchants accept payments via digital wallets, direct debit, cards, and Commerce mobile payments. The vast majority (nearly 9 in 10)
-encourage customers to pay via preferred methods, mainly to minimize risk of payment fraud.
-- Third-party payments, buy now pay later (BNPL), digital wallet, and mobile payments are the fastest growing payment methods.
+- Most eCommerce merchants accept payments via **digital wallets, direct debit transfers, traditional cards and mCommerce mobile apps (such as PayPal mobile or Amazon one-click)**. Beyond these primary methods, cash is accepted by 45% of merchants, while gift cards and vouchers, third-party payments, and buy-now-pay-later (BNPL) payments are each accepted by around 3 in 10. The vast majority (nearly 9 in 10) encourage customers to pay via preferred methods, mainly to minimize risk of payment fraud, maximizing conversion rates, expediting availability of funds and minimizing processing costs.
+- Third-party payments, cryptocurrency, buy now pay later (BNPL), digital wallet, and mobile payments are the fastest growing payment methods.
 - Merchants leverage multiple payment processors and acquiring banks to support omnichannel payments. Maximizing flexibility, geographic coverage, uptime,
 and authorizations represent merchants’ main motivations for utilizing multiple acquirers.
+  - On average, merchants leverage four payment processor connections and three different acquiring banks to support omnichannel payment.
 
 5. [Payment Management] How are merchants optimizing payment processes and platforms?
 
 - Merchants are experimenting with a diverse range of novel retail approaches, such as buy now pay later (or BNPL) and buy online pickup in store (BOPIS), as well as new customer experiences to facilitate payments, like AI chatbots and face-to-pay technologies.
-- On average, merchants use 2 to 3 different approaches or techniques to optimize payment authorization. EMV® 3DS, intelligent routing, machine learning and automated retries are most common.
+- On average, merchants use 2 to 3 different approaches or techniques to optimize payment authorization. EMV® 3DS (3D Secure 2 usage to improve issuer
+approval rate), intelligent payment routing, machine learning (fine-tune fraud management) and automated retries are most common.
+  - Sizable shares also leverage account updaters (Reducing failed transactions), tokenization (Real-time card-onfile updates), and dynamic currency conversion.
+  - Majority Use Tokenization To Enhance Security, Customer Trust and Authorization Rates: tokenization means the encryption of customer
+card numbers, either in the merchant’s own internal databases, or via the merchant’s card network / card issuer / wallet provider payment partners. The most common motivation for employing tokenization is to improve payment security and reduce risk – i.e., protecting customer privacy and reducing the risk of data breaches (robust compliance with Payment Card Industry (PCI) Data Security Standards (DSS) and payment regulations).
 - MRC members are more likely to have a sophisticated approach to payment management, with most using tokenization, employing authorization-boosting techniques, and monitoring a larger and wider range of payment KPIs.
+  - Payment success rate, revenue, and cost of payments represent the top three KPIs tracked by merchants, globally, followed by authorization, authentication and loss rates.
+  - A list of KPIs monitored:
+  - ![image](https://user-images.githubusercontent.com/46979228/182515782-f607ac04-46e0-4567-ae3b-7f5071449e0f.png)
 
 
 ### Payments Terminology
