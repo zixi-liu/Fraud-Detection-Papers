@@ -1,7 +1,32 @@
 
-## MRC Payments and Fraud Prevention Program
+## Merchant Risk Council (MRC) Payments and Fraud Prevention 
+
+
 
 ### MRC 2022 Global Payments and Fraud Survey Report 
+
+**Executive Summary**
+
+- e-commerce fraud
+
+1. What effect is fraud having on merchant businesses?
+
+- MRC merchants in our survey report *fraud rates* by revenue that are 5 to 8 times lower, *order rejection rates* that are 50 to 60 percent
+lower, and *shares of accepted orders* that are fraudulent that are 5 times lower, when compared to non-members.
+  - 重点关注在fraud rate, order reject rate, 和shares of accepted order。
+- [Payment Regulation System] European Commission’s Payment Services Directive, specifically involving the implementation of Strong Customer Authentication (known as PSD2 / SCA) and for the implementation of EMV® 3DS.
+
+2. What types of fraud attacks are merchants experiencing?
+
+- Phishing网络钓鱼/pharming, card testing, identity theft, and first-party misuse remain the most prevalent fraud attacks, each affecting more than 3 in 10 merchants globally.
+
+What strategic and tactical approaches are merchants using to prevent and manage fraud?
+
+- e-commerce payments
+
+What practices and partners are merchants using to accept eCommerce payments? 
+
+How are merchants optimizing payment processes and platforms?
 
 
 ### Payments Terminology
