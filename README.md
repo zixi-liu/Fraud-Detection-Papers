@@ -152,6 +152,7 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 **Long Short Term Memory (LSTM)**
 
 LSTM通过训练控制参数决定哪些信息被保留/忘记。
+- [[Sepp Hochreiter, Jurgen Schmidhuber] Long-Short Term Memory](http://www.bioinf.jku.at/publications/older/2604.pdf)
 - [A Tutorial into LSTM](https://arxiv.org/pdf/1909.09586.pdf)
 
 ### 七、图神经网络 Graph Neural Network-based Modeling
