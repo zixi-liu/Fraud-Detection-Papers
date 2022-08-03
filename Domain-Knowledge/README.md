@@ -1,9 +1,14 @@
 
-## Merchant Risk Council (MRC) Payments and Fraud Prevention 
+## Payments and Fraud Prevention 
+
+### [O'Reilly] Practical Fraud Prevention
+
+**前言**
+
+一点Fraud的发展历史：早期的信用卡欺诈
 
 
-
-### MRC 2022 Global Payments and Fraud Survey Report 
+### Merchant Risk Council (MRC) 2022 Global Payments and Fraud Survey Report 
 
 **Executive Summary**
 
