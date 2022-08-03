@@ -34,5 +34,7 @@ Vanishing Gradient Problems
 
 ![image](https://user-images.githubusercontent.com/46979228/182665493-1787c40e-6d40-4c5a-960a-023dda984b8c.png)
 
-$\sigma$ 表示sigmoid函数，输出在
-- many-to-many
+$\sigma$ 表示sigmoid函数，输出在0-1，作为加权求和的系数。由于旧状态与新状态的贡献需要独立的系数分别控制，因此引入门控机制。
+
+## Bidirectional RNN
+
