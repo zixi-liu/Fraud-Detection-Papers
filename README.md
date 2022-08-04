@@ -130,14 +130,6 @@ Boosting家族起源
 - [[1999] Greedy function approximation: A gradient boosting machine](https://jerryfriedman.su.domains/ftp/trebst.pdf)
 - [[2000] Additive logistic regression: A statistical view of boosting](https://hastie.su.domains/Papers/AdditiveLogisticRegression/alr.pdf)
 
-**Ads/RecSys/用户行为序列模型**
-- [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
-- [[DIN] Deep Interest Network for Click-Through Rate Prediction (Alibaba 2018)](https://arxiv.org/pdf/1706.06978.pdf)
-- [[SIM] Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/2006.05639.pdf)
-- [[MIMN] Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/1905.09248.pdf)
-- [Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce (Ebay 2021)](https://arxiv.org/pdf/2110.11072.pdf)
-- [[Enrich Deep Model] Sequential Behavioral Data Processing Using Deep Learning and the Markov Transition Field in Online Fraud Detection](https://arxiv.org/pdf/1808.05329.pdf)
-- [[注意力机制] Attention is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
 
 ### 六、序列模型 Sequence Modeling
 
@@ -154,6 +146,15 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 LSTM通过训练控制参数决定哪些信息被保留/忘记。
 - [[Sepp Hochreiter, Jurgen Schmidhuber] Long-Short Term Memory](http://www.bioinf.jku.at/publications/older/2604.pdf)
 - [A Tutorial into LSTM](https://arxiv.org/pdf/1909.09586.pdf)
+
+**Ads/RecSys/用户行为序列模型**
+- [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
+- [[DIN] Deep Interest Network for Click-Through Rate Prediction (Alibaba 2018)](https://arxiv.org/pdf/1706.06978.pdf)
+- [[SIM] Search-based User Interest Modeling with Lifelong Sequential Behavior Data for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/2006.05639.pdf)
+- [[MIMN] Practice on Long Sequential User Behavior Modeling for Click-Through Rate Prediction (Alibaba 2019)](https://arxiv.org/pdf/1905.09248.pdf)
+- [Sequential Modeling with Multiple Attributes for Watchlist Recommendation in E-Commerce (Ebay 2021)](https://arxiv.org/pdf/2110.11072.pdf)
+- [[Enrich Deep Model] Sequential Behavioral Data Processing Using Deep Learning and the Markov Transition Field in Online Fraud Detection](https://arxiv.org/pdf/1808.05329.pdf)
+- [[注意力机制] Attention is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
 
 ### 七、图神经网络 Graph Neural Network-based Modeling
 
