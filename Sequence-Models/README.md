@@ -38,3 +38,17 @@ $\sigma$ 表示sigmoid函数，输出在0-1，作为加权求和的系数。由�
 
 ## Bidirectional RNN
 
+## Text Processing
+
+### Transfer Learning and Word Embeddings
+ 
+**word2vec**
+- CBOW
+  - Matrix Dimensions: W (V*N), h (N), y (V)
+- Skip-gram
+
+**Negative Sampling**
+- Pick random sample from vocab and label as 0.
+
+关于负采样的一点解释：
+- 如何
