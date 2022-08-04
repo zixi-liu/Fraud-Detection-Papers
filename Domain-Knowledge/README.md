@@ -32,6 +32,75 @@ Impersonation Techniques
 - [Friendly Fraudster] using own identity and plan to file a fraudulent chargeback.
 
 
+Deception Techniques
+- IP masking
+- Social Engineering: the fraudster becomes a puppeteer (i.e., puppet master, not the headless chrome node, although some fraudsters do favor it). The victim—being the puppet—waltzes through the checkout process with their own email, IP, device, and so on. 
+- Fraud Ring
+
+Volatility
+- Rules must be adjusted for different times of the year, 
+- Machine learning systems must be able to scale quickly as necessary, 
+- Manual review teams must be prepared and ramped up for busy times of the year.
+- Volatility is very difficult to prepare for from the machine learning/artificial intelligence perspective. It's important to carry out continual assessments during volatile times in order to make changes as necessary on the fly.
+
+Card and Account Testing
+
+Abuse Versus Fraud
+- Promo abuse 
+- Account creation
+- Content abuse, or review abuse
+- Click fraud
+
+Money Laundering and Compliance Violations
+- Turn cryptocurrency into other forms of currency.
+
+4. Fraud Prevention Evaluation and Investment
+
+Types of Fraud Prevention Solutions
+- Rules Engines
+- Machine Learning
+
+
+5. Machine Learning and Fraud Model
+
+Advantages 
+- Scale
+- Subtlety
+- Diversity
+- Adaptability
+- Load variance
+- Pattern recognition
+
+Challenges 
+- Relative Paucity of Data
+- Delayed Feedback and Overfitting
+  - Might lead to false positives
+- The Labeled Data Difficulty
+- Intelligent Adversary
+- Explainability, Ethics, and Bias
+
+Dynamic Policies and the Merits of Story-Based Models
+- It takes policy considerations, often backed with a set of policy rules, to set the threshold.
+  - When a business tries to expand into a new region or audience, or when sales are spiking during the holidays, you may want to penetrate the market and accept more fraud.
+  - On the positive side, dynamic business can yield control groups.
+- Story-based models
+  - Breaking down the modeling problem into smaller questions.
+  - Using “smaller” models will give product/policy/business folks a stronger sense of control but also risk overfitting.
+  - Neural networks are probably less suitable for this purpose, as they are much less transparent and intuitive than tree models or regression.
+
+Best Practices
+- Labeling
+  - Fraudsters change their behavior frequently, and friendly fraud causes terrible noise.
+  - For example, imagine a classifier aiming to predict fraud but trained on a mix of ATO and account-opening fraud; the results would be far from optimal.
+- Featuring
+  - Sanity-check the features, predict significant codependencies, and uncover complex features (such as IP types) that can represent significant informational gain for the model.
+- To find mostly bots, a top-down analysis is probably the most efficient approach.
+- Fine tuning, retraining, and gap analysis
+
+Popular Machine Learning Approaches
+- Accuracy Versus Explainability and Predictability
+- Precision refers to how often the transactions you reject are in fact true positives; that is, they really are fraud. 
+- Recall is telling you how much of the fraud attacking your business your team manages to catch.
 
 =======================================================================================================
 ### Merchant Risk Council (MRC) 2022 Global Payments and Fraud Survey Report 
