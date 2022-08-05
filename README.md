@@ -45,6 +45,7 @@
 
 特征清洗
 - 清洗异常样本
+  - [树模型缺失值处理思路]https://www.zhihu.com/question/58230411
 - 采样：正负样本不均衡，样本权重
 
 数值型特征
@@ -130,7 +131,7 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 Boosting家族起源
 - [[1999] Greedy function approximation: A gradient boosting machine](https://jerryfriedman.su.domains/ftp/trebst.pdf)
 - [[2000] Additive logistic regression: A statistical view of boosting](https://hastie.su.domains/Papers/AdditiveLogisticRegression/alr.pdf)
-
+- [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/pdf/1603.02754.pdf)
 
 ### 六、序列模型 Sequence Modeling
 
