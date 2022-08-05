@@ -281,6 +281,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [非常全面的ML资料wiki](https://tracholar.github.io/wiki/#machine-learning)
 - [2021金融风控模型内容摘要[图算法+时间序列模型]](https://zhuanlan.zhihu.com/p/384896966)
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
+- [微信支付GNN链接预测技术](https://mp.weixin.qq.com/s/wIurXxsH6zwA1zVScyNibg)
 - [深度学习综述的综述](https://mp.weixin.qq.com/s/4Aaa4qa8nU7mXreTimTv3g)
 - [理解图的拉普拉斯矩阵](https://zhuanlan.zhihu.com/p/362416124)
   - 信号处理中的滤波器用于放大或缩小相关频率，消除不相关频率。线性空间中的矩阵乘法等同于尺度变化，与频域中的滤波器操作是相同的。
