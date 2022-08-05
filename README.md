@@ -45,7 +45,7 @@
 
 特征清洗
 - 清洗异常样本
-  - [树模型缺失值处理思路]https://www.zhihu.com/question/58230411
+  - [树模型缺失值处理思路](https://www.zhihu.com/question/58230411)
 - 采样：正负样本不均衡，样本权重
 
 数值型特征
