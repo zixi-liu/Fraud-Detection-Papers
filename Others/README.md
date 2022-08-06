@@ -42,7 +42,7 @@
 
 ### MLP
 
-### Wide&Deep
+### RecSys-Wide&Deep
 
 模型结构: Wide部分LR, Deep部分MLP。Wide部分增强模型记忆能力，Deep部分增强模型泛化能力。
 
@@ -50,6 +50,20 @@
 
 
 **哪些特征适合Wide/Deep**
+
+
+### Linear Algebra 基础
+
+**线性代数的几何意义**
+
+矩阵乘法是把任意一个向量变成另一个方向或长度都大多不同的新向量。这个变换的过程中，原向量主要发生旋转、伸缩变化。如果矩阵对某一个向量只发生伸缩变换，不产生旋转效果，那么这些向量称为这个矩阵的eigenvector，伸缩的比例就是eigenvalue。
+- 物理意义即eigenvector在矩阵的作用下伸缩运动，伸缩幅度就由eigenvalue决定。
+
+$A\bar{v} = \lambda\bar{v}$ 即 $|A-\lambda I| = 0$
+- somehow对角矩阵是对基向量进行拉伸。
+- 线性不变量：特征值再怎么变也不会离开特征空间。
+- 特征值是震动的谱。
+
 
 
 
