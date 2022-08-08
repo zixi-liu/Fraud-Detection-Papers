@@ -233,6 +233,9 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 ### 八、其它相关资源
 
+**优化方法**
+- [ADAM: A Method For Stochastic Optimization](https://arxiv.org/pdf/1412.6980.pdf)
+
 **ML模型评估策略**
 - [Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning](https://arxiv.org/pdf/1811.12808.pdf)
 - [Slice Finder: Automated Data Slicing for Model Validation](https://arxiv.org/pdf/1807.06068.pdf)
