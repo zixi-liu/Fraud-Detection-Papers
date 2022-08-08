@@ -80,7 +80,9 @@
 - [深入理解Boosting算法-3 GBDT](https://zhuanlan.zhihu.com/p/129080589)
 - [深入理解Boosting算法-4 XGBoost](https://zhuanlan.zhihu.com/p/136243990) 
 - [XGBoost常见问题解答](https://zhuanlan.zhihu.com/p/269193235)
+- [深入理解Boosting算法-5 LightGBM](https://zhuanlan.zhihu.com/p/137847395)
 - [Bagging和Boosting的区别](https://cloud.tencent.com/developer/news/393218#:~:text=Bagging%EF%BC%9A%E8%AE%AD%E7%BB%83%E9%9B%86%E6%98%AF%E5%9C%A8,%E7%9A%84%E5%88%86%E7%B1%BB%E7%BB%93%E6%9E%9C%E8%BF%9B%E8%A1%8C%E8%B0%83%E6%95%B4%E3%80%82&text=Boosting%EF%BC%9A%E6%A0%B9%E6%8D%AE%E9%94%99%E8%AF%AF%E7%8E%87%E4%B8%8D%E6%96%AD,%E5%A4%A7%E5%88%99%E6%9D%83%E9%87%8D%E8%B6%8A%E5%A4%A7%E3%80%82)
+
 
 Boosting的基本思想是将多个弱学习器整合成一个强学习器。
 
@@ -117,7 +119,15 @@ Boosting的基本思想是将多个弱学习器整合成一个强学习器。
   - 特征维度的并行训练：训练之前，每个特征按特征值对样本进行预排序，并存储为Block结构，在后面查找特征分割点时可以重复使用。
 
 **LightGBM**
-
+- 用梯度信息来衡量样本是否被充分学习（如果训练集中小梯度占据着主导作用，会掩盖困难样本）。对样本的梯度进行排序，大梯度的样本保留，小梯度的样本随机抽样，减少训练样本，加速模型训练。
+  - 为保证抽样之后分布不变对小梯度加权补偿。
+- 在高维稀疏特征空间中，将多个互斥特征进行合并成bundle，减少特征的个数，这样在构建特征的直方图时，可以降低时间复杂度。
+  - 根据计算数据集冲突比，优先选择冲突比低的特征.
+- 原论文中强调了强调了以上两点创新：
+  - Gradient-based One-Side Sampling (GOSS)： With GOSS, we exclude a significant proportion of data instances with small gradients, and only use the rest to estimate the information gain. 
+  - Exclusive Feature Bundling (EFB): With EFB, we bundle mutually exclusive features (i.e., they rarely take nonzero values simultaneously), to reduce the number of features.
+- 风控场景中，会设计不同时间切片的特征，如最近1天，最近3天，最近7天的聚合特征，一般来说时间越近，特征越稀疏，如果多个不同类型的最近N天的信息进行合并，也可以大大提高特征的信息量。
+- [LightGBM调参指南](https://zhuanlan.zhihu.com/p/372206991)
 
 ---
 
