@@ -14,22 +14,76 @@
 - [7. 无处不在的贝叶斯](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247490017&idx=1&sn=bc15e07ae76282c82826a64e662de0e5&chksm=fdb68476cac10d6027a7b8e9883c5652950de6e989c0f57cf460aaeba89e717d4ab84decab22&scene=21#wechat_redirect)
 - [8. 深度学习发展简史](https://mp.weixin.qq.com/s/mDRo3v9UPhmFZcdSSGoacQ)
 
+---
+
 ### PCA降维
 - [深入理解PCA降维](https://zhuanlan.zhihu.com/p/269432722)
 
-### 决策树
+---
 
-- [深入理解决策树](https://mp.weixin.qq.com/s/ZV8f3YMve2QuWNZiTtv34g)
+### 决策树的前世今生系列
+
+- [深入理解决策树模型](https://zhuanlan.zhihu.com/p/359085365)
+- [Induction of Decision Trees](https://hunch.net/~coms-4771/quinlan.pdf)
+- [Decision Tree Algorithm, The University of Iowa](http://user.engineering.uiowa.edu/~comp/public/DecisionT1.pdf)
+
+最早的决策树算法：CLS算法[Hunt, 1966]
+- [Divide and Conquer]分而治之:假设初始训练数据集为S，选取一个属性，按照这个属性的不同取值将数据分为不同子集S1, S2,..., SN。如果某个子集的类别都是相同的或者子集为空，那么分类结束；否则继续选取新的属性，将该子集再次划分为更小的子集。
+  - Divide the training data set into disjoint sets S1, S2, …, SN so that they create a partition based on a single feature.
+- 最大的问题就是随机选取属性，而不同属性的分类效果差异巨大。
+
+基于信息增益来选择属性：ID3算法[Quinlan, 1986]
+
+- 定义事件 $a_i$ 的信息熵为
+  - ![image](https://user-images.githubusercontent.com/46979228/183322460-b5f563b2-001f-42a7-981e-50a2f733356e.png)
+- Entropy只与X的概率分布有关，Entropy越大，则随机变量的不确定性越大。
+  - ![image](https://user-images.githubusercontent.com/46979228/183323040-765a1608-55b1-4755-b82b-e00ebf09fc50.png)
+- 对于训练数据集（或者它的子集），计算其对于所有特征的信息增益，选择信息增益最大的特征作为分类属性。
+
+基于信息增益比来选择属性：C4.5算法[1993]
+- 信息增益的一个问题是它倾向于选取那些取值较多的属性。使用信息增益比可以予以矫正。
+  - 信息增益比：信息增益除以属性A的不确定度。
+  - [C4.5 Algorithm works with continuous features by using a discretization scheme. It also handles cases with missing data.](http://inferate.blogspot.com/2015/06/c45-decision-trees-with-missing-data.html) 
+
+决策树算法的一般综述
+- 生成空决策树与样本属性集合Feature Set（全局变量）
+- 如果样本集合 T 中所有元素属于同一类，生成结点 T，并终止算法（递归基准）
+- 选取一个属性（随机or信息增益or信息增益比），并生成结点（记作A）
+- 根据该属性的不同取值，把 T 划分为不同子集
+- 删除该属性 A
+- 转到第2步，对每个子集递归调用算法的 2-6 步.
+
+一个理想的决策树应该满足：叶子结点数最少 或 叶子结点深度最小 或 叶子结点数最少且叶子结点深度最小。
+
+决策树的剪枝
+- 防止出现过拟合
+  - 剪枝的基本思想：极小化整体的损失函数或代价函数。
+  - 找到一组具有同一父亲结点的叶结点，如果将这组叶结点删去后能使得损失函数变小，那么就删去。
+  
+决策树的CART算法（只生成二叉树）[Breiman 1984]
+- 分类问题：Gini 指标，Towering，order Towering
+  - 预测值是离散的，通常会将叶子结点中多数样本的类别作为该节点的预测类别。
+- 回归问题：MSE, MAE
+  - 预测值是连续的，通常会将叶子结点中多数样本的平均值作为该节点的预测值。
 
 
-### Boosting家族
+---
+
+### Boosting家族系列
 
 - [深入理解Boosting算法-1 基础回归树](https://zhuanlan.zhihu.com/p/129079207)
 - [深入理解Boosting算法-2 AdaBoost](https://zhuanlan.zhihu.com/p/129079870)
 - [深入理解Boosting算法-3 GBDT](https://zhuanlan.zhihu.com/p/129080589)
 - [深入理解Boosting算法-4 XGBoost](https://zhuanlan.zhihu.com/p/136243990) 
 
-### ML模型评估
+
+
+**XGBoost原理及理论证明**
+
+
+---
+
+### ML模型评估系列
 - [Underspecification Presents Challenges for Credibility in Modern Machine Learning](https://arxiv.org/pdf/2011.03395.pdf)
 
 三点模型评估压力测试思路：
@@ -39,6 +93,8 @@
   - 图像处理-将数据映射到另一个数据分布上，测试预测器表现是否稳定。
 - 对比评估(Constrastive evaluations)
   - 用特例集验证预测器表现。
+
+---
 
 ### MLP
 
@@ -51,6 +107,7 @@
 
 **哪些特征适合Wide/Deep**
 
+---
 
 ### Linear Algebra 基础
 
