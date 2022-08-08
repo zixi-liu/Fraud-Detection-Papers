@@ -123,7 +123,7 @@ Boosting的基本思想是将多个弱学习器整合成一个强学习器。
   - 为保证抽样之后分布不变对小梯度加权补偿。
 - 在高维稀疏特征空间中，将多个互斥特征进行合并成bundle，减少特征的个数，这样在构建特征的直方图时，可以降低时间复杂度。
   - 根据计算数据集冲突比，优先选择冲突比低的特征.
-- 原论文中强调了强调了以上两点创新：
+- 原论文中强调了以上两点创新：
   - Gradient-based One-Side Sampling (GOSS)： With GOSS, we exclude a significant proportion of data instances with small gradients, and only use the rest to estimate the information gain. 
   - Exclusive Feature Bundling (EFB): With EFB, we bundle mutually exclusive features (i.e., they rarely take nonzero values simultaneously), to reduce the number of features.
 - 风控场景中，会设计不同时间切片的特征，如最近1天，最近3天，最近7天的聚合特征，一般来说时间越近，特征越稀疏，如果多个不同类型的最近N天的信息进行合并，也可以大大提高特征的信息量。
@@ -132,6 +132,8 @@ Boosting的基本思想是将多个弱学习器整合成一个强学习器。
 ---
 
 ### ML模型评估系列
+
+- [Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning](https://arxiv.org/pdf/1811.12808.pdf)
 - [Underspecification Presents Challenges for Credibility in Modern Machine Learning](https://arxiv.org/pdf/2011.03395.pdf)
 
 三点模型评估压力测试思路：
