@@ -128,10 +128,11 @@ into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-
 - [The Elements of Statistical Learning, <Chapter 9, 10>](https://esl.hohoweiya.xyz/book/The%20Elements%20of%20Statistical%20Learning.pdf)
 - [Comparative Study of RF and SVM on Credit Card Fraud Detection](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Data-Mining-for-Credit-Card-Fraud.pdf)
 
-Boosting家族起源
+Boosting家族
 - [[1999] Greedy function approximation: A gradient boosting machine](https://jerryfriedman.su.domains/ftp/trebst.pdf)
 - [[2000] Additive logistic regression: A statistical view of boosting](https://hastie.su.domains/Papers/AdditiveLogisticRegression/alr.pdf)
 - [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/pdf/1603.02754.pdf)
+- [LightGBM: A Highly Efficient Gradient Boosting Decision Tree](https://proceedings.neurips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf)
 
 ### 六、序列模型 Sequence Modeling
 
