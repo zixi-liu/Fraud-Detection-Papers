@@ -80,6 +80,7 @@
 - [深入理解Boosting算法-3 GBDT](https://zhuanlan.zhihu.com/p/129080589)
 - [深入理解Boosting算法-4 XGBoost](https://zhuanlan.zhihu.com/p/136243990) 
 - [XGBoost常见问题解答](https://zhuanlan.zhihu.com/p/269193235)
+- [Bagging和Boosting的区别](https://cloud.tencent.com/developer/news/393218#:~:text=Bagging%EF%BC%9A%E8%AE%AD%E7%BB%83%E9%9B%86%E6%98%AF%E5%9C%A8,%E7%9A%84%E5%88%86%E7%B1%BB%E7%BB%93%E6%9E%9C%E8%BF%9B%E8%A1%8C%E8%B0%83%E6%95%B4%E3%80%82&text=Boosting%EF%BC%9A%E6%A0%B9%E6%8D%AE%E9%94%99%E8%AF%AF%E7%8E%87%E4%B8%8D%E6%96%AD,%E5%A4%A7%E5%88%99%E6%9D%83%E9%87%8D%E8%B6%8A%E5%A4%A7%E3%80%82)
 
 Boosting的基本思想是将多个弱学习器整合成一个强学习器。
 
