@@ -234,6 +234,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 ### 八、其它相关资源
 
 **ML模型评估策略**
+- [Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning](https://arxiv.org/pdf/1811.12808.pdf)
 - [Slice Finder: Automated Data Slicing for Model Validation](https://arxiv.org/pdf/1807.06068.pdf)
 - [Subgroup Discovery Algorithms: A Survey and Empirical Evaluation](https://github.com/zixi-liu/Fraud-Detection-Papers/blob/main/Others/Subgroup%20Discovery%20Algorithms_%20A%20Survey%20and%20Empirical%20Evaluation.pdf)
 
