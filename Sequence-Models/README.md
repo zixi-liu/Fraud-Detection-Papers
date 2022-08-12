@@ -53,3 +53,8 @@ $\sigma$ 表示sigmoid函数，输出在0-1，作为加权求和的系数。由�
 关于负采样的一点通俗解释：
 - 负采样在广告CTR和RecSys模型训练中很常见，考虑到模型的训练复杂度，从一堆负样本中采集出一部分进行训练。重点思考如何采样以及采样效率。Word2Vec中的负采样，理论上需要对全部单词进行预测，然后取预测值最大的单词，但计算复杂度过高，因此从全部单词中进行采样。
 
+
+**Sequence to Sequnce Models**
+
+常用的NN模型: Pillar Models - MLP, CNN, RNN, Attention Models.
+- [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
