@@ -4,7 +4,7 @@
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
 
-### [O'Reilly] Practical Fraud Prevention
+### [O'Reilly] Practical Fraud Prevention 📖
 
 **前言**
 
@@ -14,15 +14,13 @@
 
 Why event-based historical data?
 
-- Point-in-time analysis (e.g., being able to train a predictive system using only data that was available at the time of the fraud attack, long before the financial loss became evident)
+- **Point-in-time analysis** (e.g., being able to train a predictive system using only data that was available at the time of the fraud attack, long before the financial loss became evident)
 
-**一、欺诈分析 Fraud Analytics**
+## 一、欺诈分析 Fraud Analytics
 
-1. Fraud Traits
+### 1. Fraudster Traits 黑产的一些特点 🥷
 
-*You don’t care about what (the IP, address, email, etc.). You care about who.*
-
-Impersonation Techniques
+Impersonation Techniques 黑产伪装手段
 - Fraudsters pretend to be someone else,
   - Device ID and behavioral info are harder to spoof unless the attack is carried out with malware used to skim the info from live visitors.
   - Emails & Phone numbers: fraudster steal account or use disposable SIM cards that match whereever victim lives.
@@ -32,48 +30,44 @@ Impersonation Techniques
 - [Friendly Fraudster] using own identity and plan to file a fraudulent chargeback.
 
 
-Deception Techniques
+Deception Techniques 常见的欺诈手段
 - IP masking
 - Social Engineering: the fraudster becomes a puppeteer (i.e., puppet master, not the headless chrome node, although some fraudsters do favor it). The victim—being the puppet—waltzes through the checkout process with their own email, IP, device, and so on. 
 - Fraud Ring
 
-Volatility
+Volatility 黑产攻击的波动性
 - Rules must be adjusted for different times of the year, 
 - Machine learning systems must be able to scale quickly as necessary, 
 - Manual review teams must be prepared and ramped up for busy times of the year.
 - Volatility is very difficult to prepare for from the machine learning/artificial intelligence perspective. It's important to carry out continual assessments during volatile times in order to make changes as necessary on the fly.
 
-Card and Account Testing
+Card and Account Testing 信用卡测试
+- Fraudsters attempt small purchases on an unsuspecting merchant’s site to see if the stolen card was approved.
+- When businesses experience a large number of authorizations and a high authorization decline rate, this may be an indicator that fraudsters have successfully submitted orders.
 
-Abuse Versus Fraud
+Abuse Versus Fraud 羊毛党🐏vs欺诈风险
 - Promo abuse 
 - Account creation
 - Content abuse, or review abuse
 - Click fraud
 
-Money Laundering and Compliance Violations
+Money Laundering and Compliance Violations 洗钱行为
 - Turn cryptocurrency into other forms of currency.
 
-4. Fraud Prevention Evaluation and Investment
+### 4. Fraud Prevention Evaluation and Investment
 
 Types of Fraud Prevention Solutions
 - Rules Engines
 - Machine Learning
 
+### 5. Machine Learning and Fraud Model
 
-5. Machine Learning and Fraud Model
+Advantages ML模型的优势
+- Scale, Subtlety, Diversity, Adaptability, Load variance, Pattern recognition
 
-Advantages 
-- Scale
-- Subtlety
-- Diversity
-- Adaptability
-- Load variance
-- Pattern recognition
-
-Challenges 
+Challenges ML模型的挑战
 - Relative Paucity of Data
-- Delayed Feedback and Overfitting
+- Delayed Feedback and Overfitting 
   - Might lead to false positives
 - The Labeled Data Difficulty
 - Intelligent Adversary
@@ -84,23 +78,111 @@ Dynamic Policies and the Merits of Story-Based Models
   - When a business tries to expand into a new region or audience, or when sales are spiking during the holidays, you may want to penetrate the market and accept more fraud.
   - On the positive side, dynamic business can yield control groups.
 - Story-based models
-  - Breaking down the modeling problem into smaller questions.
-  - Using “smaller” models will give product/policy/business folks a stronger sense of control but also risk overfitting.
-  - Neural networks are probably less suitable for this purpose, as they are much less transparent and intuitive than tree models or regression.
 
-Best Practices
-- Labeling
+Some Best Practices 
+- Labeling 黑产标注
   - Fraudsters change their behavior frequently, and friendly fraud causes terrible noise.
   - For example, imagine a classifier aiming to predict fraud but trained on a mix of ATO and account-opening fraud; the results would be far from optimal.
-- Featuring
+- Featuring 特征工程
   - Sanity-check the features, predict significant codependencies, and uncover complex features (such as IP types) that can represent significant informational gain for the model.
-- To find mostly bots, a top-down analysis is probably the most efficient approach.
-- Fine tuning, retraining, and gap analysis
+
 
 Popular Machine Learning Approaches
 - Accuracy Versus Explainability and Predictability
 - Precision refers to how often the transactions you reject are in fact true positives; that is, they really are fraud. 
 - Recall is telling you how much of the fraud attacking your business your team manages to catch.
+
+## II. Ecommerce Fraud Analytics 电商欺诈分析 🛍️
+
+### 6. Stolen Credit Card Fraud 信用卡欺诈
+
+**Defining Stolen Credit Card Fraud**
+- An attacker already has the compromised credentials (credit card number, expiration date, name on card, CVV) and they are attempting to purchase goods or sign up to a service in order to monetize those stolen details.
+
+**Email Analysis**
+- Aged email: an email created by a fraudster, often including a username to match a specific victim’s identity, which is then left alone to “age” for a period of time before the attack.
+- Spoofed/hacked email: the true email of the victim that has been hacked/breached by the fraudster.
+- Email mismatch: Fraudsters may use their own email or a disposable email address for the purpose of an attack.
+
+**Modus Operandi 作案手法 👿**
+
+Fraudsters need to prepare:
+- A clean device that has no cookies to tie it to previous attacks, nor any fraud-related software/apps/plug-ins installed.
+- Device settings to match the profile of the cardholder.
+- An IP provider + geolocation to match the victim’s alleged lifestyle.
+- Browsing and behavioral patterns tailored to match the victim’s alleged lifestyle (this includes time zone, language, browser history, referral URL, and browsing speed)
+
+During checkout the fraudster will provide:
+- Cardholder name and billing/shipping address.
+- Contact email. Fraudsters would go for a recently generated email (or a spoofed email of another victim), preferably one with a handle name similar to the cardholder’s name.
+- Contact phone. Fraudsters would provide bogus info and/or Voice over IP (VoIP)/disposable/public phone numbers that would match the geography of the cardholder.
+
+**Identification 欺诈识别**
+
+IP fraud identification - what should qualify as suspicious IP behavior？
+
+**Everything about IP**
+- IP Address
+  - Protocols at the Internet layer provide for delivery beyond the local network segment (LAN).
+  - The world is switching from 32-bit binary IPv4 addresses to a new 128-bit address system known as IPv6.
+  - A logical addressing scheme is maintained by the IP protocol at the Internet layer. The logical address is called the IP address. 
+  - Another Internet layer protocol called Address Resolution Protocol (ARP) assembles a table that maps IP addresses to physical addresses. This ARP table is the link between the IP address and the physical address burned into the network adapter card.
+- Internet Protocol
+  - The Internet Protocol (IP) provides a hierarchical, hardware-independent addressing system and offers the services necessary for delivering data on a complex, routed network. Each network adapter on a TCP/IP network has a unique IP address.
+  - Computers with multiple network adapters are also common. A computer that is acting as a router or a proxy server, for instance, must have more than one network adapter and, therefore, has more than one IP address. 
+  - IP addresses on the network are organized so that you can tell the location of the host.
+
+**IP masking**
+
+Mismatched IP
+- Geolocation/profiling mismatches between the IP connection and the cardholder’s alleged location/profile。
+- If we find this IP in a context that does not match the expected activity of this organization, we should suspect that it is being used as a proxy. 
+- [互联网黑产剖析——代理和匿名](https://zhuanlan.zhihu.com/p/41544284)
+
+Repeat offender IP
+- Significant evidence of the IP being linked to previous attacks.
+- IPs are often aggregated in a way that means they represent many users (home connections can be recycled by the ISP, mobile IPs are aggregated to a cell tower level, network address translation [NAT] routers will translate many employees of a corporation into a single IP, etc.).
+
+Nonunique IP
+- Significant evidence of attempts to cover the tracks of IPs by using public IPs.
+- Looking for the Tor regular expression on the reverse DNS of the IP is worthwhile. 
+
+Masked IP
+- Significant evidence of attempts to cover the tracks of IPs by using proxies or VPNs of all sorts.
+- Traceroute check allow effectively follow the geographic and IP routes of a packet of data.
+
+Digital mapping services
+- Digital mapping services, which translate IPs into geography and Whois/ASN (autonomous system number) data (i.e., registration data).
+- A grain of salt: [[Apple’s 2021 Private Relay release]](https://support.apple.com/en-il/HT212614) vs [Maxmind - Data Updates for Apple iCloud Private Relay](https://blog.maxmind.com/2021/09/data-updates-for-apple-icloud-private-relay/)
+
+Mitigation
+- Query more than one service for Whois/ASN data. Cross-reference different services against each other, plus do reverse DNS. Along these lines, it’s worth learning about the gethostbyaddr function, for instance, in the DNS/Reverse DNS Lookups section of PHP 5 Unleashed by John Coggeshall (SAMS). 
+- Consider metrics such as country/language breakdown, operating system breakdown, number of devices, weekend/night activity, and so on.
+- Some examples:
+  - Using IP Geolocation to Identify Legitimate Hotel IPs
+  - Using IP Traffic Trends to Identify Fake-Hotel IPs
+  - Using Hierarchy in Variable Design
+  - Using Hierarchy in IP Typology Variable Design
+  - If dealing with a fraud ring, consider reversing this hierarchy in an attempt to hunt down all the proxies.
+  
+### 7. Address Manipulation and Mules 地址欺诈
+
+**Porch Piracy “门廊海盗”**
+- Reshippers：Cross-border reshipping or freight forwarding services easily become target;
+- AVS Manipulation: AVS system only checks the numbers of an address, not the words.
+
+**Shipping Mules**
+- If the fraudster can buy stolen card information for a number of cards, all connected to the same geographic area, and they can find a mule who lives in the right area, they can place plenty of fraudulent purchases that look legitimate, have them all sent to the mule, and then have the mule send them on to wherever is convenient for the fraudster. 
+
+**Adding an Address to the Card**
+- Targets the customer support representatives of the credit card’s issuer and persuades them to add their (the fraudster’s) own shipping address to the credit card on file. 
+
+**Triangulation**
+- The fraudster collects real payments as "businesses" from their own customers (and in the process, gains their payment information for future fraud) and uses stolen information to place the order with the merchant.
+
+**Identification and Mitigation**
+
+
 
 =======================================================================================================
 ### Merchant Risk Council (MRC) 2022 Global Payments and Fraud Survey Report 
