@@ -7,7 +7,8 @@
 **经典论文总结**
 - [反欺诈算法经典论文解读](https://zhuanlan.zhihu.com/p/85155064)
 - [Awesome Collection of Fraud Detection Papers](https://github.com/benedekrozemberczki/awesome-fraud-detection-papers)
-
+- [Trustworthy Machine Learning](https://people.duke.edu/~zg70/TML.html)
+- [Social Networks and Web Security and Privacy](https://people.duke.edu/~zg70/SocialNetworkSP.html)
 
 ## 目录
 
@@ -193,6 +194,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 - [[JD Finance] Graph mining assisted semi-supervised learning for fraudulent cash-out detection](https://nosh.northwestern.edu/wp-content/uploads/2020/10/Graph-mining-assisted-semi-supervised-learning-for-fraudulent-cash-out-detection.pdf)
 - [A novel approach for automated credit card transaction fraud detection using network-based extensions](http://eliassi.org/papers/vanvlasselaer_dss2015.pdf)
 - [[Capital One (2019)] DeepTrax: Embedding Graphs of Financial Transactions](https://arxiv.org/pdf/1907.07225.pdf)
+- [A Comprehensive Survey on Graph Anomaly Detection with Deep Learning](https://arxiv.org/pdf/2106.07178.pdf)
 
 **图神经网络入门**
 - [Graph neural networks: A review of methods and applications](https://arxiv.org/pdf/1812.08434.pdf)
