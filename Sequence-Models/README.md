@@ -1,4 +1,6 @@
 
+# Sequence Models 序列模型 
+
 ## RNN
 
 RNN shares features learned across different positions of the sequence.
@@ -7,11 +9,13 @@ RNN shares features learned across different positions of the sequence.
 
 将网络的隐含层输出又作为自身的输入，展开后相当于堆叠多个共享隐含层参数的前馈神经网络。
 
-![image](https://user-images.githubusercontent.com/46979228/182639747-b3fb1c9b-949b-4154-ba57-64a39039bc73.png)
+<img src="https://user-images.githubusercontent.com/46979228/182639747-b3fb1c9b-949b-4154-ba57-64a39039bc73.png" alt="GNN" width = "200"/>
+
 
 当使用RNN处理一个序列输入时，需要讲RNN按输入时刻展开，然后将序列中的每个输入对应到网络不同时刻的输入上，并将当前时刻隐含层的输出作为下一时刻的输入。
 
-![image](https://user-images.githubusercontent.com/46979228/182641087-068a70c7-717c-4cfc-9a01-1318911c7aa7.png)
+<img src="https://user-images.githubusercontent.com/46979228/182641087-068a70c7-717c-4cfc-9a01-1318911c7aa7.png" alt="GNN" width = "600"/>
+
 
 ${h_t} = tanh(W^{xh}x_t + b^{xh} + W^{hh}h_{t-1} + b^{hh})$
 
@@ -32,7 +36,8 @@ Vanishing Gradient Problems
   
 ## LSTM
 
-![image](https://user-images.githubusercontent.com/46979228/182665493-1787c40e-6d40-4c5a-960a-023dda984b8c.png)
+<img src="https://user-images.githubusercontent.com/46979228/182665493-1787c40e-6d40-4c5a-960a-023dda984b8c.png" alt="GNN" width = "800"/>
+
 
 $\sigma$ 表示sigmoid函数，输出在0-1，作为加权求和的系数。由于旧状态与新状态的贡献需要独立的系数分别控制，因此引入门控机制。
 
@@ -58,3 +63,15 @@ $\sigma$ 表示sigmoid函数，输出在0-1，作为加权求和的系数。由�
 
 常用的NN模型: Pillar Models - MLP, CNN, RNN, Attention Models.
 - [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/pdf/1409.3215.pdf)
+
+**Beam Search**
+- [通俗理解搜索算法Beam Search](https://zhuanlan.zhihu.com/p/82829880)
+- [Seq2Seq模型在事件抽取上的应用](https://zhuanlan.zhihu.com/p/466586095)
+  - 事件抽取 (Event Extraction, EE): Trigger Identification, Trigger Classification, Argument Identification, Argument Classification;
+
+**BLEU Score**
+- [BLEU score评估模型](https://zhuanlan.zhihu.com/p/338488036)
+
+### Attention Model 注意力机制
+
+生成目标语言时，不仅考虑前一个时刻的状态，更关注要生成的单词和源语言哪些单词更相关。
