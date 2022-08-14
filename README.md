@@ -93,6 +93,7 @@
 
 
 **3. 数据增强 Data Augmentation**
+- [[Snap Research] Data Augmentation for Graph Neural Networks](https://arxiv.org/pdf/2006.06830.pdf)
 - [[Knowledge Graph] Injecting Semantic Background Knowledge
 into Neural Networks using Graph Embeddings](https://perso.liris.cnrs.fr/pierre-edouard.portier/publications/2017_ZIEGLER_PORTIER_WETICE_injecting_semantic_background_knowledge_into_neural_networks_using_graph_embeddings.pdf)
 
@@ -243,6 +244,8 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 **AB Testing**
 - [Overlapping Experiment Infrastructure: More, Better, Faster Experimentation](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36500.pdf)
+
+
 
 **金融场景风控模型策略**
 
