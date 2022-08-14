@@ -32,9 +32,21 @@
 - [02. 谱域方法](https://zhuanlan.zhihu.com/p/369382428)
 - [03. 空间域方法](https://zhuanlan.zhihu.com/p/369425550)
 
+图神经网络主流是消息传递范式
+- [Geometric Deep Learning Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/pdf/2104.13478.pdf)
+- [Graph Attention MLP with Reliable Label Utilization](https://arxiv.org/pdf/2108.10097.pdf)
+- [Graph Neural Networks Inspired by Classical Iterative Algorithms](https://arxiv.org/pdf/2103.06064.pdf)
+- [Do Transformers Really Perform Bad for Graph Representation?](https://arxiv.org/pdf/2106.05234.pdf)
 
 **Message Passing消息传递范式：**
 - [理解GNN消息传递机制](https://zhuanlan.zhihu.com/p/352510643)
+
+消息传递结构的数学依据
+- 谱分析表达式归纳得到GCN
+- 对图上某一类损失函数的优化过程视为消息传递
+- 图上进行热力学扩散的过程认为是消息传递 
+  - [Predict then Propagate: Graph Neural Networks meet Personalized PageRank](https://arxiv.org/pdf/1810.05997.pdf)
+  
 
 基于消息传递范式的图神经网络（MPNN）旨在将节点的特征传播到邻居节点上，通常也会考虑添加一些权重来分配邻居之间传播特征的比例。
 
@@ -52,6 +64,12 @@
   - 针对邻居信息求和后的结果，送入MLP，获得更抽象的特征表示。
 - [How Powerful are Graph Neural Netowrks?](https://arxiv.org/pdf/1810.00826.pdf)
   - 聚合函数+组合函数。设计可学习参数。
+
+**异质图**
+- [Are we really making much progress? Revisiting, benchmarking, and refining heterogeneous graph neural networks](https://keg.cs.tsinghua.edu.cn/jietang/publications/KDD21-Lv-et-al-HeterGNN.pdf)
+- 每一种边类型一种函数：GraphSage->RGCN, GAT->RGAT, HGT
+- 抽取数个包括部分边类型的子图，然后组合：SIGN->NARS
+- 以元路径构造新图，将异质图同质化：GAT->HAN
 
 
 ### 目录
