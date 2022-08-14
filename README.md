@@ -150,6 +150,7 @@ Recurrent Neural Network](https://www.ijcai.org/proceedings/2021/0505.pdf)
 LSTM通过训练控制参数决定哪些信息被保留/忘记。
 - [[Sepp Hochreiter, Jurgen Schmidhuber] Long-Short Term Memory](http://www.bioinf.jku.at/publications/older/2604.pdf)
 - [A Tutorial into LSTM](https://arxiv.org/pdf/1909.09586.pdf)
+- [[Linkedin] Using deep learning to detect abusive sequences of member activity](https://engineering.linkedin.com/blog/2021/using-deep-learning-to-detect-abusive-sequences-of-member-activi)
 
 **Ads/RecSys/用户行为序列模型**
 - [[Wide&Deep] Wide & Deep Learning for Recommender Systems (Google 2016)](https://arxiv.org/pdf/1606.07792.pdf)
