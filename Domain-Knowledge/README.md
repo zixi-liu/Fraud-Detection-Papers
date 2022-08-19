@@ -10,6 +10,36 @@
 
 ## Payments and Fraud Prevention 
 
+### Overview of Payment Technology
+
+Magnetic Stripe Card 磁条卡
+- Static data programmed onto card at issuance. 
+  - Data contains Primary Account Number (PAN), Expiry Date, and Usage Controls.
+  
+Smart Cards
+- Card with Integrated Circuit (ICC)
+  - Contains secret keys and PINs, cryptographic use for proof of use, and can talk to outside world.
+- EMV card (card with embedded microchips) transaction flow
+  - Select application -> read card data -> terminal decision -> card decision [online authorization] -> complete [issuer scripting]
+
+Contactless Payments
+- EMV card with antenna
+  - Faster transactions <500ms
+
+Mobile Payments 
+- Near-field Communication (NFC)
+  - Tokenization.
+  - Card date can be used to make "in-app" purchases.
+
+Peer-to-Peer Payments 
+- Money transfered directly from one account to another.
+  - Using networks such as Paypal or Venmo.
+  - Using direct bank-to-bank method like Zelle.
+  
+Alternative Payments 
+- QR codes or 2D barcodes
+
+
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
 
