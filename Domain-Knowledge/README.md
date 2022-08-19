@@ -39,6 +39,19 @@ Peer-to-Peer Payments
 Alternative Payments 
 - QR codes or 2D barcodes
 
+### Payments Transaction Routing
+
+[Awesome Talk on Payment Transaction Routing at LinkedIn](https://www.youtube.com/watch?v=afs6CnU6qtk)
+
+Payments Transaction Routing Flow
+- Intent to order
+- Intent to order confirmed
+- Orders Approved
+
+Member -> Order -> Payment Service Provider (Payment Gateway, Payment Processors, Acquirers) -> Payment Networks -> Issuers
+
+**Approval Rate = Orders Approved / Intent to order confirmed**
+
 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
