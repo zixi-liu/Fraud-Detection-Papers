@@ -41,6 +41,22 @@ Alternative Payments
 
 ### Payments Transaction Routing
 
+Payment routing is a payment processing feature for businesses working with multiple payment providers. It allows sending each transaction to the optimal payment gateway based on selected parameters.
+
+**Why Card Decline Happens?**
+
+A card decline occurs when the card is unable to be processed, which can happen at several points in the transaction process. Card declines happen for different reasons and many of these reasons are preventable by using services like Account Updater to keep card information up to date. 
+
+**Payment Gateway**
+- An interface between the merchant's website and acquirer. Card and transaction details are collected and stored on the secure surface of payment gateway. Once the payment confirmed by card schemes, payment gateway sends transaction back to merchant's website.
+  - Authorization
+  - Settlement
+  - Security (Protocols, Signatures, PCI DSS, Multi-factor Authorization, Tokenizations)
+  - Bin-based Routing
+
+**Dynamic Routing**
+- Select the best route based on multiple parameters, such as card issuer/type/brand, auth mode (CVV/3DS), geolocation, store, currency, amount, date & time, metadata, and other payment routing data.
+ 
 [Awesome Talk on Payment Transaction Routing at LinkedIn](https://www.youtube.com/watch?v=afs6CnU6qtk)
 
 Payments Transaction Routing Flow
@@ -51,6 +67,9 @@ Payments Transaction Routing Flow
 Member -> Order -> Payment Service Provider (Payment Gateway, Payment Processors, Acquirers) -> Payment Networks -> Issuers
 
 **Approval Rate = Orders Approved / Intent to order confirmed**
+
+
+
 
 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
