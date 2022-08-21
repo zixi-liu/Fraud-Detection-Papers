@@ -1,5 +1,9 @@
 
-## Industry Applications
+## 目录
+
+- [《支付方法论》阅读笔记](#Payments-P)
+
+## Industry Applications 业界案例
 
 **Anti-Abuse AI Team @Linkedin**
 
@@ -8,9 +12,24 @@
 
 [Abstract] The Anti-Abuse AI Team at LinkedIn creates, deploys, and maintains models that detect and prevent many types of abuse, including the creation of fake accounts, member profile scraping, automated spam, and account takeovers. Bad actors use automation to scale their attempted abuse. There are many unique challenges associated with using machine learning to stop abuse on a large professional network including maximizing signal, keeping up with adversarial attackers, and covering many heterogeneous attack surfaces. In addition, traditional machine learning models require hand-engineered features that are often specific to a particular type of abuse and attack surface. To address these challenges, we have productionalized a deep learning model that operates directly on raw sequences of member activity, allowing us to scalably leverage more of the available signal hidden in the data and stop adversarial attacks more effectively. Our first production use case of this model was the detection of logged-in accounts scraping member profile data. We will present results demonstrating the promise of this modeling approach and discuss how it helps to solve many of the unique challenges in the anti-abuse domain.
 
-## Payments and Fraud Prevention 
+## Payments and Fraud Prevention 支付与反欺诈
 
-### Overview of Payment Technology
+### Payments P
+
+### 《支付方法论》阅读笔记
+
+1、支付的基本概念
+
+1.1 支付的三个基本过程：交易、清分、和结算。
+- 交易的重要性：拓展交易场景
+  - 确保支付指令的生成、确认与传输。包括交易主体的合法性和身份确认、支付方式确认、支付通道的计算与决策、支付能力查证、交易结果的存储与返回信息归类等等。
+- 清分(Clearing)：算出债权人与债务人各自应收应付，并没有发生实际交割。
+- 结算(Settlement)：资产交割。
+
+*“支付是交易的终点，是货币流动的起点。”*
+
+
+### Overview of Payment Technology 支付技术总结
 
 Magnetic Stripe Card 磁条卡
 - Static data programmed onto card at issuance. 
@@ -102,6 +121,8 @@ Advanced authorization rates:
 - Abandonment rate / drop-off rate with 3D Secure
 
 Decline rate per issuer and by reason code
+- [WorldPay - Payment Transaction Response Codes](http://support.worldpay.com/support/CNP-API/content/paytransrespcodes.htm)
+- [WorldPay - 3DS Authentication Result Codes](http://support.worldpay.com/support/CNP-API/content/3dsauthrescodes.htm)
 
 Capture rate: (percentage of authorized transactions that are captured) enables merchants to identify if all authorized transactions are eventually sent for settlement. An authorization can be captured or cancelled for several reasons, such as fraud or product shortage.
 
