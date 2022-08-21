@@ -1,7 +1,7 @@
 
 ## 目录
 
-- [《支付方法论》阅读笔记](#Payments-P)
+- [《支付方法论》阅读笔记](#《支付方法论》阅读笔记)
 
 ## Industry Applications 业界案例
 
@@ -14,7 +14,6 @@
 
 ## Payments and Fraud Prevention 支付与反欺诈
 
-### Payments P
 
 ### 《支付方法论》阅读笔记
 
