@@ -41,11 +41,22 @@ Alternative Payments
 
 ### Payments Transaction Routing
 
+*Implementing the right local payment method is a real lever for conversion.*
+
 Payment routing is a payment processing feature for businesses working with multiple payment providers. It allows sending each transaction to the optimal payment gateway based on selected parameters.
 
 **Why Card Decline Happens?**
 
 A card decline occurs when the card is unable to be processed, which can happen at several points in the transaction process. Card declines happen for different reasons and many of these reasons are preventable by using services like Account Updater to keep card information up to date. 
+
+**Popular Online Payment Methods**
+- Credit/Debit Cards
+- ACH Payments (Automated Clearing House): the electronic funds transfer in batches, considered the most secure mode of the online and automated recurring payment, processed in two to three working days.
+  - Direct Deposits: The ACH Direct Deposits can be made using Paychecks, Government Benefits, Tax Refunds, Interest Payments, and others.
+  - Direct Payments: Paying a bill online, sending money from one bank account to another, sending payments via PayPal, Stripe, Braintree, and other social payment apps, and more are the prime examples of ACH Payments.
+- Digital Wallets: Digital wallets do not require a bank account with a physical branch. They enable wider financial inclusion. Digital Wallets can also process digital or cryptocurrencies. Some of the payment services providers also serve as payment aggregators and offer merchant’s accounts.
+- Mobile Payments: Mobile Wallet service allows its users to store digital cash on their phones. Some of the leading examples of mobile payments are Apple Pay, Samsung Pay, Ali Pay, Google Pay, Amazon Pay, and some others.
+- Wire Transfers: Most costly, unsafe, undisputable, but faster and instant way to make recurring payments when they are international. With the rise of digital wallets and mobile payments, wire transfer is not as effective and efficient as it was considered earlier.
 
 **Payment Gateway**
 - An interface between the merchant's website and acquirer. Card and transaction details are collected and stored on the secure surface of payment gateway. Once the payment confirmed by card schemes, payment gateway sends transaction back to merchant's website.
@@ -53,6 +64,9 @@ A card decline occurs when the card is unable to be processed, which can happen 
   - Settlement
   - Security (Protocols, Signatures, PCI DSS, Multi-factor Authorization, Tokenizations)
   - Bin-based Routing
+  
+**Static Routing**
+- Manually configured system that is pre-defined for the customers. 
 
 **Dynamic Routing**
 - Select the best route based on multiple parameters, such as card issuer/type/brand, auth mode (CVV/3DS), geolocation, store, currency, amount, date & time, metadata, and other payment routing data.
@@ -68,9 +82,42 @@ Member -> Order -> Payment Service Provider (Payment Gateway, Payment Processors
 
 **Approval Rate = Orders Approved / Intent to order confirmed**
 
+### Payment KPIs
 
+**Must-Have KPIs include:**
+- Authorization rate: allows merchants to see the performance of card payments (that require a real-time approval from the card issuer) and whether payments are proceeding successfully. 
+- Conversion rate: percentage of unique visitors that are able to pay and complete their purchase. 
+- Fraud rate: monitors fraudulent transactions.
+- Chargeback rate: chargebacks happen for multiple reasons (including fraud) when a customer contacts their card issuer to request a refund.
+- Total cost per transaction: many merchants find they need to assess the cost of accepting payment.
 
+**Advanced KPIs include:**
 
+Advanced authorization rates: 
+- Authorization rate by country (location of buyer and/or of merchant)
+- Authorization rate per PSP
+- Authorization rate per issuer and/or acquirer
+- Authorization rate across other dimensions such as the device used by the consumer, whether there has been a retry via another acquirer, whether another form of payment is used after an initial decline, etc.
+- Authorization rate per authentication method (3D Secure version 1, 3D Secure version 2, non-authenticated transaction, by-pass authentication, eligible to exemptions)
+- Abandonment rate / drop-off rate with 3D Secure
+
+Decline rate per issuer and by reason code
+
+Capture rate: (percentage of authorized transactions that are captured) enables merchants to identify if all authorized transactions are eventually sent for settlement. An authorization can be captured or cancelled for several reasons, such as fraud or product shortage.
+
+False positive rate: an important KPI that tracks genuine transactions made by a real client, but which is declined due to suspicion of fraud. 
+
+**Emerging KPIs include:**
+- Incremental sales via A/B testing: the ability of payment to generate incremental sales is typically hard to measure.
+- Token management: more and more merchants are enabling omnichannel use cases, and leverage the tokenization of customer’s payment data. It enables merchants to follow spending per sales channel and set up strategies to drive a customer from one channel to another.
+
+**How to use KPIs to optimize payment?**
+- authorization rate
+  - Improvement of authorization rates through BIN analysis can be a very useful tool. It allows merchants to identify with which issuer they encounter difficulties and directly engage with them (or via their PSP / acquirer) to discuss areas of improvement. 
+- fraud rate
+- cost of payment acceptance
+  - For instance, some merchants implemented a surcharging policy (in countries where it is allowed) or ‘promoted’ alternative payment methods in specific
+countries.
 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
@@ -130,6 +177,28 @@ Money Laundering and Compliance Violations 洗钱行为
 Types of Fraud Prevention Solutions
 - Rules Engines
 - Machine Learning
+  - “adapt quickly to big new fraud tricks”
+- Hybrid Systems
+- Data Enrichment Tools
+  - BioCatch started by collecting behavioral biometric data such as mouse motion, typing patterns, and the way one holds and operates a mobile device. When you control someone else’s device remotely over the internet, your hand–eye coordination gets awkward and delayed due to latency; given sufficiently sensitive behavioral analytics, it can be immediately detected.
+- Privacy-enhancing Technology 
+
+Measuring Loss and Impact
+- Number of fraud chargebacks received - it’s crucial to stay well below the chargeback thresholds set by the card companies, with a comfortable margin of error.
+- False positives
+- Benchmarking against industry averages
+
+Important Metrics
+- Fraud rate, or the number of attacks you’re seeing as a percentage of overall transactions or activities. Break this down into types of attack.
+- The number of fraudulent attempts you stop, both as a percentage of the total number of attacks and in dollar value.
+- The exposure dollar amount versus the actual losses.
+- Chargeback rate
+- Successful chargeback dispute rate
+- Manual review rate
+- Percentage of manually reviewed cases that are approved
+- The average speed of manual review.
+- Account-level abuses such as coupon abuse, wire fraud losses, peer-to-peer (P2P) fraud losses, fake reviews, and more that harm the business’s bottom line and/or reputation.
+
 
 ### 5. Machine Learning and Fraud Model
 
