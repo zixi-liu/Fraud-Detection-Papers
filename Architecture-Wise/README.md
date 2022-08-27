@@ -11,6 +11,9 @@
   - 点分割（vertext partitioning or edge-cut partitioning）
   - 边分割（edge partitioning or vertex-cut partitioning）
 
+图分割的两个目标是负载均衡load balancing（减少存储代价）和最小化切边或点minimum cuts（减少通讯代价），同时优化这两个目标是平衡图分割（balanced graph partitioning）问题。
+
+
 子图采样
 - 单机内存-PaGraph
 
