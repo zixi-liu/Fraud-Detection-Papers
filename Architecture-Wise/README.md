@@ -2,7 +2,14 @@
 
 - [[Google Graph Mining] Graph Mining and Learning @ NeurIPS](https://gm-neurips-2020.github.io/)
 
+
+
 **图数据采样**
+
+图分割
+- [图分割技术总结](https://zhuanlan.zhihu.com/p/446152634)
+  - 点分割（vertext partitioning or edge-cut partitioning）
+  - 边分割（edge partitioning or vertex-cut partitioning）
 
 子图采样
 - 单机内存-PaGraph
@@ -31,3 +38,5 @@ The input graph can be observed in all the dataset splits (training, validation 
 We break the edges between splits to get multiple graphs
 - Now we have 3 graphs that are independent
 
+Each split can only observe the graph(s) within the split.
+- A successful model should generalize to unseen graphs.
