@@ -5,6 +5,7 @@
 - [《社会工程》阅读笔记](#社会工程-阅读笔记)
 - [Overview of Payment Technology 支付技术总结](#Overview-of-Payment-Technology-支付技术总结)
 - [Payments Transaction Routing](#Payments-Transaction-Routing)
+- [Payments orchestration](#Payments-Orchestration)
 - [Payment KPIs](#Payment-KPIs)
 - [EMV 3DS](#EMV-3DS)
 - [How to Create a Fraud Prevention Unit](#How-to-Create-a-Fraud-Prevention-Unit)
@@ -181,6 +182,22 @@ Payments Transaction Routing Flow
 Member -> Order -> Payment Service Provider (Payment Gateway, Payment Processors, Acquirers) -> Payment Networks -> Issuers
 
 **Approval Rate = Orders Approved / Intent to order confirmed**
+
+
+### Payments Orchestration
+Payments orchestration
+- an abstraction layer that met the four following conditions: one API, connectivity to providers that acquire cards and provide local payment methods, end-user routing and management configurable tools, and real-time ledgers.
+
+**Architecture Diagram**
+- API (Account Verification, Authorization, Capture, Lifecycle Notifications, Partial Refunds, Redirects, Reporting API)
+- Application (BIN file, FX Tracker tracks currency rate at time of settlement, payment method presentation, PCI Level 1 Certified Token Vault, Transaction Manager)
+- Attribute (Idempotency that prevent double spending, currency support)
+- Endpoint (3DS provider-standalone connection, PSP)
+- Endpoint-PayMethod (Paypal, Klarna, U.S.ACH etc.)
+- Feature (Algorithmic routing, integration to account updater programs, dynamic routing, endpoint timeouts, installment payments, merchant initiated transactions, partial captures - The ability to submit the same transaction for clearing multiple times for customizable amounts, PSP declinen codes)
+- Instance 
+- Reporting (A/B Testing, Routing report etc.)
+- Service (iOS/Android SDK, Blocklist, Canonical Message Converter, Logger, Message Decision Handler, Payments Data Warehouse, Transaction Router, Retry Manager includes 3DS soft declines, Payment Method Catalog, Network Token Requestor, MID Manager)
 
 ### Payment KPIs
 
