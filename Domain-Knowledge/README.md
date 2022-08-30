@@ -4,6 +4,8 @@
 - [《支付方法论》阅读笔记](#支付方法论-阅读笔记)
 - [《社会工程》阅读笔记](#社会工程-阅读笔记)
 - [EMV 3DS](#EMV-3DS)
+- [How to Create a Fraud Prevention Unit][#How-to-Create-a-Fraud-Prevention-Unit]
+- [[O'Reilly] Practical Fraud Prevention](#[O'Reilly]-Practical-Fraud-Prevention)
 
 ## Industry Applications 业界案例
 
@@ -239,10 +241,65 @@ Then, the issuer’s 3D Secure service provider assesses the transaction risk. I
 - Reduced risk of fraud
 - Chargeback Liability shift of 3D Secure
  
+ 
+### How to Create a Fraud Prevention Unit
+
+**Types of Online Fraud**
+- New Account Fraud
+- Synthetic Profiles
+- Account Takeover (ATO)
+- Mobile Fraud (track fraud by channel)
+- First Party Fraud
+- Merchant Fraud
+- Transaction Laudering
+
+**Regulation**
+- General Data Protection Regulation (GDPR)
+- Payment Services Directive (PSD2)
+  - Strong Customer Authentication (SCA) for account-based payments and card-based payments (something you know i.e. password/pin, somthing you have i.e. token, phone, somthing you are i.e. biometric identifier)
+- Transaction Risk Analysis (TRA)
+
+**Fraud Managements**
+- strategic, financial, operational, compliance, reputational fraud.
+
+**Frameworks for Fighting Fraud**
+- When to fight: proactiive vs. reactive
+- How to fight: prevention, detection, measurement, analytics, investment and communication.
+
+**Measuring the Scale of Fraud**
+- Fraud loss chargebacks
+- Chargeback representment win rate
+- Fraud exposure (fraud prevented + fraud loss)
+- Fraud exposure rate (fraud orders/total orders)
+- Fraud loss chargeback rate
+- Fraud loss rate
+
+**Operational KPIs**
+- Authorization rate (by bin and card scheme)
+- Time to review (manual rebiew time - non-review time)
+- Manual review rate
+- Decline rate 
+- False positive rate (TP/TP+FN)
+  - customer reorder
+  - manual review
+  - auto-accept
+
+**KPI for Fraud Analysts**
+- Chargeback released (Leakage rate)
+- Approval Rate
+- Manual review time
+
+**Benchmarking**
+- Fraud by average ticket value
+- Most typical fraud by type
+- Fraud management challenges
+- Detection tools and techniques
+- Chargeback win rates
+
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
 
-### [O'Reilly] Practical Fraud Prevention 📖
+### [O'Reilly] Practical Fraud Prevention
 
 **前言**
 
