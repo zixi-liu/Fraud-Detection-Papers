@@ -3,6 +3,7 @@
 
 - [《支付方法论》阅读笔记](#支付方法论-阅读笔记)
 - [《社会工程》阅读笔记](#社会工程-阅读笔记)
+- [EMV 3DS](#EMV-3DS)
 
 ## Industry Applications 业界案例
 
@@ -212,6 +213,32 @@ False positive rate: an important KPI that tracks genuine transactions made by a
   - For instance, some merchants implemented a surcharging policy (in countries where it is allowed) or ‘promoted’ alternative payment methods in specific
 countries.
 
+### EMV 3DS
+
+- [3DS2 (3D Secure 2.0) - Everything You Need to Know [2021 Update]](https://www.emerchantpay.com/insights/3ds2/)
+- [Visa's 3DS](https://www.visa.co.uk/dam/VCOM/regional/ve/unitedkingdom/PDF/visa-preparing-for-psd2-sca-publication-version-1-1-05-12-18-002-final.pdf)
+
+3D Secure 2.0 is an authentication protocol that aims to reduce fraud and enhance security in online card payments.
+- perform strong (two-factor) authentication. It aims to reduce fraud and enhance security in online card payments. 
+- an enhanced version of the old 3DS protocol and introduced a more frictionless payment flow across different devices. 
+- 3DS stands for Three-Domain Secure. 
+- Visa created the authentication protocol in 1999, to help merchants and issuing banks authenticate cardholders’ identity when shopping online.
+
+The three domains are 
+- the acquirer domain (the merchant and the bank to which the money is paid), 
+- the issuer domain (the bank that issued the cardholder’s card) and 
+- the interoperability domain (the infrastructure used by the card scheme to enforce 3DS protocol, i.e. the Internet, the Merchant Plugin, and Access Control Server (ACS)).
+
+The cardholder enters their card details at checkout. At this point, the merchant’s 3D Secure service provider sends an authentication request with rich data to the issuer. This data includes a varying amount of cardholder and device information upon regional or market law restrictions, such as device ID, MAC address, geo-location, previous transactions and more.
+
+Then, the issuer’s 3D Secure service provider assesses the transaction risk. If the transaction is determined as high-risk, the transaction goes through a challenge. In other words, it prompts the cardholder to verify their identity using biometrics, and/or two-factor authentication, i.e. a one-time password, a fingerprint etc. If the transaction is deemed as low-risk, no further action is required on the cardholder’s end. The issuer sends the authentication result to the merchant, who in turn submits the transaction for authorisation with a flag indicating the authentication result.
+
+**Benefits of 3DS**
+- Enhanced user experience across devices and in-app
+- Rich data exchange means more secure payments
+- Reduced risk of fraud
+- Chargeback Liability shift of 3D Secure
+ 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
 
