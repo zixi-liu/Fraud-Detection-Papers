@@ -219,6 +219,10 @@ Payments orchestration
 - Reporting (A/B Testing, Routing report etc.)
 - Service (iOS/Android SDK, Blocklist, Canonical Message Converter, Logger, Message Decision Handler, Payments Data Warehouse, Transaction Router, Retry Manager includes 3DS soft declines, Payment Method Catalog, Network Token Requestor, MID Manager)
 
+**Unified Payment Interface (UPI)**
+
+
+
 ### Payment KPIs
 
 **Must-Have KPIs include:**
@@ -462,6 +466,13 @@ engineering."
 **How to Beat BNPL Fraud**
 - Behavioral biometrics, patterns of behaviors, device information obtained through digital fingerprinting are all analysed automatically
 and in real time.
+
+**5 BNPL Business Models**
+- Integrated shopping apps (Afterpay, Klarna)
+- Card-linked installment offerings
+- Off-card financing solutions (Affirm)
+- Virtual rent-to-own models
+- vertical-focused larger-ticket plays
 
 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
