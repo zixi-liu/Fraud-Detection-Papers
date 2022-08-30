@@ -8,6 +8,9 @@
 - [Payment KPIs](#Payment-KPIs)
 - [EMV 3DS](#EMV-3DS)
 - [How to Create a Fraud Prevention Unit](#How-to-Create-a-Fraud-Prevention-Unit)
+- [Account Takeover](#Account-Takeover)
+- [Financial Impacts of Cybercrime](#Financial-Impacts-of-Cybercrime)
+- [BNPL Overview](#BNPL-Overview)
 - [[O'Reilly] Practical Fraud Prevention](#[O'Reilly]-Practical-Fraud-Prevention)
 
 ## Industry Applications 业界案例
@@ -298,6 +301,64 @@ Then, the issuer’s 3D Secure service provider assesses the transaction risk. I
 - Fraud management challenges
 - Detection tools and techniques
 - Chargeback win rates
+
+**Reducing PSD2/SCA Friction**
+- Two-factor authentication (password + verification via SMS code)
+- SCA through 3DS2
+  - additional data is gathered during each transaction; customer behaviours and device ID, transaction history etc.
+- TRA exemption
+
+
+### Account Takeover
+
+
+
+### Financial Impacts of Cybercrime
+
+Two areas of cybercrime that are difficult to measure are IP theft and loss of opportunity.
+
+Stolen IP and confidential business information, online fraud, financial manipulation of publicly traded companies, and the cost of securing networks after hacking are some of the most devastating effects to companies right now.
+
+How much it costs to set up the automated attack—including the credentials, automation tools, and botnets—versus the estimated return. These attacks can
+provide a solid ROI for cybercriminals even when the value per transaction is low.
+
+**ROI = Value of attack * Change of Success / Cost - Initial Investment (100%)**
+
+**Common Types of Attack**
+- Low-cost credential stuffing attacks
+- Get credentials
+- Automate login
+- Simulate relevant geography (proxy services)
+- Defeat defenses
+
+**How to Detect Automated Attacks**
+- Examine application traffic patterns
+- Check your login success ratios
+- Look for diurnal patterns
+- Check for attacker retooling
+
+### BNPL Overview
+
+Millennials and Gen Z spend 44% and 72% more on orders if BNPL is available as an option.
+
+**Types of BNPL Fraud**
+- Identity theft and social engineering scams
+- Account Takeover (ATO)
+- Friendly fraud
+
+"As fraudsters can easily circumvent rules-based fraud management systems, all they
+need to do is act as normal as possible over a period of time (sometimes weeks or even
+months). They achieve this by browsing shops online, adding/removing small items to
+checkout, making small purchases similar to the ones the real account holder will make.
+They will even engage customer relations to make a connection with the merchant. Later
+in the process, high-value goods will be purchased and even card details changed to
+make payments. This is part of a Trojan Horse Scheme and is essentially a form of social
+engineering."
+
+**How to Beat BNPL Fraud**
+- Behavioral biometrics, patterns of behaviors, device information obtained through digital fingerprinting are all analysed automatically
+and in real time.
+
 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
