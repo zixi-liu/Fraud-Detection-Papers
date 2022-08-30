@@ -8,6 +8,7 @@
 - [Payments Orchestration](#Payments-Orchestration)
 - [Payment KPIs](#Payment-KPIs)
 - [EMV 3DS](#EMV-3DS)
+- [Credit Card Payment Processing Rules and Laws](#Credit-Card-Payment-Processing-Rules-and-Laws)
 - [How to Create a Fraud Prevention Unit](#How-to-Create-a-Fraud-Prevention-Unit)
 - [Account Takeover](#Account-Takeover)
 - [Financial Impacts of Cybercrime](#Financial-Impacts-of-Cybercrime)
@@ -22,6 +23,25 @@
 
 
 [Abstract] The Anti-Abuse AI Team at LinkedIn creates, deploys, and maintains models that detect and prevent many types of abuse, including the creation of fake accounts, member profile scraping, automated spam, and account takeovers. Bad actors use automation to scale their attempted abuse. There are many unique challenges associated with using machine learning to stop abuse on a large professional network including maximizing signal, keeping up with adversarial attackers, and covering many heterogeneous attack surfaces. In addition, traditional machine learning models require hand-engineered features that are often specific to a particular type of abuse and attack surface. To address these challenges, we have productionalized a deep learning model that operates directly on raw sequences of member activity, allowing us to scalably leverage more of the available signal hidden in the data and stop adversarial attacks more effectively. Our first production use case of this model was the detection of logged-in accounts scraping member profile data. We will present results demonstrating the promise of this modeling approach and discuss how it helps to solve many of the unique challenges in the anti-abuse domain.
+
+**Payment Anallytics at Netflix**
+
+- [Payment Analytics at Netflix](https://www.youtube.com/watch?v=xCwW1OENCOY)
+  - Minimize involuntary churn
+  - Optimize payment routing
+  - Minimize False positives/negatives
+  - Building tools for exploration of data
+ 
+Business Processes
+ - acquisition
+ - renewals
+ - after acquisition and renewals
+ - retail gift
+ - processor services
+ - anomaly detection
+ - offline and online processing analytics
+ - issuer analytics
+ 
 
 ## Payments and Fraud Prevention 支付与反欺诈
 
@@ -263,8 +283,75 @@ Then, the issuer’s 3D Secure service provider assesses the transaction risk. I
 - Rich data exchange means more secure payments
 - Reduced risk of fraud
 - Chargeback Liability shift of 3D Secure
+
+### Credit Card Payment Processing Rules and Laws
+
+**PCI Data Security Standard**
+- a global data security standard required of all businesses, regardless of size, that accept credit cards. PCI DSS and the Payment Application Data Security Standard (PA-DSS) are rules designed to reduce the incidence of credit card fraud.
+- PA-DSS mandates that all point-of-sale (POS) equipment and terminals meet the PCI DSS standards. That means that if you have a POS system, the lion’s share of your PCI compliance is already handled by your POS hardware.
+- [Payment Processing Laws](https://www.business.com/articles/payment-processing-laws/)
+
+**Four Levels of PCI Compliance**
+
+PCI Level 1
+- applies to businesses that process more than 6 million credit card transactions annually.
+  - Annual report on compliance (ROC) by a Qualified Security Assessor (QSA) or internal auditor (external or internal trained individuals certified to review payment transaction systems and assess and validate compliance)
+  - Quarterly network scan by an Approved Scanning Vendor (ASV), a company with commercial software that analyzes and performs certified vulnerability scans on business systems and networks
+  - Attestation of Compliance form
+
+PCI Level 2
+- applies to businesses that process 1 million to 6 million credit card transactions annually.
+  - Annual self-assessment questionnaire
+  - Quarter network scan by an ASV
+  - Attestation of Compliance form 
  
- 
+PCI Level 3
+- applies to businesses that process 20,000 to 1 million credit card transactions annually.
+  - Annual self-assessment questionnaire
+  - Quarter network scan by an ASV
+  - Attestation of Compliance form
+
+PCI Level 4
+- applies to businesses that process up to 20,000 e-commerce payments or up to 1 million payments via other channels.
+  - Annual self-assessment questionnaire recommended, but not required
+  - Quarter network scan by an ASV, if applicable
+  - Compliance validation requirements set up by merchant bank
+
+**Card Association Network**
+- set and manage the interchange rates, the purchase percentage and the per-transaction amount that you pay for the ability to accept each type of card.
+
+**National Automated Clearinghouse Association**
+- governs ACH transactions and the network they use. ACH transactions include direct deposits and direct payments from bank and credit union accounts.
+
+**IRS Mandate**
+- Section 6050W, also called the IRS mandate, which requires merchant services providers to specifically report their clients’ annual gross transactions processed with a credit or debit card or third-party network to the IRS.
+
+**Nacha**
+- any business that accepts ACH payments must abide by these rules.
+- A new Nacha Supplementing Data Security Rule, which went into effect in June 2021, requires businesses that process 2 million or more ACH transactions annually to encrypt payment information on their computer systems while at rest (not being transmitted to a financial institution). Businesses with fewer than 2 million ACH transactions per year are not subject to the new rule but are encouraged to comply anyway. 
+
+**Visa Chargeback Rules**
+- Pre-Dispute
+- Dispute
+- Dispute Response (Representment)
+- Pre-Arbitration
+- Final Decision
+
+Visa Chargeback Categories
+- Fraud
+- Authorization
+- Processing Error
+- Consumer Dispute
+
+Rules for Responding to Visa Disputes
+- draw from many different sources for evidence, whatever documents you provide must directly address the reason code attached to the dispute case.
+- provide a rebuttal letter, which explains the reason for the dispute. You may also be required to include documents like a Chargeback Adjustment Reversal Request, a Chargeback Debit Advice Letter, depending on the circumstances.
+- Merchants must respond within 30 days of “day one” for each phase. In Visa’s case, day one is the day after each phase is initiated.
+
+Visa Chargeback Thresholds
+- Visa chargeback rules limit the number of disputes a merchant can receive.
+
+**Visa Dispute Monitoring Program (VDMP) & Visa Fraud Monitoring Program (VFMP)**
 ### How to Create a Fraud Prevention Unit
 
 **Types of Online Fraud**
