@@ -3,6 +3,7 @@
 
 - [《支付方法论》阅读笔记](#支付方法论-阅读笔记)
 - [《社会工程》阅读笔记](#社会工程-阅读笔记)
+- [Overview of Payment Technology 支付技术总结](#Overview-of-Payment-Technology-支付技术总结)
 - [Payments Transaction Routing](#Payments-Transaction-Routing)
 - [Payment KPIs](#Payment-KPIs)
 - [EMV 3DS](#EMV-3DS)
