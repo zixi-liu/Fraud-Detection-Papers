@@ -569,6 +569,13 @@ and in real time.
 - Virtual rent-to-own models
 - vertical-focused larger-ticket plays
 
+### Crypto Fraud
+
+Terminologies
+- Crypto: digital assets which exist today and operate on blockchain technology.
+- Central Bank Digital Currencies (CBDCs): a digital form of fiat issued by governments.
+
+
 
 *Robust fraud prevention solutions are built mainly by researchers who can explain the fraud from the perspectives of the attacker and the victim.*
 
