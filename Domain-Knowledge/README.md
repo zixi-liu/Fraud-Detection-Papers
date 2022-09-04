@@ -13,6 +13,7 @@
 - [Account Takeover](#Account-Takeover)
 - [Financial Impacts of Cybercrime](#Financial-Impacts-of-Cybercrime)
 - [BNPL Overview](#BNPL-Overview)
+- [Crypto Fraud](#Crypto-Fraud)
 - [[O'Reilly] Practical Fraud Prevention](#[O'Reilly]-Practical-Fraud-Prevention)
 
 ## Industry Applications 业界案例
@@ -24,7 +25,7 @@
 
 [Abstract] The Anti-Abuse AI Team at LinkedIn creates, deploys, and maintains models that detect and prevent many types of abuse, including the creation of fake accounts, member profile scraping, automated spam, and account takeovers. Bad actors use automation to scale their attempted abuse. There are many unique challenges associated with using machine learning to stop abuse on a large professional network including maximizing signal, keeping up with adversarial attackers, and covering many heterogeneous attack surfaces. In addition, traditional machine learning models require hand-engineered features that are often specific to a particular type of abuse and attack surface. To address these challenges, we have productionalized a deep learning model that operates directly on raw sequences of member activity, allowing us to scalably leverage more of the available signal hidden in the data and stop adversarial attacks more effectively. Our first production use case of this model was the detection of logged-in accounts scraping member profile data. We will present results demonstrating the promise of this modeling approach and discuss how it helps to solve many of the unique challenges in the anti-abuse domain.
 
-**Payment Anallytics at Netflix**
+**Payment Anallytics @Netflix**
 
 - [Payment Analytics at Netflix](https://www.youtube.com/watch?v=xCwW1OENCOY)
   - Minimize involuntary churn
@@ -50,7 +51,12 @@ Business Processes
 
 1、支付的基本概念
 
-1.1 支付的三个基本过程：交易、清分、和结算。
+支付是货币债权转移过程。
+
+支付的三个基本过程：交易、清分、和结算。
+
+交易是支付的前提和基础，清分是数据的准备阶段，结算是支付的完结。
+
 - 交易的重要性：拓展交易场景
   - 确保支付指令的生成、确认与传输。包括交易主体的合法性和身份确认、支付方式确认、支付通道的计算与决策、支付能力查证、交易结果的存储与返回信息归类等等。
 - 清分(Clearing)：算出债权人与债务人各自应收应付，并没有发生实际交割。
@@ -58,12 +64,12 @@ Business Processes
 
 *“支付是交易的终点，是货币流动的起点。”*
 
-1.2 支付演进概述
+支付演进概述
 - 货币的实物商品本位阶段
   - 直到世界经济发展，黄金储备严重不足，美元贬值，布雷顿森林体系解体，进入货币第二阶段。
 - 信用货币阶段
 
-1.3 现代支付体系
+现代支付体系
 - 支付服务组织：支付工具和支付系统的提供者
   - 中央银行，银行业金融机构，支付清算组织等。
 - 支付系统：实现资金、债券、债务信息的清算，完成资金的转移。
@@ -75,7 +81,7 @@ Business Processes
   - API, SDK, 移动端，二维码，电话语音支付，POS支付等。
 - 支付体系监管
 
-1.5 支付基础名词
+支付基础名词
 - T+1：工作日+1
 - D+1：自然日+1
 - 全额结算(Gross Settlement)
@@ -90,7 +96,7 @@ Business Processes
 
 2. 支付通道
 
-2.1 支付通道要求 
+支付通道要求 
 - 支付方式：卡基&账基
 - 支付品牌：商业银行，地区银行等
 - BIN：一个支付通道往往会由于没有处理权限或未及时更新等，不能覆盖全部的BIN。
@@ -99,7 +105,7 @@ Business Processes
 - 支付通道能力
   - 额度、限额、结算时效、风险拒付率、费率、安全性等。
 
-2.2 支付通道结构
+支付通道结构
 - 支付方式
 - 支付品牌
 - 支付通道
@@ -107,14 +113,52 @@ Business Processes
   - 逻辑通道：按接入渠道、商户、不同品牌、价格等因素拆分。
 - 支付产品
 
-2.3 支付通道分类
+支付通道分类
 - 快捷支付与非快捷支付
   - 无磁有密类：直接支付。无签约。可能会验证有效期、CVV。
   - 快捷支付：现签约再支付。 
 
-<img src="https://user-images.githubusercontent.com/46979228/185811807-5834751a-253a-4820-8227-0d85fe2c7100.png" alt="Unsupervised embedding" width = "500px"/>
+<img src="https://user-images.githubusercontent.com/46979228/185811807-5834751a-253a-4820-8227-0d85fe2c7100.png" alt="Unsupervised embedding" width = "400px"/>
 
-7 清结算
+3. 跨境支付（Cross-border Payment）
+
+跨境支付是不同交易币种、不同结算币种、不同跨国监管主体资金转移、不同国界支付网络（如SWIFT、卡组织等）的连接。
+
+- 交易发起阶段(Initiate Relationship)：（客户、汇出行、汇率转换机构）资金处理、费用处理、验证客户信息KYC、AML反洗钱信息提交、与汇率转换机构换汇等。
+- 资金转移阶段(Transfer Money)：（当地清分网络、SWIFT、代理行）当地清分网络进行资金费用计算，SWIFT提供国际间资金处理报文传输网络等。
+- 资金交付阶段(Deliver Funds)：（汇入行、收款人、汇率转换机构）
+- 资金交付后阶段(Act Post Payment)：（银行、汇率转换机构、政府监管机构）
+
+<img src="https://user-images.githubusercontent.com/46979228/188317677-84cafd83-932e-4993-a5f9-0b63b1174f11.png" alt="Unsupervised embedding" width = "800px"/>
+
+**跨境支付背景**：
+- 账户端应用场景（跨境电商）
+- 备付金集中存管：第三方支付机构交易产生的客户备付金统一存至指定账户，央行监管，支付机构不得挪用、占用客户备付金。
+- 直连与断直连
+
+跨境支付场景
+- 境外线下支付（基于交易）
+- 跨境转账汇款（基于人口跨国转移流动）
+- 跨境线上支付（基于交易）
+
+跨境支付注意事项
+- 跨币种资金转移与流动
+  - DCC(Dynamic Currency Conversion)将当地货币实时转换为持卡人的记账货币 or EDC(Electronic Data Capture)支付时仅知道本地货币价格。
+  - 跨地区的资金转移与流动
+
+跨境支付方式与特性
+- 电汇
+- 时效
+- 金额限制
+- SWIFT系统：提供标准化、安全可靠合规的报文传送和通信服务。每个成员拥有一个SWIFT Code。
+
+4. 路由系统
+
+5. 重试服务
+
+6. BIN服务
+
+7. 清结算
 
 7.3 计费服务
 - 计费对象分为商户和支付通道。
