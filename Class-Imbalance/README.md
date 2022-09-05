@@ -10,4 +10,4 @@
 
 - [Focal Loss 论文详解](https://zhuanlan.zhihu.com/p/49981234)
   - 目的是通过调制系数减少易分类样本的权重，从而使得模型在训练时更专注于难分类的样本。
-- [Focal Loss 与LightGBM实现](https://maxhalford.github.io/blog/lightgbm-focal-loss/)
+- [Focal Loss 与 LightGBM 实现](https://maxhalford.github.io/blog/lightgbm-focal-loss/)
