@@ -188,6 +188,16 @@ $A\bar{v} = \lambda\bar{v}$ 即 $|A-\lambda I| = 0$
 - 特征值分解：特征值表示这个特征多么重要，特征向量表示这个特征是什么。
 - [SVD及其应用](https://www.cnblogs.com/LeftNotEasy/archive/2011/01/19/svd-and-applications.html)
 
+---
+
+**算法工程师分享系列**
+
+CS的陋室
+- [心法利器[70]|短文本理解的难点和解决方案](https://mp.weixin.qq.com/s/PViYa_hG_LBwmrD_O3dB_w)
+- [心法利器[69]|聊聊数据敏感性](https://mp.weixin.qq.com/s?__biz=MzIzMzYwNzY2NQ==&mid=2247488497&idx=1&sn=b1230a87b2bd47b937fa32837b24841f&chksm=e8824b6fdff5c2792a631364fbd14a5acf3e0043511586b07d1254c342a1b128d70b3394aaba&scene=21#wechat_redirect)
+
+**Bad Case分析**
+- [心法利器[37]|bad case治疗术：认知篇](https://mp.weixin.qq.com/s?__biz=MzIzMzYwNzY2NQ==&mid=2247487349&idx=1&sn=78624d06c3ccc6cb4babaf7c6cdf5cb8&chksm=e88257ebdff5defdd1ea9bc86427520f674bb99246a34f487f07aaad86bbebb8c900a7ba2b1b&scene=21#wechat_redirect)
 
 
 
