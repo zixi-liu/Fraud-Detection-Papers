@@ -59,6 +59,7 @@
 - 交叉组合FM/分箱 Binning/Count Encoding/Target Encoding/Odds Ratio/相关系数/WOE
   - [特征交叉组合模型演化简史](https://zhuanlan.zhihu.com/p/269730650)
   - [Feature Hashing for Large Scale Multitask Learning](https://arxiv.org/pdf/0902.2206.pdf)
+  - [CTR和推荐系统中常用的Feature Hashing](https://www.zhihu.com/question/264165760)
 
 时序特征
 - 历史事件分时段统计
