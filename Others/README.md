@@ -203,6 +203,10 @@ $A\bar{v} = \lambda\bar{v}$ 即 $|A-\lambda I| = 0$
 - 特征值分解：特征值表示这个特征多么重要，特征向量表示这个特征是什么。
 - [SVD及其应用](https://www.cnblogs.com/LeftNotEasy/archive/2011/01/19/svd-and-applications.html)
 
+**从Self-Attention理解 $XX^T$**
+- 向量的内积，几何意义是表征两个向量的夹角，表征一个向量在另一个向量上的投影。
+- 投影的值大，说明两个向量相关度高。如果两个向量夹角是九十度，那么这两个向量线性无关。
+
 ---
 
 **算法工程师分享系列**
