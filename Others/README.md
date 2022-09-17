@@ -155,6 +155,10 @@ Boosting的基本思想是将多个弱学习器整合成一个强学习器。
 - 对比评估(Constrastive evaluations)
   - 用特例集验证预测器表现。
 
+
+**Loss and Prediction Accuracy**
+- [Loss Functions](https://vinija.ai/toolkit/loss/)
+
 ---
 
 ### MLP
