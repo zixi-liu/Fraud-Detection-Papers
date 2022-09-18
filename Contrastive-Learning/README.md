@@ -65,7 +65,8 @@ Vision Transformer
 
 ### NLP
 
-利用对比学习思想，自监督训练sentence-embedding。
+利用对比学习思想，自监督训练sentence-embedding。运用Contrastive Learning思想主要分为两类：1）损失联合优化；2）构造增强样本，fine-tune模型；
+- [[SimCSE] SimCSE: Simple Contrastive Learning of Sentence Embeddings, 2022](https://arxiv.org/pdf/2104.08821.pdf)
 
 **损失联合优化**
 
@@ -82,9 +83,10 @@ seq2seq, 由encoder和decoder组成。先将输⼊映射到一个序列，然后
 
 - [Contrastive Learning with Adversarial Perturbations for Conditional Text Generation, 2021](https://arxiv.org/pdf/2012.07280.pdf)
   - 解决“exposure bias”: model is exposed to various valid or incorrect perturbations of the inputs, for improved generalization
-- [[SimCLR] A Contrastive Framework for Neural Text Generation, 2022](https://arxiv.org/pdf/2202.06417.pdf)
+- [[SimCTG] A Contrastive Framework for Neural Text Generation, 2022](https://arxiv.org/pdf/2202.06417.pdf)
   - Motivation: 在文本生成中，用MLE去decode经常会出现重复性Token，影响文本质量，在长文本中可能尤其明显。
   - Method: 提出contrastive search—to encourage diversity while maintaining coherence in the generated text. 使用 Token Similarity Matrix (the token similarity matrix should be sparse and the representations of distinct tokens should be discriminative)。
+  - Loss: $L_{SimCTG}$ = $L_{MLE}$ + $L_{CL}$
 
 
 **NCE**
