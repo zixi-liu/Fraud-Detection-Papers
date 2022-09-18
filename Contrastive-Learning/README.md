@@ -78,6 +78,9 @@ Vision Transformer
 
 
 - [文本生成基础与方案梳理](https://zhuanlan.zhihu.com/p/162035103)
+- [Nucleus Sampling与不同解码策略](https://zhuanlan.zhihu.com/p/442557114)
+  - 无论top-k/top-p还是temprature sampling都是在优化解码词概率分布，通过re-scaling，尽量让生成的句子多样性更好，同时不损失通顺度。
+  - 重新归一化后,虽然之前概率最大的词现在概率值还是最大，但是整体概率分布会更加均匀，这样别的词被采样到的概率会稍微大一点。
 
 seq2seq, 由encoder和decoder组成。先将输⼊映射到一个序列，然后通过序列解码，解码的时候当前值依赖与隐藏节点和解码出来的上一个节点。由于seq2seq的loss采用最大似然求解，必然容易导致偏置问题，生成的内容重复且单一， 如果想要模型生成出更多有趣多样的内容，就需要复杂的数据过滤，采样技术等。
 
@@ -87,7 +90,10 @@ seq2seq, 由encoder和decoder组成。先将输⼊映射到一个序列，然后
   - Motivation: 在文本生成中，用MLE去decode经常会出现重复性Token，影响文本质量，在长文本中可能尤其明显。
   - Method: 提出contrastive search—to encourage diversity while maintaining coherence in the generated text. 使用 Token Similarity Matrix (the token similarity matrix should be sparse and the representations of distinct tokens should be discriminative)。
   - Loss: $L_{SimCTG}$ = $L_{MLE}$ + $L_{CL}$
+  - [Bert中词向量的各向异性Anisotropic](https://www.zhihu.com/question/460991118) 一个好的向量表示应该同时满足Alignment和Uniformity。
 
+**NER**
+- [CONTAINER: Few-Shot Named Entity Recognition via Contrastive Learning, 2022](https://arxiv.org/pdf/2109.07589.pdf)
 
 **NCE**
 - [Understanding Hard Negatives in Noise Contrastive Estimation, 2021](https://arxiv.org/pdf/2104.06245.pdf)
