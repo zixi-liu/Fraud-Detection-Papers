@@ -65,11 +65,27 @@ Vision Transformer
 
 ### NLP
 
+利用对比学习思想，自监督训练sentence-embedding。
+
+**损失联合优化**
+
+将Contrastive Learning的loss和其他loss混合
+- [[CLEAR] Contrastive LEArning for sentence Representation](https://arxiv.org/pdf/2012.15466.pdf)
+
+
 **文本生成**
+
+
+- [文本生成基础与方案梳理](https://zhuanlan.zhihu.com/p/162035103)
+
+seq2seq, 由encoder和decoder组成。先将输⼊映射到一个序列，然后通过序列解码，解码的时候当前值依赖与隐藏节点和解码出来的上一个节点。由于seq2seq的loss采用最大似然求解，必然容易导致偏置问题，生成的内容重复且单一， 如果想要模型生成出更多有趣多样的内容，就需要复杂的数据过滤，采样技术等。
+
 - [Contrastive Learning with Adversarial Perturbations for Conditional Text Generation, 2021](https://arxiv.org/pdf/2012.07280.pdf)
   - 解决“exposure bias”: model is exposed to various valid or incorrect perturbations of the inputs, for improved generalization
-- [A Contrastive Framework for Neural Text Generation, 2022](https://arxiv.org/pdf/2202.06417.pdf)
-  -  The sparseness of the token similarity matrix of the generated text should be preserved.
+- [[SimCLR] A Contrastive Framework for Neural Text Generation, 2022](https://arxiv.org/pdf/2202.06417.pdf)
+  - Motivation: 在文本生成中，用MLE去decode经常会出现重复性Token，影响文本质量，在长文本中可能尤其明显。
+  - Method: 提出contrastive search—to encourage diversity while maintaining coherence in the generated text. 使用 Token Similarity Matrix (the token similarity matrix should be sparse and the representations of distinct tokens should be discriminative)。
+
 
 **NCE**
 - [Understanding Hard Negatives in Noise Contrastive Estimation, 2021](https://arxiv.org/pdf/2104.06245.pdf)
@@ -85,3 +101,4 @@ NCE通过学习数据分布样本和噪声分布样本之间的区别，从而�
 ### 其他
 
 - [推荐系统中的对比学习（Contrastive Learning）方法](https://zhuanlan.zhihu.com/p/405117499)
+- [对比学习论文实现](https://zhuanlan.zhihu.com/p/408156196)
