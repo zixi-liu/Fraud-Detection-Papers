@@ -1,1 +1,18 @@
+## Contrastive Learning 对比学习
 
+### 综述
+
+- [对比学习（Contrastive Learning）相关进展梳理](https://zhuanlan.zhihu.com/p/141141365)
+- [Contrastive Self-Supervised Learning](https://ankeshanand.com/blog/2020/01/26/contrative-self-supervised-learning.html)
+
+表示学习算法并不一定要关注到样本的每一个细节，只要学到的特征能够使其和其他样本区别开来就行。
+- 如何定义目标函数: 正例pair和负例pair隔开至少n的距离
+- 如何构建正例和负例: 设计出合理的正例和负例pair，并且尽可能提升pair能够cover的semantic relation，才能让得到的表示在downstream task表现的更好。
+
+**Contrastive Learning Framework**
+- 学习一个映射函数f，把样本x编码成其表示f(x), 使得
+
+ ![image](https://user-images.githubusercontent.com/46979228/190882819-ea6f469b-efce-4302-94b2-36819eaea3b9.png)
+
+### 构建对比样例
+- [[MoCo] Momentum Contrast for Unsupervised Visual Representation Learning](https://arxiv.org/pdf/1911.05722.pdf)
