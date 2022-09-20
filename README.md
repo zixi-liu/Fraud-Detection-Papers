@@ -96,7 +96,7 @@
   - [Unsupervised Feature Selection for Linked Social Media Data, 2012](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.300.2277&rep=rep1&type=pdf)
   - [Efficient Partial Order Preserving Unsupervised Feature Selection on Networks](https://epubs.siam.org/doi/pdf/10.1137/1.9781611974010.10)
   - [Unsupervised Feature Selection on Networks: A Generative View](https://ojs.aaai.org/index.php/AAAI/article/view/10309/10168)
-
+- 核密度估计(KDE)：对比train、valid、test在不同标签下的分布特征，挑选稳定有效的特征。
 
 **3. 数据增强 Data Augmentation**
 - [[Snap Research] Data Augmentation for Graph Neural Networks](https://arxiv.org/pdf/2006.06830.pdf)
