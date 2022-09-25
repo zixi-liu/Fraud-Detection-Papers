@@ -63,6 +63,11 @@ Self-supervised Learning 不需要标签信息。通过定义规则作为监督�
 Vision Transformer
 - [[DINO] Emerging Properties in Self-Supervised Vision Transformers, 2021](https://arxiv.org/pdf/2104.14294.pdf)
 
+Prototypical Contrastive Learning
+- [[PCL] Prototypical Contrastive Learning of Unsupervised Representations, 2021](https://arxiv.org/pdf/2005.04966.pdf)
+  - ProtoNCE loss
+- [[HCSC] HCSC: Hierarchical Contrastive Selective Coding, 2022](https://arxiv.org/pdf/2202.00455.pdf)
+
 ### NLP
 
 利用对比学习思想，自监督训练sentence-embedding。运用Contrastive Learning思想主要分为两类：1）损失联合优化；2）构造增强样本，fine-tune模型；
@@ -105,6 +110,7 @@ seq2seq, 由encoder和decoder组成。先将输⼊映射到一个序列，然后
 NCE通过学习数据分布样本和噪声分布样本之间的区别，从而发现数据中的一些特性。
 - Data Sample vs Noise Sample
 - 如果负样本的数量很多，使用NCE的变种InfoNCE 
+
 
 ### 其他
 
