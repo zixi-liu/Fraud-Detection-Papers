@@ -193,6 +193,7 @@ Boosting的基本思想是将多个弱学习器整合成一个强学习器。
 - $|\sigma(a)+\sigma(b)|=|a+b|$
 
 矩阵乘法是把任意一个向量变成另一个方向或长度都大多不同的新向量。这个变换的过程中，原向量主要发生旋转、伸缩变化。如果矩阵对某一个向量只发生伸缩变换，不产生旋转效果，那么这些向量称为这个矩阵的eigenvector，伸缩的比例就是eigenvalue。
+- [矩阵乘法的本质](https://www.zhihu.com/question/21351965)
 - 物理意义即eigenvector在矩阵的作用下伸缩运动，伸缩幅度就由eigenvalue决定。
 
 $A\bar{v} = \lambda\bar{v}$ 即 $|A-\lambda I| = 0$
