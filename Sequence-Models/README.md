@@ -74,4 +74,15 @@ $\sigma$ 表示sigmoid函数，输出在0-1，作为加权求和的系数。由�
 
 ### Attention Model 注意力机制
 
+<img src="https://user-images.githubusercontent.com/46979228/193437180-c9a781c7-c72f-4632-9393-96190bdabbd6.png" alt="GNN" width = "400"/>
+
+
+查询、键和值
+- 自主性提示query, value, 非自主提示key, 通过注意力池化层来有偏向性的选择某些输入。
+- attention value是一个查询(query)到一系列键值(key-value)对的映射。
+
+
+注意力评分函数
+
+
 生成目标语言时，不仅考虑前一个时刻的状态，更关注要生成的单词和源语言哪些单词更相关。
