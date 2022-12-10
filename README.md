@@ -24,6 +24,7 @@
 - [TitAnt: 蚂蚁金融在线实时交易欺诈检测](https://arxiv.org/pdf/1906.07407.pdf)
 - [如何制定有效的模型应用策略](https://mp.weixin.qq.com/s/rjkHAFSm4iIDNiK6eYg3QA)
 - [[黑产反欺诈综述]风控要略-互联网业务反欺诈之路](https://weread.qq.com/web/reader/3ef321f071fd5a9d3effb02)
+- [WhatsApp Spam Detection](https://docs.google.com/presentation/d/1W0sjPiNxNJIDUrW8FiEVkdeDpQll7ArTWSQk7u1fl2E/edit#slide=id.p12)
 
 
 ### 二、交易欺诈类型 Fraud Types
