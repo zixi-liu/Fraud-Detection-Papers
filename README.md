@@ -298,6 +298,7 @@ Graph Embedding模型：DeepWalk, node2cev, LINE, SDNE, Struc2Vec, GraRep.
 
 **Knowledge Base**
 - [非常全面的ML资料wiki](https://tracholar.github.io/wiki/#machine-learning)
+- [Graph Code Samples](https://zqfang.github.io/)
 - [2021金融风控模型内容摘要[图算法+时间序列模型]](https://zhuanlan.zhihu.com/p/384896966)
 - [鲲鹏分布式平台在蚂蚁金服的应用](http://library.usc.edu.ph/ACM/KKD%202017/pdfs/p1693.pdf)
 - [微信支付GNN链接预测技术](https://mp.weixin.qq.com/s/wIurXxsH6zwA1zVScyNibg)
