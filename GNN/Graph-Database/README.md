@@ -12,4 +12,6 @@
   - 更新模块
      - 实时更新: 同步 VS 异步
      - 批量更新
+  
+ [图计算框架](https://www.zhihu.com/question/67056086/answer/2374091183?utm_medium=social&utm_oi=606895222513471488&utm_psn=1616988250073112576&utm_source=ZHShareTargetIDMore)
 ### 单机部署 VS 分布式数据库
