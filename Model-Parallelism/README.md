@@ -61,3 +61,5 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
 ## Data Parallelism vs. Model Parallelism
 
 - [深度学习并行训练算法: DDP, TP, PP, ZeRO](https://zhuanlan.zhihu.com/p/581677880)
+- [Distributed Parallel Training: Data Parallelism and Model Parallelism](https://towardsdatascience.com/distributed-parallel-training-data-parallelism-and-model-parallelism-ec2d234e3214)
+  - In practice, tensor parallelism used only when NVLink is available (in Ampere generation of GPUs, this is limited to the GPUs within a single node).
