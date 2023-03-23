@@ -32,4 +32,26 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
 **Execution Time**
 - Scale of compute
 
+## Algorithms
 
+**Transformer**
+- Common fault tolerance mechanism, in the large model training
+  - Model checkpointing is a standard practice these days, to restart training from those checkpoints in case of HW failures during training.
+- Data Parallel = same model, different slices of data each batch, Model Parallel = same data, different slices of model
+
+## Systems
+
+- NVIDIA DGX Superpod Solution
+- Automatic Mixed Precision
+- Activation Checkpoints 
+- Trading compute for memory
+- Offloading - trading memory capacity for bandwidth (Offload CPU tensors not used in computation from GPU to CPU)
+- Model Implementation 
+  - Tensor, Pipeline Parallelism
+  - Data parallel, distributed Optimizer
+  - Automatic Mixed Precision
+  - BERT, GPT, T5, Vision Transformer
+  - Achieve high utilization and scaling to thousands of GPUs
+  - Working towards Trillion models
+
+![image](https://user-images.githubusercontent.com/46979228/227277392-241833c9-1c20-428b-a36c-5218b301b7a0.png)
