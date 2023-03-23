@@ -80,8 +80,12 @@ CPU vs. GPU
 - 同样面积的芯片，CPU放置更多的多级缓存和指令并行的控制部件；GPU则更多运算单元；
 - GPU往往拥有更大带宽的Memory，所谓的显存，因此在大吞吐量的应用中会有很好的性能；
 
-1). 相较于CPU而言，GPU更强大的“naive"浮点算术能力，但在GPU集群上，因为计算与通信的gap导致的性能degradation会更显著。
+1) 相较于CPU而言，GPU更强大的“naive"浮点算术能力，但在GPU集群上，因为计算与通信的gap导致的性能degradation会更显著。
 
-2). GPU的访存特点也使得GPU计算平台上能hold的有效模型尺寸通常来说是远小于CPU平台上的（以比较主流的Nvidia  Tesla K40M为例，显存12GiB），这也使得GPU平台上在处理比较大的模型的时候，会比CPU平台更早地遇到模型尺寸的瓶颈，需要考虑model parallelism。
+2) GPU的访存特点也使得GPU计算平台上能hold的有效模型尺寸通常来说是远小于CPU平台上的（以比较主流的Nvidia  Tesla K40M为例，显存12GiB），这也使得GPU平台上在处理比较大的模型的时候，会比CPU平台更早地遇到模型尺寸的瓶颈，需要考虑model parallelism。
 
 
+## Inference
+
+Model Selection
+- Not all models respond in the same way to knowledge distillation, pruning and quantization.
