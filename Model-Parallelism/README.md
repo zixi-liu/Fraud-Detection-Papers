@@ -89,3 +89,35 @@ CPU vs. GPU
 
 Model Selection
 - Not all models respond in the same way to knowledge distillation, pruning and quantization.
+
+<img width="1269" alt="image" src="https://user-images.githubusercontent.com/46979228/227357113-e26bb0fd-cf24-49d9-ad16-b9be7226baff.png">
+
+#### Quantization
+
+- Small precision but still maintain accuracy;
+  - Without calibration, you could incur a pretty steep accuracy loss. FP16 tends to maintain accuracy well but a lot more caution is needed for going down to 8 bits.
+- Bandwidth reduction;
+
+<img width="1399" alt="image" src="https://user-images.githubusercontent.com/46979228/227357821-a8954075-c177-4205-a6e1-f7d5c4d9d68d.png">
+
+#### Model Optimization
+
+- Pruning
+
+#### Sparsity Support
+
+#### Knowledge Distillation
+
+- Compress a large model or teach a smaller model; i.e. DistillBERT etc.
+
+### Inference of Huge Models
+
+- Maximize utilization of GPUs;
+- Maximize throughput, minimize latency;
+
+### Production Deployment
+
+
+
+
+
