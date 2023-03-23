@@ -7,3 +7,24 @@ In this workshop, you’ll learn how to:
 - Use techniques such as activation checkpointing, gradient accumulation, and various forms of model parallelism to overcome the challenges associated with large-model memory footprint
 - Capture and understand training performance characteristics to optimize model architecture
 Deploy very large multi-GPU models to production using NVIDIA Triton™ Inference Server
+
+
+<img width="1125" alt="image" src="https://user-images.githubusercontent.com/46979228/227267515-43fb934b-2e8b-4c78-8253-9f6433af3c7e.png">
+
+## Challenges
+
+- Cost of labels limits the utility of supervised deep learning models
+- The Scaling Laws - loss decreasing with training data size increasing
+- Few Shot Learning
+  - learning from far fewer examples - larger models make increasingly efficient use of in-context information
+
+
+**Model Tuning & Prompt Tuning**
+- Prompt tuning is where you essentially have the model learn some 'virtual tokens' - basically an embedding that gets prepended to your prompt. So the model learns, given some examples, what a good prompt looks like (although the prompt isn't something human readable - thus 'virtual prompt')
+  - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/pdf/2104.08691.pdf)
+
+
+
+
+
+
