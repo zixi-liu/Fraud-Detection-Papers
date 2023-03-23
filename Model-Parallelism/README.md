@@ -65,3 +65,23 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
 - [GPU/CPU集群下做到Data/Model Parallelism的区别](https://www.zhihu.com/question/31999064)
   - Tensor parallelism would just break up the matrix operations used in forward/back propagation.
   - In practice, tensor parallelism used only when NVLink is available (in Ampere generation of GPUs, this is limited to the GPUs within a single node).
+
+#### 并行计算解决的问题
+- 1） 通过并行化来做性能加速
+- 2） 解决单机内存无法hold的huge model size
+
+#### 并行计算的优化方案
+
+- 将计算与通信开销overlap以后，提高计算资源的utilization rate；
+- 神经网络的拓扑结构进行优化，在不明显损失精度的情况下，减少并行计算的同步过程所需要传输的数据量；
+- 在不明显损失精度的情况下，改善计算资源的utilization rate；
+
+CPU vs. GPU
+- 同样面积的芯片，CPU放置更多的多级缓存和指令并行的控制部件；GPU则更多运算单元；
+- GPU往往拥有更大带宽的Memory，所谓的显存，因此在大吞吐量的应用中会有很好的性能；
+
+1). 相较于CPU而言，GPU更强大的“naive"浮点算术能力，但在GPU集群上，因为计算与通信的gap导致的性能degradation会更显著。
+
+2). GPU的访存特点也使得GPU计算平台上能hold的有效模型尺寸通常来说是远小于CPU平台上的（以比较主流的Nvidia  Tesla K40M为例，显存12GiB），这也使得GPU平台上在处理比较大的模型的时候，会比CPU平台更早地遇到模型尺寸的瓶颈，需要考虑model parallelism。
+
+
