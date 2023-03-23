@@ -58,6 +58,6 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
 
 ![image](https://user-images.githubusercontent.com/46979228/227277392-241833c9-1c20-428b-a36c-5218b301b7a0.png)
 
-## Data Parallism vs. Model Parallism
+## Data Parallelism vs. Model Parallelism
 
 - [深度学习并行训练算法: DDP, TP, PP, ZeRO](https://zhuanlan.zhihu.com/p/581677880)
