@@ -44,7 +44,9 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
 - NVIDIA DGX Superpod Solution
 - Automatic Mixed Precision
 - Activation Checkpoints 
-- Trading compute for memory
+  - Trading compute for memory
+- Gradient Accumulation
+  - Gradient accumulation increases the effective batch size. Increasing the batch size is a very common trick to speed up training since GPUs are massively parallel and can process more data points at once with a larger batch.
 - Offloading - trading memory capacity for bandwidth (Offload CPU tensors not used in computation from GPU to CPU)
 - Model Implementation 
   - Tensor, Pipeline Parallelism
@@ -55,3 +57,7 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
   - Working towards Trillion models
 
 ![image](https://user-images.githubusercontent.com/46979228/227277392-241833c9-1c20-428b-a36c-5218b301b7a0.png)
+
+## Data Parallism vs. Model Parallism
+
+- [深度学习并行训练算法: DDP, TP, PP, ZeRO](https://zhuanlan.zhihu.com/p/581677880)
