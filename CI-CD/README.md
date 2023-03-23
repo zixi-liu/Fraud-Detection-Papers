@@ -56,3 +56,14 @@ Serverless Computing
 **Monitoring**
 - Amazon CloudWatch
 - AWS CloudTrail
+
+## Nginx
+
+- [深入浅出Nginx](https://zhuanlan.zhihu.com/p/34943332)
+
+Nginx是一款轻量级的Web服务器、反向代理服务器，由于它的内存占用少，启动极快，高并发能力强，在互联网项目中广泛应用。
+
+#### 反向代理服务器
+
+- 正向代理“代理”的是客户端，而且客户端是知道目标的，而目标是不知道客户端是通过VPN访问的。
+- 
