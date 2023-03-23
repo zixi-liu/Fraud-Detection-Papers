@@ -23,8 +23,13 @@ Deploy very large multi-GPU models to production using NVIDIA Triton™ Inferenc
 - Prompt tuning is where you essentially have the model learn some 'virtual tokens' - basically an embedding that gets prepended to your prompt. So the model learns, given some examples, what a good prompt looks like (although the prompt isn't something human readable - thus 'virtual prompt')
   - [The Power of Scale for Parameter-Efficient Prompt Tuning](https://arxiv.org/pdf/2104.08691.pdf)
 
+**Towards General Intelligence**
+- Does not need labelled data
+- Single generic model can do more than one tasks
+- More generalized: in addition to language also learns higher level concepts, styles, etc.
+- Computationally Expensive (~500 Billion parameters)
 
-
-
+**Execution Time**
+- Scale of compute
 
 
