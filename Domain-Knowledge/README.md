@@ -18,6 +18,7 @@
 - [BNPL Overview](#BNPL-Overview)
 - [Crypto Fraud](#Crypto-Fraud)
 - [[O'Reilly] Practical Fraud Prevention](#[O'Reilly]-Practical-Fraud-Prevention)
+- [Subscription - 8 most important KPIs for subscription business models]
 
 ## Industry Applications 业界案例
 
@@ -813,6 +814,31 @@ Mitigation
 **Identification and Mitigation**
 
 
+## Subscription - 8 most important KPIs for subscription business models
+
+#### 1. Monthly recurring revenue (MRR)
+
+- MRR = no. of customers x monthly rate
+
+#### 2. Annual recurring revenue (ARR)
+
+- ARR = (monthly rate x 12) / no. of customers
+
+#### 3. Average revenue per user (ARPU)
+
+- ARPU = MRR / no. of customers
+
+#### 4. Customer lifetime value (CLV)
+
+- CLV = Average Transaction Size x Number of Transactions x Retention Period
+
+#### 5. Customer acquisition cost (CAC)
+
+#### 6. Churn rate
+
+- Churn rate = subscription cancellations/total customers
+
+#### 8. Lead velocity rate (LVR)
 
 =======================================================================================================
 ### Merchant Risk Council (MRC) 2022 Global Payments and Fraud Survey Report 
