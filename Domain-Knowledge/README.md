@@ -333,8 +333,10 @@ Member -> Order -> Payment Service Provider (Payment Gateway, Payment Processors
 
 
 ### Payments Orchestration
-Payments orchestration
+Payments orchestration 支付编排
 - an abstraction layer that met the four following conditions: one API, connectivity to providers that acquire cards and provide local payment methods, end-user routing and management configurable tools, and real-time ledgers.
+- 支付编排在软件上链接不同的支付服务提供商PSP,收单机构和银行.
+
 
 **Architecture Diagram**
 - API (Account Verification, Authorization, Capture, Lifecycle Notifications, Partial Refunds, Redirects, Reporting API)
