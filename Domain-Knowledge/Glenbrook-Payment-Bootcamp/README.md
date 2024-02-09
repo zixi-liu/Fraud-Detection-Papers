@@ -28,3 +28,15 @@ Payment systems compete within domains.
 - B2B (context, data important)
 - Income
 
+### Payment System Stack
+
+- Domains
+- Value-Add Services (Directories, Gateways, Orchestration, Risk Services, Open APIs, Request-to-Pay)
+- Scheme (Rules, Brand, Governance)
+- Infrastructure (Messaging Standards, Connectivity, Operationanl Processing)
+- Settlement Services (Net Settlement, Gross Settlement, Hybrid Settlement)
+
+
+
+
+
