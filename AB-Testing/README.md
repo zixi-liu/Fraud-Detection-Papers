@@ -4,8 +4,8 @@
   - auth decreases fraud exposure, but increases passenger churn
   - user churn increase with increased auth frequency
 - [[**Feedzai 2023**] On the Importance of Application-Grounded Experimental Design for Evaluating Explainable Machine Learning Methods](https://arxiv.org/pdf/2206.13503)
-
-
+- [[**Feedzai 2024**] On the Importance of Application-Grounded Experimental Design for Evaluating Explainable ML Methods](https://ojs.aaai.org/index.php/AAAI/article/view/30082/31906)
+  - use performance metrics that reflect operational goals such as Percent Dollar Regret (PDR)
 
 
 
