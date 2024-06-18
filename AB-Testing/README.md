@@ -1,5 +1,16 @@
 ## A/B Testing
 
+- [[**Lyft Engineering 2017**] Interactions in fraud experiments: A case study in multivariable testing](https://eng.lyft.com/interactions-in-fraud-experiments-a-case-study-in-multivariable-testing-e0525b11751)
+  - auth decreases fraud exposure, but increases passenger churn
+  - user churn increase with increased auth frequency
+- [[**Feedzai 2023**] On the Importance of Application-Grounded Experimental Design for Evaluating Explainable Machine Learning Methods](https://arxiv.org/pdf/2206.13503)
+
+
+
+
+
+
+## Platform-wise
 随机对照试验 RCT
 - 在线上流量中取出一小部分用户（较低风险），完全随机地分给原策略A和新策略B（排除干扰），再结合一定的统计方法，得到两种策略对比效果的准确估计。
 
@@ -16,4 +27,4 @@
 - 假设检验
 - Seed finder, Diff in Diff, CUPED (Controlled-experiment using pre-experiment data)
 
-### Econometrics：计量经济学
+
