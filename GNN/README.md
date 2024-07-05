@@ -72,11 +72,13 @@
 - 以元路径构造新图，将异质图同质化：GAT->HAN
 
 
+
 ### 目录
 
 
 | Year  | Title | Entity | Paper | Code  |
 | :---: | :---: | :---: | :---: | :---: |
+| 2022  | **Rethinking Graph Neural Networks for Anomaly Detection** | ICML | [[ICML2022]](https://arxiv.org/pdf/2205.15508) | Code |
 | 2022  | **Representing Fine-Grained Co-Occurrences for Behavior-Based Fraud Detection in Online Payment Services** | IEEE | [[IEEE2022]](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9085905) | Code |
 | 2021  | **Unveiling Fake Accounts at the Time of Registration: An Unsupervised Approach** | Tencent | [[KDD2021]](https://dl.acm.org/doi/pdf/10.1145/3447548.3467094) | Code |
 | 2020 | [**Heterogeneous Graph Neural Networks for Malicious Account Detection**](#Heterogeneous-Graph-Neural-Networks-for-Malicious-Account-Detection) | Ant Group| [[arXiv2020]](https://arxiv.org/pdf/2002.12307.pdf) | Code |
