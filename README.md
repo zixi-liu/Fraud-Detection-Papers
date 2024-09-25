@@ -55,6 +55,7 @@
 
 数值型特征
 - 归一 Normalizer：处理特征值尺度不同问题 （i.e. min-max, scale to [-1, 1], z-score, log-based, L2, Gauss Rank, Robust Scaling etc.）
+  - [特征工程中的归一化有什么作用](https://www.zhihu.com/question/20455227/answer/370658612)
 - 分箱 Binning：处理特征值分布不均匀问题（有监督分箱如卡方分箱、决策树分箱/无监督分桶如固定宽度分箱、分位数分箱等）
   - 将连续特征离散化，旨在引入非线性变换，对异常值不敏感、防止过拟合；
   - Tree-based模型中，高基数特征相对于低基数特征处于支配地位。
