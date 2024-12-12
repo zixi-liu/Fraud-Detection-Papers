@@ -8,6 +8,15 @@
   - use performance metrics that reflect operational goals such as Percent Dollar Regret (PDR)
 
 
+## Multi-Armed Bandit
+
+Traffic is dynamically re-allocated to winning variants.
+
+**When to Use Multi-Arm Bandit?**
+- Winning over learning
+- Single goal metric
+- Multiple variations
+
 
 
 ## Platform-wise
