@@ -7,6 +7,8 @@
 - 如何避免过拟合
    - 1. 正规化（regularization)
    - 2. 增加训练数据集
+    
+[Generalization Theory](https://www.tengjiaye.com/generalization.html)
 
 ### Interesting Papers
 
@@ -15,4 +17,11 @@
 [A Decade's Battle on Dataset Bias: Are We There Yet?](https://arxiv.org/pdf/2403.08632)
 - [数据集偏差的十年之战](https://zhuanlan.zhihu.com/p/687907731)
 
+[如何顺畅使用feature learning理论：基础篇](https://zhuanlan.zhihu.com/p/682516296)
+- Signal & Noise
+
 **Debias in Recommender Systems**
+
+**Benign Overfitting**
+
+[benign overfitting & harmful overfitting](https://www.cnblogs.com/yspm/p/17969006/IPDL-Notes)
